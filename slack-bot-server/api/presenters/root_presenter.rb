@@ -27,6 +27,20 @@ module Api
         }
       end
 
+      link :missing_children do |opts|
+        {
+          href: "#{base_url(opts)}/api/missing_children/#{link_params(Api::Helpers::PaginationParameters::ALL)}",
+          templated: true
+        }
+      end
+
+      link :missing_child do |opts|
+        {
+          href: "#{base_url(opts)}/api/missing_children/{id}",
+          templated: true
+        }
+      end
+
       private
 
       def base_url(opts)

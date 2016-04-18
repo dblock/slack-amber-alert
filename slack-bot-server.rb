@@ -1,3 +1,5 @@
+$LOAD_PATH.unshift(File.dirname(__FILE__))
+
 ENV['RACK_ENV'] ||= 'development'
 
 require 'bundler/setup'
@@ -10,6 +12,7 @@ end
 Mongoid.load! File.expand_path('../config/mongoid.yml', __FILE__), ENV['RACK_ENV']
 
 require 'faye/websocket'
+require 'open-uri'
 require 'slack-ruby-bot'
 require 'slack-bot-server/version'
 require 'slack-bot-server/info'

@@ -3,13 +3,12 @@ module SlackBotServer
     class Help < SlackRubyBot::Commands::Base
       HELP = <<-EOS
 ```
-I am your friendly slack-bot-server, here to help.
+Amber Alert Slack Bot.
 
 General
 -------
 
 help               - get this helpful message
-whoami             - print your username
 
 ```
 EOS

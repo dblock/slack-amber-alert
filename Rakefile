@@ -17,4 +17,5 @@ unless ENV['RACK_ENV'] == 'production'
   task default: [:rubocop, :spec]
 
   import 'tasks/db.rake'
+  import 'tasks/notify.rake'
 end

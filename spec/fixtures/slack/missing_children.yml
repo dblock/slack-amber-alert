@@ -1,0 +1,53 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://www.missingkids.org/missingkids/servlet/XmlServlet?LanguageCountry=en_US&act=rss&orgPrefix=NCMC
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - text/xml
+      Content-Length:
+      - '1274'
+      Date:
+      - Sun, 17 Apr 2016 19:07:22 GMT
+      Server:
+      - Apache
+      Set-Cookie:
+      - asdfjkl1=!Jqo/qqnWEWWLLleboZNuUBTVaO3P26ncIdQanbffVfp47ckHZCkYGh5nghW2HEk19qmkhxCfVh3jfg==;
+        path=/
+      - asdfjkl=998090944.20480.0000; path=/
+      Vary:
+      - Accept-Encoding
+      Age:
+      - '76254'
+      X-Cache:
+      - Hit from cloudfront
+      - MISS from 3
+      X-Amz-Cf-Id:
+      - vsIDeAYKX_qZDOVtDo6QcbtoY6_pkru0roxQPjdBTF0wUO8eB_SFdg==
+      Via:
+      - 1.1 c4032d302400e72942a63d2c4ac1acc5.cloudfront.net (CloudFront), 1.1 3 (squid)
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: |-
+        <?xml version="1.0" encoding="UTF-8"?>
+        <rss version='2.0'><channel><title>Missing Children Alert Cases</title><link>http://www.missingkids.com/</link><description>Missing Children Alert Cases</description><image><url>http://www.missingkids.com/en_US/missingkids_logo/homeHeaderLogo.gif</url><title>Missing Children Alert Cases</title><link>http://www.missingkids.com/</link></image><item><title>Missing: NOEMI WALLACE (TX)</title><pubDate>Fri, 01 Apr 2016 12:00:00 EDT</pubDate><link>http://www.missingkids.com/missingkids/servlet/PubCaseSearchServlet?act=viewChildDetail&amp;LanguageCountry=en_US&amp;searchLang=en_US&amp;caseLang=en_US&amp;orgPrefix=NCMC&amp;caseNum=1264275&amp;seqNum=1</link><description>NOEMI WALLACE, Age Now: 16, Missing: 03/07/2016. Missing From LEANDER, TX. ANYONE HAVING INFORMATION SHOULD CONTACT: Leander Police Department (Texas) 1-512-528-2800.</description><enclosure length="1899" type="image/jpeg" url="http://www.missingkids.com/photographs/NCMC1264275c1t.jpg"/></item><item><title>Missing: NATHANIEL COOPER (TX)</title><pubDate>Tue, 29 Mar 2016 12:00:00 EDT</pubDate><link>http://www.missingkids.com/missingkids/servlet/PubCaseSearchServlet?act=viewChildDetail&amp;LanguageCountry=en_US&amp;searchLang=en_US&amp;caseLang=en_US&amp;orgPrefix=NCMC&amp;caseNum=1264431&amp;seqNum=1</link><description>NATHANIEL COOPER, Age Now: 12, Missing: 03/13/2016. Missing From HOUSTON, TX. ANYONE HAVING INFORMATION SHOULD CONTACT: Houston Police Department (Texas) 1-713-884-3131.</description><enclosure length="1897" type="image/jpeg" url="http://www.missingkids.com/photographs/NCMC1264431c1t.jpg"/></item><item><title>Missing: NOAH COOPER (TX)</title><pubDate>Tue, 29 Mar 2016 12:00:00 EDT</pubDate><link>http://www.missingkids.com/missingkids/servlet/PubCaseSearchServlet?act=viewChildDetail&amp;LanguageCountry=en_US&amp;searchLang=en_US&amp;caseLang=en_US&amp;orgPrefix=NCMC&amp;caseNum=1264431&amp;seqNum=2</link><description>NOAH COOPER, Age Now: 14, Missing: 03/13/2016. Missing From HOUSTON, TX. ANYONE HAVING INFORMATION SHOULD CONTACT: Houston Police Department (Texas) 1-713-884-3131.</description><enclosure length="2024" type="image/jpeg" url="http://www.missingkids.com/photographs/NCMC1264431c2t.jpg"/></item><item><title>Missing: KALEYA ALSTORK (OH)</title><pubDate>Thu, 24 Mar 2016 12:00:00 EDT</pubDate><link>http://www.missingkids.com/missingkids/servlet/PubCaseSearchServlet?act=viewChildDetail&amp;LanguageCountry=en_US&amp;searchLang=en_US&amp;caseLang=en_US&amp;orgPrefix=NCMC&amp;caseNum=1264425&amp;seqNum=1</link><description>KALEYA ALSTORK, Age Now: 15, Missing: 03/14/2016. Missing From DAYTON, OH. ANYONE HAVING INFORMATION SHOULD CONTACT: Montgomery County Sheriff's Office  (Ohio)  1-937-225-4357.</description><enclosure length="1868" type="image/jpeg" url="http://www.missingkids.com/photographs/NCMC1264425c1t.jpg"/></item><item><title>Missing: JOSHUA FRANKLIN (CA)</title><pubDate>Thu, 17 Mar 2016 12:00:00 EDT</pubDate><link>http://www.missingkids.com/missingkids/servlet/PubCaseSearchServlet?act=viewChildDetail&amp;LanguageCountry=en_US&amp;searchLang=en_US&amp;caseLang=en_US&amp;orgPrefix=NCMC&amp;caseNum=1264337&amp;seqNum=1</link><description>JOSHUA FRANKLIN, Age Now: 14, Missing: 03/12/2016. Missing From VISALIA, CA. ANYONE HAVING INFORMATION SHOULD CONTACT: Visalia Police Department  (California)  1-559-734-8116.</description><enclosure length="1693" type="image/jpeg" url="http://www.missingkids.com/photographs/NCMC1264337c1t.jpg"/></item><item><title>Missing: HAILEE WILLIAMS (NV)</title><pubDate>Thu, 03 Mar 2016 12:00:00 EST</pubDate><link>http://www.missingkids.com/missingkids/servlet/PubCaseSearchServlet?act=viewChildDetail&amp;LanguageCountry=en_US&amp;searchLang=en_US&amp;caseLang=en_US&amp;orgPrefix=NCMC&amp;caseNum=1262740&amp;seqNum=1</link><description>HAILEE WILLIAMS, Age Now: 15, Missing: 02/11/2016. Missing From SPARKS, NV. ANYONE HAVING INFORMATION SHOULD CONTACT: Sparks Police Department (Nevada) 1-775-353-2231.</description><enclosure length="1742" type="image/jpeg" url="http://www.missingkids.com/photographs/NCMC1262740c1t.jpg"/></item><item><title>Missing: MABEL LOPEZ (OK)</title><pubDate>Fri, 19 Feb 2016 12:00:00 EST</pubDate><link>http://www.missingkids.com/missingkids/servlet/PubCaseSearchServlet?act=viewChildDetail&amp;LanguageCountry=en_US&amp;searchLang=en_US&amp;caseLang=en_US&amp;orgPrefix=NCMC&amp;caseNum=1262873&amp;seqNum=1</link><description>MABEL LOPEZ, Age Now: 8, Missing: 02/17/2016. Missing From EL RENO, OK. ANYONE HAVING INFORMATION SHOULD CONTACT: El Reno Police Department  (Oklahoma)  1-405-262-6941.</description><enclosure length="1528" type="image/jpeg" url="http://www.missingkids.com/photographs/NCMC1262873c1t.jpg"/></item><item><title>Missing: UNITY FORNEY (DE)</title><pubDate>Tue, 02 Feb 2016 12:00:00 EST</pubDate><link>http://www.missingkids.com/missingkids/servlet/PubCaseSearchServlet?act=viewChildDetail&amp;LanguageCountry=en_US&amp;searchLang=en_US&amp;caseLang=en_US&amp;orgPrefix=NCMC&amp;caseNum=1261605&amp;seqNum=1</link><description>UNITY FORNEY, Age Now: 14, Missing: 01/15/2016. Missing From WILMINGTON, DE. ANYONE HAVING INFORMATION SHOULD CONTACT: New Castle County Police Department  (Delaware)  1-302-573-2800.</description><enclosure length="1784" type="image/jpeg" url="http://www.missingkids.com/photographs/NCMC1261605c1t.jpg"/></item><item><title>Missing: YVETTE HERNANDEZ (IL)</title><pubDate>Tue, 26 Jan 2016 12:00:00 EST</pubDate><link>http://www.missingkids.com/missingkids/servlet/PubCaseSearchServlet?act=viewChildDetail&amp;LanguageCountry=en_US&amp;searchLang=en_US&amp;caseLang=en_US&amp;orgPrefix=NCMC&amp;caseNum=1261092&amp;seqNum=1</link><description>YVETTE HERNANDEZ, Age Now: 15, Missing: 01/16/2016. Missing From CHICAGO, IL. ANYONE HAVING INFORMATION SHOULD CONTACT: Chicago Police Department  (Illinois)  1-312-747-5789.</description><enclosure length="1763" type="image/jpeg" url="http://www.missingkids.com/photographs/NCMC1261092c1t.jpg"/></item></channel></rss>
+    http_version: 
+  recorded_at: Mon, 18 Apr 2016 16:18:35 GMT
+recorded_with: VCR 3.0.1

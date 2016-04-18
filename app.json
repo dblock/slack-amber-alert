@@ -1,7 +1,7 @@
 {
-	"name": "Slack Bot Server",
-	"description": "A Slack bot server.",
-	"respository": "https://github.com/dblock/slack-bot-server",
+	"name": "Amber Alert",
+	"description": "A Slack bot that sends missing children alerts.",
+	"respository": "https://github.com/dblock/slack-ambert-alert",
 	"keywords": ["slack", "bots"],
 	"addons": [
 		"mongolab"

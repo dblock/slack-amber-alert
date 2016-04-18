@@ -9,8 +9,11 @@ class Team
   field :domain, type: String
   field :token, type: String
   field :active, type: Boolean, default: true
+  field :notified_at, type: DateTime
+  field :api, type: Boolean, default: false
 
   scope :active, -> { where(active: true) }
+  scope :api, -> { where(api: true) }
 
   validates_uniqueness_of :token, message: 'has already been used'
   validates_presence_of :token

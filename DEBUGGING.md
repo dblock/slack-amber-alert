@@ -2,7 +2,7 @@
 
 ### Locally
 
-You can debug your instance of slack-bot-server with a built-in `script/console`.
+You can debug your instance of slack-amber-alert with a built-in `script/console`.
 
 ### Silence Mongoid Logger
 

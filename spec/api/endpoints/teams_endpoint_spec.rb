@@ -28,6 +28,19 @@ describe Api::Endpoints::TeamsEndpoint do
         expect(teams.to_a.first.team_id).to eq active_team.team_id
       end
     end
+    context 'api' do
+      let!(:active_team) { Fabricate(:team, api: true, active: true) }
+      let!(:team) { Fabricate(:team, api: false, active: true) }
+      it 'does not return teams with api=false' do
+        teams = client.teams
+        expect(teams.count).to eq 1
+      end
+      it 'does not return team with api=false' do
+        expect do
+          client.team(id: team.id)
+        end.to_not raise_error
+      end
+    end
   end
 
   context 'team' do
