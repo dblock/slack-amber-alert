@@ -1,11 +1,11 @@
 module SlackBotServer
   INFO = <<-EOS
-BotServer #{SlackBotServer::VERSION}
+Missing Kids #{SlackBotServer::VERSION}
 
 © 2016 Daniel Doubrovkine & Contributors, MIT License
 https://twitter.com/dblockdotorg
 
-Free Service at http://slack-bot-server.herokuapp.com
-Open-Source at https://github.com/dblock/slack-bot-server
+Free Service at http://missingkids.dblock.org/
+Open-Source at https://github.com/dblock/slack-amber-alert
   EOS
 end
