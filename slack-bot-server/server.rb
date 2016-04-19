@@ -27,10 +27,8 @@ module SlackBotServer
     end
 
     on :channel_joined do |client, data|
-      EM.next_tick do
-        missing_child = MissingChild.desc(:published_at).first
-        MissingChildrenNotifier.notify_missing_child!(client.web_client, data.channel, missing_child) if missing_child
-      end
+      missing_child = MissingChild.desc(:published_at).first
+      MissingChildrenNotifier.notify_missing_child!(client.web_client, data.channel, missing_child) if missing_child
     end
   end
 end
