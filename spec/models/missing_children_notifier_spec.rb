@@ -27,11 +27,16 @@ describe MissingChildrenNotifier do
         channel: 'general',
         as_user: true,
         attachments: [{
-          fallback: "Missing: #{missing_child.name} (#{missing_child.state})",
+          fallback: missing_child.to_s,
           title_link: missing_child.link,
           title: missing_child.to_s,
-          text: missing_child.description,
-          color: '#FF0000'
+          text: [
+            missing_child.circumstance,
+            "Missing since #{missing_child.missingDate.to_formatted_s(:long)}.",
+            "Contact #{missing_child.altContact}."
+          ].join("\n"),
+          color: '#FF0000',
+          image_url: missing_child.photo
         }]
       )
       subject.notify!

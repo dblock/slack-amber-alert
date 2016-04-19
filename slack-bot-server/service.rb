@@ -38,6 +38,9 @@ module SlackBotServer
           sleep 0.25
           start!(team)
         end
+        EventMachine.add_periodic_timer((ENV['NOTIFY_PERIOD'] || (60 * 10)).to_i) do
+          MissingChildrenNotifier.notify!
+        end
       end
 
       def restart!(team, server, wait = 1)

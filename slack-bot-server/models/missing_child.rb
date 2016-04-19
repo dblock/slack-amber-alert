@@ -1,6 +1,7 @@
 class MissingChild
   include Mongoid::Document
   include Mongoid::Timestamps
+  include Mongoid::Attributes::Dynamic
 
   # original RSS data
   field :title, type: String
@@ -8,10 +9,16 @@ class MissingChild
   field :link, type: String
   field :published_at, type: DateTime
 
-  # parsed
-  field :status, type: String
-  field :name, type: String
-  field :state, type: String
+  field :caseNumber, type: String
+  field :firstName, type: String
+  field :lastName, type: String
+  field :middleName, type: String
+  field :missingCity, type: String
+  field :missingState, type: String
+  field :circumstance, type: String
+  field :missingDate, type: Date
+  field :altContact, type: String
+  field :hasPhoto, type: Boolean, default: false
 
   SORT_ORDERS = ['created_at', '-created_at']
 
@@ -20,15 +27,21 @@ class MissingChild
     rss = SimpleRSS.parse(f)
     rss.items.each do |item|
       begin
-        missing_child = MissingChild.where(title: item.title, published_at: item.pubDate).first
-        missing_child ||= MissingChild.new(title: item.title, published_at: item.pubDate)
+        case_number = CGI.parse(URI.parse(item.link).query)['caseNum'][0]
+
+        # existing record
+        next if MissingChild.where(caseNumber: case_number).exists?
+
+        # details
+        detail_url = "http://www.missingkids.com/missingkids/servlet/JSONDataServlet?action=childDetail&orgPrefix=NCMC&caseNum=#{case_number}&seqNum=1&caseLang=en_US&searchLang=en_US&LanguageId=en_US"
+        details = JSON.parse(open(URI.parse(detail_url)).read)['childBean']
+
+        missing_child = MissingChild.new(details)
+        missing_child.title = item.title
+        missing_child.published_at = item.pubDate
         missing_child.description = item.description
         missing_child.link = item.link
-        title_data = missing_child.title.match(/^(?<status>[\w]*):\s(?<name>.*)\s\((?<state>[A-Z]*)\)$/)
-        missing_child.status = title_data[:status]
-        missing_child.name = title_data[:name]
-        missing_child.state = title_data[:state]
-        next unless missing_child.changed?
+
         missing_child.save!
         Mongoid.logger.info missing_child.to_s
       rescue StandardError => e
@@ -38,7 +51,15 @@ class MissingChild
     end
   end
 
+  def photo
+    "http://www.missingkids.com/photographs/NCMC#{caseNumber}c1.jpg" if hasPhoto
+  end
+
+  def name
+    [firstName, middleName, lastName].reject(&:blank?).join(' ')
+  end
+
   def to_s
-    "#{status}: #{name} (#{state})"
+    "#{name} (#{missingCity}, #{missingState})"
   end
 end

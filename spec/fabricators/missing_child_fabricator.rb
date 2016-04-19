@@ -1,11 +1,14 @@
 Fabricator(:missing_child) do |_record|
-  name { Faker::Name.name }
-  state { Faker::Address.state_abbr }
-  status 'Missing'
+  caseNumber { Faker::Number.number(6) }
+  firstName { Faker::Name.first_name }
+  middleName ''
+  lastName { Faker::Name.last_name }
   published_at { Time.now.utc }
-  after_build do
-    self.title = "Missing: #{name} (#{state})"
-    self.description = "#{name}, Age Now: 16, #{status}: 03/07/2016. Missing from LEANDER, #{state}. ANYONE HAVING INFORMATION SHOULD CONTACT: Leander Police Department (Texas) 1-512-528-2800."
-  end
-  link 'http://www.missingkids.com/missingkids/servlet/PubCaseSearchServlet?act=viewChildDetail&amp;LanguageCountry=en_US&amp;searchLang=en_US&amp;caseLang=en_US&amp;orgPrefix=NCMC&amp;caseNum=1264275&amp;seqNum=1'
+  missingCity { Faker::Address.city }
+  missingState { Faker::Address.state_abbr }
+  missingDate { 1.week.ago.to_date }
+  hasPhoto true
+  link { 'http://www.missingkids.com/missingkids/servlet/PubCaseSearchServlet?act=viewChildDetail&amp;LanguageCountry=en_US&amp;searchLang=en_US&amp;caseLang=en_US&amp;orgPrefix=NCMC&amp;caseNum=123&amp;seqNum=1' }
+  altContact "Manatee County Sheriff's Office (Florida) 1-941-747-3011"
+  circumstance 'They may still be in the local area.'
 end

@@ -5,7 +5,7 @@ describe MissingChild, vcr: { cassette_name: 'missing_children', allow_playback_
     it 'creates a record for each alert' do
       expect do
         MissingChild.update!
-      end.to change(MissingChild, :count).by(9)
+      end.to change(MissingChild, :count).by(8)
     end
   end
   context 'with existing records' do
@@ -14,7 +14,7 @@ describe MissingChild, vcr: { cassette_name: 'missing_children', allow_playback_
     end
     it 'only creates new records' do
       MissingChild.all.limit(5).destroy
-      expect(MissingChild.count).to eq 4
+      expect(MissingChild.count).to eq 3
       expect do
         MissingChild.update!
       end.to change(MissingChild, :count).by(5)

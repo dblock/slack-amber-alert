@@ -19,5 +19,11 @@ module SlackBotServer
         client.owner = team
       end
     end
+
+    on :hello do |client, _data|
+      EM.next_tick do
+        MissingChildrenNotifier.notify!(client.team, client.web_client)
+      end
+    end
   end
 end
