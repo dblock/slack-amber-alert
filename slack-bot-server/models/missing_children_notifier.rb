@@ -20,25 +20,30 @@ module MissingChildrenNotifier
       return unless channels.any?
       missing_children.each do |missing_child|
         channels.each do |channel|
-          client.chat_postMessage(
-            channel: channel['id'],
-            as_user: true,
-            attachments: [{
-              fallback: missing_child.to_s,
-              title_link: missing_child.link,
-              title: missing_child.to_s,
-              text: [
-                missing_child.circumstance,
-                "Missing since #{missing_child.missingDate.to_formatted_s(:long)}.",
-                "Contact #{missing_child.altContact}."
-              ].join("\n"),
-              thumb_url: missing_child.photo,
-              color: '#FF0000'
-            }]
-          )
+          notify_missing_child!(client, channel, missing_child)
         end
         team.update_attributes!(notified_at: missing_child.published_at)
       end
+    end
+
+    def notify_missing_child!(client, channel, missing_child)
+      Mongoid.logger.info "Notify #{missing_child} on #{channel['id']} ..."
+      client.chat_postMessage(
+        channel: channel['id'],
+        as_user: true,
+        attachments: [{
+          fallback: missing_child.to_s,
+          title_link: missing_child.link,
+          title: missing_child.to_s,
+          text: [
+            missing_child.circumstance,
+            "Missing since #{missing_child.missingDate.to_formatted_s(:long)}.",
+            "Contact #{missing_child.altContact}."
+          ].join("\n"),
+          thumb_url: missing_child.photo,
+          color: '#FF0000'
+        }]
+      )
     end
   end
 end
