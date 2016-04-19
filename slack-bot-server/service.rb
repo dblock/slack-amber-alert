@@ -34,6 +34,7 @@ module SlackBotServer
       end
 
       def start_from_database!
+        MissingChild.update!
         Team.active.each do |team|
           sleep 0.25
           start!(team)

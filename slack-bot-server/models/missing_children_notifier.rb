@@ -8,12 +8,12 @@ module MissingChildrenNotifier
     end
 
     def notify_team!(team, client = nil)
-      Mongoid.logger.info "Notify #{team.name} ..."
       missing_children = if team.notified_at
                            MissingChild.where(:published_at.gt => team.notified_at).asc(:published_at)
                          else
                            MissingChild.all.desc(:published_at).limit(1)
                          end
+      Mongoid.logger.info "Notify #{team.name}, #{missing_children.count} missing ..."
       return unless missing_children.any?
       client ||= Slack::Web::Client.new(token: team.token)
       channels = client.channels_list['channels'].select { |channel| channel['is_member'] }
@@ -32,7 +32,7 @@ module MissingChildrenNotifier
                 "Missing since #{missing_child.missingDate.to_formatted_s(:long)}.",
                 "Contact #{missing_child.altContact}."
               ].join("\n"),
-              image_url: missing_child.photo,
+              thumb_url: missing_child.photo,
               color: '#FF0000'
             }]
           )

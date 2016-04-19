@@ -36,7 +36,7 @@ describe MissingChildrenNotifier do
             "Contact #{missing_child.altContact}."
           ].join("\n"),
           color: '#FF0000',
-          image_url: missing_child.photo
+          thumb_url: missing_child.photo
         }]
       )
       subject.notify!
