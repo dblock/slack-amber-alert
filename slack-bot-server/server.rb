@@ -22,7 +22,7 @@ module SlackBotServer
 
     on :hello do |client, _data|
       EM.next_tick do
-        MissingChildrenNotifier.notify_team!(client.team, client.web_client)
+        MissingChildrenNotifier.notify_team!(client.owner, client.web_client)
       end
     end
   end
