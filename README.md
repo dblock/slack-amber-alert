@@ -1,5 +1,5 @@
-Slack Bot Server
-================
+Missing Children in Slack
+=========================
 
 [![Build Status](https://travis-ci.org/dblock/slack-amber-alert.svg?branch=master)](https://travis-ci.org/dblock/slack-amber-alert)
 [![Dependency Status](https://gemnasium.com/dblock/slack-amber-alert.svg)](https://gemnasium.com/dblock/slack-amber-alert)
