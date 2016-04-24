@@ -29,7 +29,8 @@ module SlackBotServer
     on :channel_joined do |client, data|
       missing_child = MissingChild.desc(:published_at).first
       next unless missing_child
-      MissingChildrenNotifier.notify_missing_child!(client.owner, client.web_client, data.channel, missing_child)
+      MissingChildrenNotifier.notify_missing_child!(client.web_client, data.channel, missing_child)
+      client.owner.notified!(missing_child.published_at)
     end
   end
 end

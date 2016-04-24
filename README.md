@@ -7,6 +7,12 @@ Missing Children in Slack
 
 An amber alert bot that notifies your team of missing children.
 
+### Commands
+
+#### missing children [number|infinity]
+
+Get the list of the most recent missing children, the default number is 3.
+
 ### Copyright & License
 
 Copyright [Daniel Doubrovkine](http://code.dblock.org), 2016

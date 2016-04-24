@@ -27,6 +27,11 @@ class Team
     update_attributes!(active: true, token: token)
   end
 
+  def notified!(ts)
+    return if notified_at && notified_at > ts
+    update_attributes!(notified_at: ts)
+  end
+
   def to_s
     {
       name: name,

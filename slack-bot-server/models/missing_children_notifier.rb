@@ -20,12 +20,13 @@ module MissingChildrenNotifier
       return unless channels.any?
       missing_children.each do |missing_child|
         channels.each do |channel|
-          notify_missing_child!(team, client, channel, missing_child)
+          notify_missing_child!(client, channel, missing_child)
+          team.notified!(missing_child.published_at)
         end
       end
     end
 
-    def notify_missing_child!(team, client, channel, missing_child)
+    def notify_missing_child!(client, channel, missing_child)
       Mongoid.logger.info "Notify #{missing_child} on #{channel['id']} ..."
       client.chat_postMessage(
         channel: channel['id'],
@@ -43,8 +44,6 @@ module MissingChildrenNotifier
           color: '#FF0000'
         }]
       )
-      return if team.notified_at && team.notified_at > missing_child.published_at
-      team.update_attributes!(notified_at: missing_child.published_at)
     end
   end
 end
