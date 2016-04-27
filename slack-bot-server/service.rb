@@ -40,6 +40,7 @@ module SlackBotServer
           start!(team)
         end
         EventMachine.add_periodic_timer((ENV['NOTIFY_PERIOD'] || (60 * 10)).to_i) do
+          MissingChild.update!
           MissingChildrenNotifier.notify!
         end
       end
