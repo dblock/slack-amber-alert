@@ -27,8 +27,21 @@ module SlackBotServer
     end
 
     on :channel_joined do |client, data|
+      send_welcome_message(client, data)
+      notify_missing_children(client, data)
+    end
+
+    def self.send_welcome_message(client, data)
+      return if client.owner.welcomed_at
+      logger.info "#{client.owner.name}: Welcome."
+      client.say(channel: data.channel['id'], text: "Thanks for installing the Missing Kids Bot - you're doing your part in helping out!")
+      client.owner.update_attributes!(welcomed_at: Time.now.utc)
+    end
+
+    def self.notify_missing_children(client, data)
+      # send missing children alerts
       missing_child = MissingChild.desc(:published_at).first
-      next unless missing_child
+      return unless missing_child
       MissingChildrenNotifier.notify_missing_child!(client.web_client, data.channel, missing_child)
       client.owner.notified!(missing_child.published_at)
     end

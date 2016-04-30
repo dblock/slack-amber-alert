@@ -10,6 +10,7 @@ class Team
   field :token, type: String
   field :active, type: Boolean, default: true
   field :notified_at, type: DateTime
+  field :welcomed_at, type: DateTime
   field :api, type: Boolean, default: false
 
   scope :active, -> { where(active: true) }
