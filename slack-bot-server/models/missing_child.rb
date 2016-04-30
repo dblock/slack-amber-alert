@@ -34,7 +34,15 @@ class MissingChild
 
         # details
         detail_url = "http://www.missingkids.com/missingkids/servlet/JSONDataServlet?action=childDetail&orgPrefix=NCMC&caseNum=#{case_number}&seqNum=1&caseLang=en_US&searchLang=en_US&LanguageId=en_US"
-        details = JSON.parse(open(URI.parse(detail_url)).read)['childBean']
+        details_json = JSON.parse(open(URI.parse(detail_url)).read)
+
+        unless details_json['status'] == 'success'
+          Mongoid.logger.warn "Error retrieving details for #{item}: #{details_json['msg']} (#{detail_url})."
+          next
+        end
+
+        details = details_json['childBean']
+        next unless details
 
         missing_child = MissingChild.new(details)
         missing_child.title = item.title
