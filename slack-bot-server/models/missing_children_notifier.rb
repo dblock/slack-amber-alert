@@ -37,9 +37,9 @@ module MissingChildrenNotifier
           title: missing_child.to_s,
           text: [
             missing_child.circumstance,
-            "Missing since #{missing_child.missingDate.to_formatted_s(:long)}.",
-            "Contact #{missing_child.altContact}."
-          ].join("\n"),
+            missing_child.missingDate && "Missing since #{missing_child.missingDate.to_formatted_s(:long)}.",
+            missing_child.altContact && "Contact #{missing_child.altContact}."
+          ].compact.join("\n"),
           thumb_url: missing_child.photo,
           color: '#FF0000'
         }]
