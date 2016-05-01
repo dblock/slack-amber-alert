@@ -11,7 +11,6 @@ end
 
 Mongoid.load! File.expand_path('../config/mongoid.yml', __FILE__), ENV['RACK_ENV']
 
-require 'faye/websocket'
 require 'open-uri'
 require 'slack-ruby-bot'
 require 'slack-bot-server/version'

@@ -13,7 +13,7 @@ module SlackBotServer
     def restart!(wait = 1)
       # when an integration is disabled, a live socket is closed, which causes the default behavior of the client to restart
       # it would keep retrying without checking for account_inactive or such, we want to restart via service which will disable an inactive team
-      EM.next_tick do
+      Celluloid.defer do
         logger.info "#{team.name}: socket closed, restarting ..."
         SlackBotServer::Service.restart! team, self, wait
         client.owner = team
@@ -21,7 +21,7 @@ module SlackBotServer
     end
 
     on :hello do |client, _data|
-      EM.next_tick do
+      Celluloid.defer do
         MissingChildrenNotifier.notify_team!(client.owner, client.web_client)
       end
     end

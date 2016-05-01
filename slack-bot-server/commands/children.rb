@@ -14,13 +14,15 @@ module SlackBotServer
             max = Integer(number)
           end
         end
-        children = MissingChild.all.desc(:published_at).limit(max)
-        if children.any?
-          children.each do |missing_child|
-            MissingChildrenNotifier.notify_missing_child!(client.web_client, data.channel, missing_child)
+        Celluloid.defer do
+          children = MissingChild.all.desc(:published_at).limit(max)
+          if children.any?
+            children.each do |missing_child|
+              MissingChildrenNotifier.notify_missing_child!(client.web_client, data.channel, missing_child)
+            end
+          else
+            client.say(channel: data.channel, text: 'No information on missing children available.')
           end
-        else
-          client.say(channel: data.channel, text: 'No information on missing children available.')
         end
         logger.info "MISSING #{max || '∞'}: #{client.owner} - #{data.user}"
       end

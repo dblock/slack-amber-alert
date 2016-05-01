@@ -4,6 +4,7 @@ module SlackBotServer
 
     LOCK = Mutex.new
     @services = {}
+    @timers = Timers::Group.new
 
     class << self
       def start!(team)
@@ -13,15 +14,13 @@ module SlackBotServer
         LOCK.synchronize do
           @services[team.token] = server
         end
-        EM.defer do
-          restart!(team, server)
-        end
+        restart!(team, server)
       rescue StandardError => e
         logger.error e
       end
 
       def stop!(team)
-        EM.defer do
+        Celluloid.defer do
           LOCK.synchronize do
             fail 'Token unknown.' unless @services.key?(team.token)
             logger.info "Stopping team #{team}."
@@ -36,10 +35,9 @@ module SlackBotServer
       def start_from_database!
         MissingChild.update!
         Team.active.each do |team|
-          sleep 0.25
           start!(team)
         end
-        EventMachine.add_periodic_timer((ENV['NOTIFY_PERIOD'] || (60 * 10)).to_i) do
+        @timers.every((ENV['NOTIFY_PERIOD'] || (60 * 10)).to_i) do
           MissingChild.update!
           MissingChildrenNotifier.notify!
         end
@@ -55,7 +53,7 @@ module SlackBotServer
         else
           logger.error "#{team.name}: #{e.message}, restarting in #{wait} second(s)."
           sleep(wait)
-          EM.next_tick do
+          Celluloid.defer do
             restart! team, server, [wait * 2, 60].min
           end
         end

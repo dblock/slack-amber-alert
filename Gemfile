@@ -3,6 +3,7 @@ source 'http://rubygems.org'
 ruby '2.2.4'
 
 gem 'slack-ruby-bot', github: 'dblock/slack-ruby-bot'
+gem 'celluloid-io'
 gem 'mongoid', '~> 5.0.0'
 gem 'unicorn'
 gem 'grape', '~> 0.15.0'

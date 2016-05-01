@@ -8,7 +8,8 @@ Amber Alert Slack Bot.
 General
 -------
 
-help               - get this helpful message
+children [n|inifinity]  - show missing kids
+help                    - get this helpful message
 
 ```
 EOS
