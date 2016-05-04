@@ -20,13 +20,11 @@ module SlackBotServer
       end
 
       def stop!(team)
-        Celluloid.defer do
-          LOCK.synchronize do
-            fail 'Token unknown.' unless @services.key?(team.token)
-            logger.info "Stopping team #{team}."
-            @services[team.token].stop!
-            @services.delete(team.token)
-          end
+        LOCK.synchronize do
+          fail 'Token unknown.' unless @services.key?(team.token)
+          logger.info "Stopping team #{team}."
+          @services[team.token].stop!
+          @services.delete(team.token)
         end
       rescue StandardError => e
         logger.error e
@@ -53,9 +51,7 @@ module SlackBotServer
         else
           logger.error "#{team.name}: #{e.message}, restarting in #{wait} second(s)."
           sleep(wait)
-          Celluloid.defer do
-            restart! team, server, [wait * 2, 60].min
-          end
+          restart! team, server, [wait * 2, 60].min
         end
       end
 

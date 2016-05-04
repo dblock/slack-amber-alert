@@ -8,6 +8,19 @@ GIT
       hashie
       slack-ruby-client (>= 0.6.0)
 
+GIT
+  remote: git://github.com/dblock/slack-ruby-client.git
+  revision: b5c99888183de659228493140f779deda09fe440
+  specs:
+    slack-ruby-client (0.7.2)
+      activesupport
+      faraday
+      faraday_middleware
+      gli
+      hashie
+      json
+      websocket-driver
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -265,14 +278,6 @@ GEM
       rubyzip (~> 1.0)
       websocket (~> 1.0)
     simple-rss (1.3.1)
-    slack-ruby-client (0.7.0)
-      activesupport
-      faraday
-      faraday_middleware
-      gli
-      hashie
-      json
-      websocket-driver
     thor (0.19.1)
     thread_safe (0.3.5)
     timers (4.1.1)
@@ -334,6 +339,7 @@ DEPENDENCIES
   selenium-webdriver
   simple-rss
   slack-ruby-bot!
+  slack-ruby-client!
   unicorn
   vcr
   webmock

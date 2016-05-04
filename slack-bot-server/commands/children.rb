@@ -1,6 +1,8 @@
 module SlackBotServer
   module Commands
     class Children < SlackRubyBot::Commands::Base
+      include Celluloid::IO
+
       command 'children' do |client, data, match|
         max = 3
         arguments = match['expression'].split.reject(&:blank?) if match['expression']
