@@ -40,10 +40,19 @@ module SlackBotServer
       Team.active.each do |team|
         start!(team)
       end
-      @timers.every((ENV['NOTIFY_PERIOD'] || (60 * 10)).to_i) do
+    end
+
+    def run_periodic_timer!
+      logger.info "Setting up periodic notification every #{notify_period} second(s)."
+      @timers.every(notify_period) do
         MissingChild.update!
         MissingChildrenNotifier.notify!
       end
+      loop { @timers.wait }
+    end
+
+    def notify_period
+      (ENV['NOTIFY_PERIOD'] || (60 * 10)).to_i
     end
 
     def restart!(team, server, wait = 1)
