@@ -18,7 +18,34 @@ class MissingChild
   field :circumstance, type: String
   field :missingDate, type: Date
   field :altContact, type: String
-  field :hasPhoto, type: Boolean, default: false
+  field :hasPhoto, type: Boolean
+  field :hasAgedPhoto, type: Boolean
+  field :hasExtraPhoto, type: Boolean
+  field :possibleLocation, type: String
+  field :orgPrefix, type: String
+  field :seqNumber, type: Integer
+  field :approxAge, type: String
+  field :sex, type: String
+  field :race, type: String
+  field :birthDate, type: String
+  field :height, type: Integer
+  field :heightInInch, type: Boolean
+  field :weight, type: Integer
+  field :weightInPound, type: Boolean
+  field :eyeColor, type: String
+  field :hairColor, type: String
+  field :hasThumbnail, type: String
+  field :hasPoster, type: String
+  field :caseType, type: String
+  field :missingCounty, type: String
+  field :missingProvince, type: String
+  field :missingCountry, type: String
+  field :profileNarrative, type: String
+  field :orgName, type: String
+  field :orgContactInfo, type: String
+  field :isClearinghouse, type: Boolean
+  field :isChild, type: Boolean
+  field :age, type: Integer
 
   SORT_ORDERS = ['created_at', '-created_at']
 
