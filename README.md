@@ -19,6 +19,6 @@ The service provides a RESTful Hypermedia API wrapping the [www.missingkids.org 
 
 ### Copyright & License
 
-Copyright [Daniel Doubrovkine](http://code.dblock.org), 2016
+Copyright [Daniel Doubrovkine](http://code.dblock.org), [David Markovich](https://twitter.com/DavidMarkovich_) and Contributors, 2016
 
 [MIT License](LICENSE)

@@ -1,4 +1,4 @@
-# Contributing to Slack Amber Alert
+# Contributing to the Missing Kids Slack Bot
 
 This project is work of [many contributors](https://github.com/dblock/slack-amber-alert/graphs/contributors).
 

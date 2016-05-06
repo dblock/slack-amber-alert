@@ -1,6 +1,6 @@
 {
-	"name": "Amber Alert",
-	"description": "A Slack bot that sends missing children alerts.",
+	"name": "Missing Kids Slack Bot",
+	"description": "A Slack bot that sends missing kids notifications.",
 	"respository": "https://github.com/dblock/slack-ambert-alert",
 	"keywords": ["slack", "bots"],
 	"addons": [

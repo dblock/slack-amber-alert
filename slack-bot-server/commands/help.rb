@@ -3,7 +3,7 @@ module SlackBotServer
     class Help < SlackRubyBot::Commands::Base
       HELP = <<-EOS
 ```
-Amber Alert Slack Bot.
+Missing Kids Slack Bot.
 
 General
 -------
