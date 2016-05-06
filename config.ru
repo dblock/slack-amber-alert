@@ -15,7 +15,7 @@ SlackBotServer::App.instance.prepare!
 Thread.abort_on_exception = true
 
 Thread.new do
-  SlackBotServer::Service.start_from_database!
+  SlackBotServer::Service.instance.start_from_database!
 end
 
 run Api::Middleware.instance
