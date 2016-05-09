@@ -31,5 +31,8 @@ describe 'Teams', js: true, type: :feature do
     it 'includes a link to add to slack with the client id' do
       expect(page.first("a[href='https://slack.com/oauth/authorize?scope=bot&client_id=#{ENV['SLACK_CLIENT_ID']}']"))
     end
+    it 'displays team counter' do
+      expect(page.find('#active_teams_count')).to have_content '0 registered active teams!'
+    end
   end
 end
