@@ -1,0 +1,160 @@
+body {
+overflow-x:hidden;
+font-family: 'Open Sans', sans-serif;
+}
+a:hover, a:focus {
+    text-decoration: none !important;
+}
+.header-background{
+background: url("../img/header_image@2x.png");
+background-size: cover;
+min-height: 630px;
+background-position: center;
+}
+.body-background{
+background: url("../img/bg_image@2x.png");
+background-size: cover;
+min-height: 330px;
+background-position: center -145px;
+}
+.logo{
+width: 160px;
+margin-top: 3.5%;
+}
+.htwo{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  line-height: 1.0;
+  letter-spacing: 1.5px;
+  color: #ffffff;
+  margin-top: -30px;
+}
+.ALERT-ABOUT-MISSING {
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 40px;
+  line-height: 1.4;
+  letter-spacing: 0.1px;
+  color: #ffffff;
+   margin-top: 10px;
+}
+.RECEIVE-ACTIVE-AMBER {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 10px;
+margin-bottom: 30px;
+}
+.slack-button {
+  width: 360px;
+  height: 64px;
+  border-radius: 4px;
+  background-color: #f0544f;
+  background-color: #f0544f;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  border: solid 2px #e53d00;
+  border: solid 2px #e53d00;
+}
+.Add-MissingKids-Bot {
+  font-size: 18px;
+  line-height: 0.8;
+  letter-spacing: 1px;
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+}
+.slack-chat{
+width: 85%;
+margin-top: -25%;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+.bold-headline{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.0;
+  letter-spacing: 1px;
+  color: #414141;
+  font-weight: 700;
+}
+.teal-line{
+padding-top: 7px;
+border-bottom: 4px solid #008db1;
+width: 64px;
+display: block;
+}
+.small-text {
+font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  line-height: 2.0;
+  letter-spacing: 0.8px;
+  color: #9b9b9b;
+}
+.features{
+max-width:360px;
+}
+.bottom-logo{
+width: 120px; 
+margin-top: 20px; 
+margin-bottom: 35px
+}
+.Contact-us {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.3;
+  letter-spacing: 0.8px;
+  color: #008db1;
+}
+.footer-logo{
+max-width: 20px; 
+display: inline; 
+margin-right: 10px;
+}
+.icons {
+margin-top: 11px;
+margin-left: -23px;
+color: rgb(0, 141, 177);
+margin-right: 5px;
+}
+/* mobile styles */
+@media only screen and (min-width: 320px) and (max-width: 667px){
+.htwo {
+margin-top: 10px;
+}
+.Add-MissingKids-Bot {
+    font-size: 16px;
+	}
+	.bold-headline {
+    text-align: center;
+	}
+	.teal-line {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+	}
+		.small-text {
+    text-align: center;
+}
+}
+@media only screen and (min-width: 668px) and (max-width: 1024px){
+.htwo {
+margin-top: 10px;
+}
+.Add-MissingKids-Bot {
+    font-size: 16px;
+	}
+	.bold-headline {
+    text-align: center;
+	}
+	.teal-line {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+	}
+	.small-text {
+    text-align: center;
+}
+}
