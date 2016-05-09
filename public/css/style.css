@@ -29,6 +29,13 @@ margin-top: 3.5%;
   color: #ffffff;
   margin-top: -30px;
 }
+#messages{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: orange;
+  line-height: 1.0;
+  padding-top: 40px;
+}
 .ALERT-ABOUT-MISSING {
   font-weight: 700;
   font-family: 'Open Sans', sans-serif;
@@ -96,8 +103,8 @@ font-family: 'Open Sans', sans-serif;
 max-width:360px;
 }
 .bottom-logo{
-width: 120px; 
-margin-top: 20px; 
+width: 120px;
+margin-top: 20px;
 margin-bottom: 35px
 }
 .Contact-us {
@@ -109,8 +116,8 @@ margin-bottom: 35px
   color: #008db1;
 }
 .footer-logo{
-max-width: 20px; 
-display: inline; 
+max-width: 20px;
+display: inline;
 margin-right: 10px;
 }
 .icons {

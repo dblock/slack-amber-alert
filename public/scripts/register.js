@@ -34,7 +34,8 @@ $(document).ready(function() {
   var code = $.url('?code')
   if (code) {
     SlackBotServer.message('Working, please wait ...');
-    $('#register').hide();
+    $('#register-top').hide();
+    $('#register-bottom').hide();
     $.ajax({
       type: "POST",
       url: "/api/teams",
