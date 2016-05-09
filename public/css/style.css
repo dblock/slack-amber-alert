@@ -54,14 +54,31 @@ margin-top: 3.5%;
   margin-top: 10px;
 margin-bottom: 30px;
 }
+.bold {
+font-weight: 900;
+font-size: 14px;
+}
+.bold-text{
+font-size: 16px !important; 
+font-weight: 700;
+}
+.margin-bottom{
+margin-bottom: 10px;
+}
+.contact-button {
+width: 120px;
+height: 30px;
+border-radius: 4px;
+background-color: #f0544f;
+box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+border: solid 2px #e53d00;
+}
 .slack-button {
   width: 360px;
   height: 64px;
   border-radius: 4px;
   background-color: #f0544f;
-  background-color: #f0544f;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-  border: solid 2px #e53d00;
   border: solid 2px #e53d00;
 }
 .Add-MissingKids-Bot {
