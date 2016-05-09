@@ -6,7 +6,7 @@ a:hover, a:focus {
     text-decoration: none !important;
 }
 .header-background{
-background: url("../img/header_image@2x.png");
+background: url("../img/header_image@2x.jpg");
 background-size: cover;
 min-height: 630px;
 background-position: center;
