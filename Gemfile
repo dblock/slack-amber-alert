@@ -16,7 +16,7 @@ gem 'rack-robotz'
 gem 'newrelic_rpm'
 gem 'newrelic-slack-ruby-bot'
 gem 'rack-rewrite'
-gem 'rack-server-pages'
+gem 'rack-server-pages', github: 'dblock/rack-server-pages', branch: 'fix-at-filename'
 gem 'simple-rss'
 
 group :development, :test do
