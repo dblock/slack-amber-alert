@@ -1,25 +1,25 @@
 body {
-overflow-x:hidden;
-font-family: 'Open Sans', sans-serif;
+  overflow-x:hidden;
+  font-family: 'Open Sans', sans-serif;
 }
 a:hover, a:focus {
-    text-decoration: none !important;
+  text-decoration: none !important;
 }
 .header-background{
-background: url("../img/header_image@2x.jpg");
-background-size: cover;
-min-height: 630px;
-background-position: center;
+  background: url("../img/header_image@2x.jpg");
+  background-size: cover;
+  min-height: 630px;
+  background-position: center;
 }
 .body-background{
-background: url("../img/bg_image@2x.png");
-background-size: cover;
-min-height: 330px;
-background-position: center -145px;
+  background: url("../img/bg_image@2x.png");
+  background-size: cover;
+  min-height: 330px;
+  background-position: center -145px;
 }
 .logo{
-width: 160px;
-margin-top: 3.5%;
+  width: 160px;
+  margin-top: 3.5%;
 }
 .htwo{
   font-family: 'Open Sans', sans-serif;
@@ -59,24 +59,34 @@ margin-bottom: 30px;
   height: 64px;
   border-radius: 4px;
   background-color: #f0544f;
-  background-color: #f0544f;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   border: solid 2px #e53d00;
+}
+.slack-button:hover,
+.slack-button:focus,
+.slack-button:active {
+  background-color: #ec6d69;
   border: solid 2px #e53d00;
+}
+.slack-button img{
+  margin-top:-4px;
+  width:40px; 
+  height:40px; 
+  margin-right:20px;
 }
 .Add-MissingKids-Bot {
   font-size: 18px;
-  line-height: 0.8;
+  line-height: 3;
   letter-spacing: 1px;
   color: #ffffff;
   font-family: 'Open Sans', sans-serif;
 }
 .slack-chat{
-width: 85%;
-margin-top: -25%;
-display: block;
-margin-left: auto;
-margin-right: auto;
+  width: 85%;
+  margin-top: -25%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .bold-headline{
   font-family: 'Open Sans', sans-serif;
@@ -87,10 +97,11 @@ margin-right: auto;
   font-weight: 700;
 }
 .teal-line{
-padding-top: 7px;
-border-bottom: 4px solid #008db1;
-width: 64px;
-display: block;
+  padding-top: 7px;
+  border-bottom: 4px solid #008db1;
+  width: 64px;
+  display: block;
+  margin-bottom: 16px;
 }
 .small-text {
 font-family: 'Open Sans', sans-serif;
@@ -100,12 +111,12 @@ font-family: 'Open Sans', sans-serif;
   color: #9b9b9b;
 }
 .features{
-max-width:360px;
+  max-width:360px;
 }
 .bottom-logo{
-width: 120px;
-margin-top: 20px;
-margin-bottom: 35px
+  width: 120px;
+  margin-top: 20px;
+  margin-bottom: 35px
 }
 .Contact-us {
   font-family: 'Open Sans', sans-serif;
@@ -116,20 +127,56 @@ margin-bottom: 35px
   color: #008db1;
 }
 .footer-logo{
-max-width: 20px;
-display: inline;
-margin-right: 10px;
+  max-height: 40px;
+  display: inline;
+  margin-right: 16px;
 }
 .icons {
-margin-top: 11px;
-margin-left: -23px;
-color: rgb(0, 141, 177);
-margin-right: 5px;
+  margin-top: 11px;
+  margin-left: -23px;
+  color: rgb(0, 141, 177);
+  margin-right: 5px;
 }
+.footer {
+  margin-top:64px;
+  height: 64px;
+  background-color: #ffffff;
+  box-shadow: 0 -2px 4px 0 rgba(0, 0, 0, 0.2);
+  display:table;
+  width:100%;
+}
+.footer .table-cell {
+  display:table-cell;
+  width:100%;
+  vertical-align:middle;
+  padding-top:12px;
+}
+.footer i {
+  color: rgb(0, 141, 177);
+  font-size:24px;
+}
+.footer .small-text {
+  margin-bottom:0;
+}
+.footer .fork {
+  margin-top: 8px;
+}
+.footer .comming-soon{
+  padding-right:16px;
+  padding-top:8px;
+}
+.footer .comming-soon-icons {
+  padding-left:0;
+  padding-top:8px;
+}
+.footer .comming-soon-icons i {
+  padding-right:10px;
+}
+
 /* mobile styles */
 @media only screen and (min-width: 320px) and (max-width: 667px){
 .htwo {
-margin-top: 10px;
+  margin-top: 10px;
 }
 .Add-MissingKids-Bot {
     font-size: 16px;
@@ -148,7 +195,7 @@ margin-top: 10px;
 }
 @media only screen and (min-width: 668px) and (max-width: 1024px){
 .htwo {
-margin-top: 10px;
+  margin-top: 10px;
 }
 .Add-MissingKids-Bot {
     font-size: 16px;
@@ -162,6 +209,6 @@ margin-top: 10px;
     margin-right: auto;
 	}
 	.small-text {
-    text-align: center;
-}
+    text-align: center; 
+  }
 }
