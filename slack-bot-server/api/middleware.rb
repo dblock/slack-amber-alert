@@ -18,6 +18,10 @@ module Api
 
         # rewrite HAL links to make them clickable in a browser
         use Rack::Rewrite do
+          r301 /.*/, 'http://www.missingkidsbot.org$&', if: proc { |rack_env|
+            rack_env['SERVER_NAME'] == 'missingkidsbot.org'
+          }
+
           r302 %r{(\/[\w\/]*\/)(%7B|\{)?(.*)(%7D|\})}, '$1'
         end
 
