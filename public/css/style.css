@@ -62,11 +62,33 @@ margin-bottom: 30px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   border: solid 2px #e53d00;
 }
+.contact-button {
+width: 120px;
+border-radius: 4px;
+background-color: rgb(240, 84, 79);
+box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+border: 2px solid rgb(229, 61, 0);
+height: auto;
+}
 .slack-button:hover,
 .slack-button:focus,
 .slack-button:active {
   background-color: #ec6d69;
   border: solid 2px #e53d00;
+}
+.contact-button:hover,
+.contact-button:focus,
+.contact-button:active {
+  background-color: #ec6d69;
+  border: solid 2px #e53d00;
+}
+.contact-icon{
+margin-right: 5px;
+color: rgb(255, 255, 255) !important;
+font-size: 10px !important;
+}
+.contact-text{
+font-size: 11px !important;
 }
 .slack-button img{
   margin-top:-4px;
