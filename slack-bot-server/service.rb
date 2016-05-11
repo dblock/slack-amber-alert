@@ -45,8 +45,13 @@ module SlackBotServer
     def run_periodic_timer!
       logger.info "Setting up periodic notification every #{notify_period} second(s)."
       @timers.every(notify_period) do
-        MissingKid.update!
-        MissingKidsNotifier.notify!
+        begin
+          MissingKid.update!
+          MissingKidsNotifier.notify!
+        rescue StandardError => e
+          logger.error "Error in periodic notification: #{e.message}."
+          logger.error e
+        end
       end
       loop { @timers.wait }
     end
