@@ -17,6 +17,9 @@ a:hover, a:focus {
   min-height: 330px;
   background-position: center -145px;
 }
+.header{
+background: rgb(0, 141, 177) none repeat scroll 0% 0%;
+}
 .logo{
   width: 160px;
   margin-top: 3.5%;
