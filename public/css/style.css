@@ -92,11 +92,11 @@ font-size: 11px !important;
 }
 .slack-button img{
   margin-top:-4px;
-  width:40px; 
-  height:40px; 
+  width:40px;
+  height:40px;
   margin-right:20px;
 }
-.Add-MissingKids-Bot {
+.Add-MissingKidsBot {
   font-size: 18px;
   line-height: 3;
   letter-spacing: 1px;
@@ -200,7 +200,7 @@ font-family: 'Open Sans', sans-serif;
 .htwo {
   margin-top: 10px;
 }
-.Add-MissingKids-Bot {
+.Add-MissingKidsBot {
     font-size: 16px;
 	}
 	.bold-headline {
@@ -219,7 +219,7 @@ font-family: 'Open Sans', sans-serif;
 .htwo {
   margin-top: 10px;
 }
-.Add-MissingKids-Bot {
+.Add-MissingKidsBot {
     font-size: 16px;
 	}
 	.bold-headline {
@@ -231,6 +231,6 @@ font-family: 'Open Sans', sans-serif;
     margin-right: auto;
 	}
 	.small-text {
-    text-align: center; 
+    text-align: center;
   }
 }
