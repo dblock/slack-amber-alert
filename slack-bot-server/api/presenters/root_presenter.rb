@@ -27,16 +27,16 @@ module Api
         }
       end
 
-      link :missing_children do |opts|
+      link :missing_kids do |opts|
         {
-          href: "#{base_url(opts)}/api/missing_children/#{link_params(Api::Helpers::PaginationParameters::ALL)}",
+          href: "#{base_url(opts)}/api/missing_kids/#{link_params(Api::Helpers::PaginationParameters::ALL)}",
           templated: true
         }
       end
 
-      link :missing_child do |opts|
+      link :missing_kid do |opts|
         {
-          href: "#{base_url(opts)}/api/missing_children/{id}",
+          href: "#{base_url(opts)}/api/missing_kids/{id}",
           templated: true
         }
       end

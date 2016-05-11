@@ -36,7 +36,7 @@ module SlackBotServer
     end
 
     def start_from_database!
-      MissingChild.update!
+      MissingKid.update!
       Team.active.each do |team|
         start!(team)
       end
@@ -45,8 +45,8 @@ module SlackBotServer
     def run_periodic_timer!
       logger.info "Setting up periodic notification every #{notify_period} second(s)."
       @timers.every(notify_period) do
-        MissingChild.update!
-        MissingChildrenNotifier.notify!
+        MissingKid.update!
+        MissingKidsNotifier.notify!
       end
       loop { @timers.wait }
     end

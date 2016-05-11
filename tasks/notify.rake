@@ -2,13 +2,13 @@ task :app do
   require './slack-bot-server'
 end
 
-desc 'Update missing children data and notify teams.'
+desc 'Update missing kids data and notify teams.'
 task notify: :app do
-  MissingChild.update!
-  MissingChildrenNotifier.notify!
+  MissingKid.update!
+  MissingKidsNotifier.notify!
 end
 
-desc 'Update missing children data.'
+desc 'Update missing kids data.'
 task update: :app do
-  MissingChild.update!
+  MissingKid.update!
 end

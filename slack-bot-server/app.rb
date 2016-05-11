@@ -4,6 +4,7 @@ module SlackBotServer
       silence_loggers!
       check_mongodb_provider!
       check_database!
+      migrate_data!
       create_indexes!
       mark_teams_active!
       migrate_from_single_team!
@@ -42,6 +43,14 @@ module SlackBotServer
     rescue Exception => e
       warn "Error connecting to MongoDB: #{e.message}"
       raise e
+    end
+
+    def migrate_data!
+      return unless Mongoid.default_client.collections.map(&:name).include?('missing_children')
+      Mongoid.default_client.use(:admin).command(
+        renameCollection: "#{Mongoid.default_client.database.name}.missing_children",
+        to: "#{Mongoid.default_client.database.name}.missing_kids"
+      )
     end
 
     def create_indexes!

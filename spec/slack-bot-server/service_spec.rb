@@ -66,8 +66,8 @@ describe SlackBotServer::Service do
     end
     it 'loops' do
       timers = SlackBotServer::Service.instance.instance_variable_get(:@timers)
-      expect(MissingChild).to receive(:update!).at_least(2).times
-      expect(MissingChildrenNotifier).to receive(:notify!).at_least(2).times
+      expect(MissingKid).to receive(:update!).at_least(2).times
+      expect(MissingKidsNotifier).to receive(:notify!).at_least(2).times
       detached_thread = Thread.new do
         SlackBotServer::Service.instance.run_periodic_timer!
       end

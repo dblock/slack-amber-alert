@@ -19,12 +19,12 @@ module SlackBotServer
     end
 
     on :hello do |client, _data|
-      MissingChildrenNotifier.notify_team!(client.owner, client.web_client)
+      MissingKidsNotifier.notify_team!(client.owner, client.web_client)
     end
 
     on :channel_joined do |client, data|
       send_welcome_message(client, data)
-      notify_missing_children(client, data)
+      notify_missing_kids(client, data)
     end
 
     def self.send_welcome_message(client, data)
@@ -34,12 +34,12 @@ module SlackBotServer
       client.owner.update_attributes!(welcomed_at: Time.now.utc)
     end
 
-    def self.notify_missing_children(client, data)
-      # send missing children alerts
-      missing_child = MissingChild.desc(:published_at).first
-      return unless missing_child
-      MissingChildrenNotifier.notify_missing_child!(client.web_client, data.channel, missing_child)
-      client.owner.notified!(missing_child.published_at)
+    def self.notify_missing_kids(client, data)
+      # send missing kids alerts
+      missing_kid = MissingKid.desc(:published_at).first
+      return unless missing_kid
+      MissingKidsNotifier.notify_missing_kid!(client.web_client, data.channel, missing_kid)
+      client.owner.notified!(missing_kid.published_at)
     end
   end
 end

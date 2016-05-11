@@ -1,12 +1,12 @@
 module Api
   module Presenters
-    module MissingChildrenPresenter
+    module MissingKidsPresenter
       include Roar::JSON::HAL
       include Roar::Hypermedia
       include Grape::Roar::Representer
       include Api::Presenters::PaginatedPresenter
 
-      collection :results, extend: MissingChildPresenter, as: :missing_children, embedded: true
+      collection :results, extend: MissingKidPresenter, as: :missing_kids, embedded: true
     end
   end
 end

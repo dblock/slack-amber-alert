@@ -8,7 +8,7 @@ Missing Kids Slack Bot.
 General
 -------
 
-children [n|inifinity]  - show missing kids
+kids [n|inifinity]  - show missing kids
 help                    - get this helpful message
 
 ```

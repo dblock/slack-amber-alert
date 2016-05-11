@@ -12,7 +12,7 @@ describe Api do
       expect(subject['apis'].map { |api| api['path'] }).to eq([
         '/status.{format}',
         '/teams.{format}',
-        '/missing_children.{format}',
+        '/missing_kids.{format}',
         '/swagger_doc.{format}'
       ])
     end

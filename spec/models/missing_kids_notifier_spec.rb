@@ -1,14 +1,14 @@
 require 'spec_helper'
 
-describe MissingChildrenNotifier do
+describe MissingKidsNotifier do
   context 'without data' do
     it 'does not do anything' do
       subject.notify!
     end
   end
-  context 'with a team and a missing child' do
+  context 'with a team and a missing kid' do
     let!(:team) { Fabricate(:team) }
-    let!(:missing_child) { Fabricate(:missing_child) }
+    let!(:missing_kid) { Fabricate(:missing_kid) }
     let(:client) do
       double(Slack::Web::Client,
              channels_list: {
@@ -22,21 +22,21 @@ describe MissingChildrenNotifier do
     before do
       allow(Slack::Web::Client).to receive(:new).with(token: team.token).and_return(client)
     end
-    it 'notifies a team about the missing child' do
+    it 'notifies a team about the missing kid' do
       expect(client).to receive(:chat_postMessage).with(
         channel: 'general',
         as_user: true,
         attachments: [{
-          fallback: missing_child.to_s,
-          title_link: missing_child.link,
-          title: missing_child.to_s,
+          fallback: missing_kid.to_s,
+          title_link: missing_kid.link,
+          title: missing_kid.to_s,
           text: [
-            missing_child.circumstance,
-            "Missing since #{missing_child.missingDate.to_formatted_s(:long)}.",
-            "Contact #{missing_child.altContact}."
+            missing_kid.circumstance,
+            "Missing since #{missing_kid.missingDate.to_formatted_s(:long)}.",
+            "Contact #{missing_kid.altContact}."
           ].join("\n"),
           color: '#FF0000',
-          thumb_url: missing_child.photo
+          thumb_url: missing_kid.photo
         }]
       )
       subject.notify!
@@ -44,7 +44,7 @@ describe MissingChildrenNotifier do
     it 'updated team notified_at' do
       allow(client).to receive(:chat_postMessage)
       subject.notify!
-      expect(team.reload.notified_at).to eq missing_child.reload.published_at
+      expect(team.reload.notified_at).to eq missing_kid.reload.published_at
     end
     it 'does not notify twice' do
       expect(client).to receive(:chat_postMessage).once

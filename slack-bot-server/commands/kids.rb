@@ -1,9 +1,9 @@
 module SlackBotServer
   module Commands
-    class Children < SlackRubyBot::Commands::Base
+    class Kids < SlackRubyBot::Commands::Base
       include Celluloid::IO
 
-      command 'children' do |client, data, match|
+      command 'kids' do |client, data, match|
         max = 3
         arguments = match['expression'].split.reject(&:blank?) if match['expression']
         arguments ||= []
@@ -17,13 +17,13 @@ module SlackBotServer
           end
         end
         Celluloid.defer do
-          children = MissingChild.all.desc(:published_at).limit(max)
-          if children.any?
-            children.each do |missing_child|
-              MissingChildrenNotifier.notify_missing_child!(client.web_client, data.channel, missing_child)
+          kids = MissingKid.all.desc(:published_at).limit(max)
+          if kids.any?
+            kids.each do |missing_kid|
+              MissingKidsNotifier.notify_missing_kid!(client.web_client, data.channel, missing_kid)
             end
           else
-            client.say(channel: data.channel, text: 'No information on missing children available.')
+            client.say(channel: data.channel, text: 'No information on missing kids available.')
           end
         end
         logger.info "MISSING #{max || '∞'}: #{client.owner} - #{data.user}"

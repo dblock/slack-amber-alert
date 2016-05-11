@@ -13,7 +13,7 @@ module Api
 
       mount Api::Endpoints::StatusEndpoint
       mount Api::Endpoints::TeamsEndpoint
-      mount Api::Endpoints::MissingChildrenEndpoint
+      mount Api::Endpoints::MissingKidsEndpoint
 
       add_swagger_documentation
     end

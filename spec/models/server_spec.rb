@@ -12,9 +12,9 @@ describe SlackBotServer::Server do
       expect(client.web_client).to_not receive(:chat_postMessage)
       client.send(:callback, Hashie::Mash.new('channel' => { 'id' => 'C12345' }), :channel_joined)
     end
-    context 'with a missing child' do
-      let!(:missing_child) { Fabricate(:missing_child) }
-      it 'notifies about the missing child and updates team notified timestamp' do
+    context 'with a missing kid' do
+      let!(:missing_kid) { Fabricate(:missing_kid) }
+      it 'notifies about the missing kid and updates team notified timestamp' do
         allow(client).to receive(:say)
         expect(client.web_client).to receive(:chat_postMessage).once
         client.send(:callback, Hashie::Mash.new('channel' => { 'id' => 'C12345' }), :channel_joined)

@@ -1,4 +1,4 @@
-class MissingChild
+class MissingKid
   include Mongoid::Document
   include Mongoid::Timestamps
   include Mongoid::Attributes::Dynamic
@@ -44,7 +44,7 @@ class MissingChild
   field :orgName, type: String
   field :orgContactInfo, type: String
   field :isClearinghouse, type: Boolean
-  field :isChild, type: Boolean
+  field :isKid, type: Boolean
   field :age, type: Integer
 
   SORT_ORDERS = ['created_at', '-created_at']
@@ -57,7 +57,7 @@ class MissingChild
         case_number = CGI.parse(URI.parse(item.link).query)['caseNum'][0]
 
         # existing record
-        next if MissingChild.where(caseNumber: case_number).exists?
+        next if MissingKid.where(caseNumber: case_number).exists?
 
         # details
         detail_url = "http://www.missingkids.com/missingkids/servlet/JSONDataServlet?action=childDetail&orgPrefix=NCMC&caseNum=#{case_number}&seqNum=1&caseLang=en_US&searchLang=en_US&LanguageId=en_US"
@@ -71,14 +71,14 @@ class MissingChild
         details = details_json['childBean']
         next unless details
 
-        missing_child = MissingChild.new(details)
-        missing_child.title = item.title
-        missing_child.published_at = item.pubDate
-        missing_child.description = item.description
-        missing_child.link = item.link
+        missing_kid = MissingKid.new(details)
+        missing_kid.title = item.title
+        missing_kid.published_at = item.pubDate
+        missing_kid.description = item.description
+        missing_kid.link = item.link
 
-        missing_child.save!
-        Mongoid.logger.info missing_child.to_s
+        missing_kid.save!
+        Mongoid.logger.info missing_kid.to_s
       rescue StandardError => e
         Mongoid.logger.error "Error parsing #{item}!"
         Mongoid.logger.error e

@@ -1,4 +1,4 @@
-Fabricator(:missing_child) do |_record|
+Fabricator(:missing_kid) do |_record|
   caseNumber { Faker::Number.number(6) }
   firstName { Faker::Name.first_name }
   middleName ''

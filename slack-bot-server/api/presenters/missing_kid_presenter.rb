@@ -1,13 +1,13 @@
 module Api
   module Presenters
-    module MissingChildPresenter
+    module MissingKidPresenter
       include Roar::JSON::HAL
       include Roar::Hypermedia
       include Grape::Roar::Representer
 
-      property :id, type: String, desc: 'Missing Child ID.'
-      property :title, type: String, desc: 'Missing child record title.'
-      property :description, type: String, desc: 'Missing child description.'
+      property :id, type: String, desc: 'Missing Kid ID.'
+      property :title, type: String, desc: 'Missing kid record title.'
+      property :description, type: String, desc: 'Missing kid description.'
 
       # from missingkids.org
       property :caseNumber, as: :case_number, type: String
@@ -40,10 +40,10 @@ module Api
       property :orgName, as: :org_name, type: String
       property :orgContactInfo, as: :org_contact_info, type: String
       property :isClearinghouse, as: :is_clearing_house, type: Boolean
-      property :isChild, as: :is_child, type: Boolean
+      property :isKid, as: :is_kid, type: Boolean
       property :age, as: :age, type: Integer
 
-      property :published_at, type: DateTime, desc: 'Date/time when the record was published in the registry of missing children.'
+      property :published_at, type: DateTime, desc: 'Date/time when the record was published in the registry of missing kids.'
       property :created_at, type: DateTime, desc: 'Date/time when the record was created.'
       property :updated_at, type: DateTime, desc: 'Date/time when the record was updated.'
 
@@ -57,7 +57,7 @@ module Api
 
       link :self do |opts|
         request = Grape::Request.new(opts[:env])
-        "#{request.base_url}/api/missing_children/#{id}"
+        "#{request.base_url}/api/missing_kids/#{id}"
       end
 
       private
