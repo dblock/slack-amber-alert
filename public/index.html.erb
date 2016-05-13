@@ -1,47 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel='shortcut icon' type='image/x-icon' href='/img/favicon.ico' />
-    <meta charset="UTF-8">
     <title>Missing Kids Slack Bot</title>
     <meta name="description" content="Missingkidsbot is a Slack bot that allows you to receive active amber alerts and help spread the search for missing children.">
     <meta name="keywords" content="slack bot, missing kids, missing kids bot, missing children, amber alerts, help find missing kids, bot for missing kids"
 
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://missingkidsbot.org/" />
+    <meta property="og:url" content="http://www.missingkidsbot.org/" />
     <meta property="og:site_name" content="Missing Kids Bot">
     <meta property="og:title" content="A Slack bot to alert about missing children" />
     <meta property="og:description" content="Missingkidsbot allows you to receive active amber alerts and help spread the search for missing children." />
-    <meta property="og:image" content="http://missingkidsbot.org/img/missingkids_open_graph_1a.png" />
+    <meta property="og:image" content="http://www.missingkidsbot.org/img/missingkids_open_graph_1a.png" />
 
-    <!-— twitter card tags additive with the og: tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:domain" value="missingkidsbot.org" />
     <meta name="twitter:title" value="A Slack bot to alert about missing children" />
     <meta name="twitter:description" value="Missingkidsbot allows you to receive active amber alerts and help spread the search for missing children." />
-    <meta name="twitter:image" content="http://missingkidsbot.org/img/missingkids_open_graph_1a.png" />
-    <meta name="twitter:url" value="http://missingkidsbot.org/" />
-    
-    
-    <script src="/scripts/jquery-1.7.1.min.js"></script>
-    <script src="/scripts/url.min.js"></script>
+    <meta name="twitter:image" content="http://www.missingkidsbot.org/img/missingkids_open_graph_1a.png" />
+    <meta name="twitter:url" value="http://www.missingkidsbot.org/" />
+
+    <%= partial 'public/partials/_head.html.erb' %>
+
     <script src="/scripts/register.js"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,300italic,300,600italic,600,700italic,800,800italic' rel='stylesheet' type='text/css'>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,300italic,300,600italic,600,700italic,800,800italic' rel='stylesheet' type='text/css'>
-    <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-77454349-1', 'auto');
-    ga('send', 'pageview');
-    </script>
   </head>
   <body>
     <div class="row header-background">
@@ -132,25 +112,6 @@
       </div>
       <a class="link" href="mailto:david@chatoverload.com"><button class="contact-button center-block"><i class="fa fa-phone contact-icon"></i><span class="Add-MissingKidsBot contact-text" style="font-size: 14px;">Contact Us</button></a>
     </div>
-    <footer class="footer">
-      <div class="table-cell">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4 col-md-4">
-              <img class="footer-logo" src="img/footer_logo@2x.png" alt="missingkidsbot footer logo"><p class="small-text" style="display: inline;">Copyright &copy; 2016 MissingKidsBot</p>
-            </div>
-            <div class="col-lg-4 col-md-4">
-              <p class="fork small-text text-center"><a href="https://github.com/dblock/slack-amber-alert" target="_blank">fork me on github</a> | <a href='/api'>RESTful API</a></p>
-              <p class="fork small-text text-center"><a href="privacy.html" target="_blank">Privacy Policy</a></p>
-            </div>
-            <div class="col-lg-4 col-md-4">
-              <div class="col-xs-6 comming-soon small-text text-right" style="color: rgb(0, 141, 177);">Coming soon for: </div>
-              <div class="col-xs-6 comming-soon-icons"><i class="fa fa-facebook-official"></i><i class="fa fa-skype"></i><i class="fa fa-whatsapp"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <%= partial 'public/partials/_footer.html' %>
   </body>
 </html>
