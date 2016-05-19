@@ -16,10 +16,8 @@ describe SlackBotServer::Commands::Kids do
       expect(client.web_client).to receive(:chat_postMessage).once
       message_command.call(client, Hashie::Mash.new(text: "#{SlackRubyBot.config.user} kids 1", channel: 'channel', user: 'user'))
     end
-    it 'supports infinity' do
-      2.times { Fabricate(:missing_kid) }
-      expect(client.web_client).to receive(:chat_postMessage).exactly(4).times
-      message_command.call(client, Hashie::Mash.new(text: "#{SlackRubyBot.config.user} kids infinity", channel: 'channel', user: 'user'))
+    it 'fails for any number above 10' do
+      expect(message: "#{SlackRubyBot.config.user} kids 11").to respond_with_slack_message 'Please specify a number between 1 and 10.'
     end
   end
   context 'without missing kids' do

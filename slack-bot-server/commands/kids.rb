@@ -8,14 +8,8 @@ module SlackBotServer
         arguments = match['expression'].split.reject(&:blank?) if match['expression']
         arguments ||= []
         number = arguments.shift
-        if number
-          case number.downcase
-          when 'infinity'
-            max = nil
-          else
-            max = Integer(number)
-          end
-        end
+        max = Integer(number) if number
+        fail 'Please specify a number between 1 and 10.' if max < 1 || max > 10
         Celluloid.defer do
           kids = MissingKid.all.desc(:published_at).limit(max)
           if kids.any?

@@ -8,8 +8,8 @@ Missing Kids Slack Bot.
 General
 -------
 
-kids [n|inifinity]  - show missing kids
-help                    - get this helpful message
+kids [n]  - show missing kids (n can be 1-10, default is 3)
+help      - get this helpful message
 
 ```
 EOS
