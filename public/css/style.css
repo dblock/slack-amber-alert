@@ -108,10 +108,12 @@ font-size: 11px !important;
 }
 .slack-chat{
   width: 85%;
-  margin-top: -25%;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+.slack-chat-welcome {
+  margin-top: -25%;
 }
 .bold-headline{
   font-family: 'Open Sans', sans-serif;

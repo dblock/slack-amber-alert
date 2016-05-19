@@ -12,23 +12,34 @@
         </div>
       </div>
     </div>
-      <div class="container">
+    <div class="container">
       <div class="row">
         <div class="col-lg-12 text-left">
-          <h2 class="section-heading">MissingKidsBot.org Help</h2>
-          <p>Invite <strong>@missingkids</strong> to a channel. Use <strong>@missingkids help</strong> to get missing kids information.</p>
+          <h2 class="section-heading">Help</h2>
+          <p>Invite <strong>@missingkids</strong> to a channel and missing kids alerts will automatically appear in the channel. The last known missing kid will appear the first time the bot joins a channel along with a thank you note for supporting the program.</p>
+          <p><img class="slack-chat" src="img/slack_window@2x.png" alt="slack chat for missingkidsbot"></p>
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-1 col-md-1">
-        </div>
-        <div class="col-lg-10 col-md-10">
-          <img class="slack-chat" src="img/slack_window@2x.png" alt="slack chat for missingkidsbot">
-        </div>
-        <div class="col-lg-1 col-md-1">
+        <div class="col-lg-12 col-md-1">
+          <h3 class="section-heading">Bot Commands</h3>
+          <p>Your can DM the bot or talk to it by mentioning it. For example <b>@missingkids help</b> displays a helpful message.</p>
+          <h3 class="section-heading">All Commands</h3>
+          <h4 class="section-heading">help</h4>
+          <p>Displays help.</p>
+          <h4 class="section-heading">kids [n]</h4>
+          <p>Display <strong>n</strong> last known missing children. Use <strong>kids 10</strong> to display the last 10 missing children. The default number is 3.</p>
         </div>
       </div>
+      <div class="row">
+        <div class="col-lg-12 col-md-1">
+          <h3 class="section-heading">Need More Help?</h3>
+          <p>
+            <a href='https://github.com/dblock/slack-amber-alert/issues/new' target='_blank'>Open an issue on Github</a> or contact <a href="mailto:david@chatoverload.com">David</a>.
+          </p>
+        </div>
       </div>
+    </div>
     <%= partial 'public/partials/_footer.html' %>
   </body>
 </html>
