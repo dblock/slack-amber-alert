@@ -2,6 +2,11 @@ module SlackBotServer
   class Server < SlackRubyBot::Server
     attr_accessor :team
 
+    WELCOME_MESSAGE = <<-EOS
+Thanks for installing the Missing Kids Bot - you're doing your part in helping out!
+When an Amber Alert is issued, I'll post a notification to this channel. You can also DM me to get the latest alerts.
+    EOS
+
     def initialize(attrs = {})
       @team = attrs[:team]
       fail 'Missing team' unless @team
@@ -30,7 +35,7 @@ module SlackBotServer
     def self.send_welcome_message(client, data)
       return if client.owner.welcomed_at
       logger.info "#{client.owner.name}: Welcome."
-      client.say(channel: data.channel['id'], text: "Thanks for installing the Missing Kids Bot - you're doing your part in helping out!")
+      client.say(channel: data.channel['id'], text: WELCOME_MESSAGE)
       client.owner.update_attributes!(welcomed_at: Time.now.utc)
     end
 
