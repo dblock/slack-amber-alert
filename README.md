@@ -13,6 +13,8 @@ An amber alert bot that notifies your team of missing kids.
 
 Invite *@missingkids* to a channel with `/invite @missingkids`. When an Amber Alert is issued, the bot will post a notification to that channel. You can also DM it to get the latest alerts.
 
+![](public/img/slack_window@2x.png)
+
 ### Commands
 
 #### missing kids [number]
