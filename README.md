@@ -9,13 +9,23 @@ An amber alert bot that notifies your team of missing kids.
 
 ### Commands
 
-#### missing kids [number|infinity]
+#### missing kids [number]
 
-Get the list of the most recent missing kids, the default number is 3.
+Get the list of the most recent missing kids. The max number is 10 and the default is 3.
 
 ### API
 
-The service provides a RESTful Hypermedia API wrapping the [www.missingkids.org RSS feed](http://www.missingkids.org/missingkids/servlet/XmlServlet?act=rss&LanguageCountry=en_US&orgPrefix=NCMC).
+The service provides a RESTful Hypermedia API wrapping the [www.missingkids.org RSS feed](http://www.missingkids.org/missingkids/servlet/XmlServlet?act=rss&LanguageCountry=en_US&orgPrefix=NCMC). Start [at the API root](http://www.missingkidsbot.org/api). The following examples retrieves a list of missing kids in Ruby with [Hyperclient](https://github.com/codegram/hyperclient).
+
+```ruby
+require 'hyperclient'
+
+api = Hyperclient.new('http://www.missingkidsbot.org/api/missing_kids/')
+
+api.missing_kids.each do |missing_kid|
+  puts missing_kid.title
+end
+```
 
 ### Copyright & License
 
