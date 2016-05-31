@@ -35,6 +35,10 @@ api.missing_kids.each do |missing_kid|
 end
 ```
 
+### Contributing
+
+We would love your help with a [number of bugs and feature requests](https://github.com/dblock/slack-amber-alert/issues). See [CONTRIBUTING](CONTRIBUTING.md).
+
 ### Copyright & License
 
 Copyright [Daniel Doubrovkine](http://code.dblock.org), [David Markovich](https://twitter.com/DavidMarkovich_) and Contributors, 2016
