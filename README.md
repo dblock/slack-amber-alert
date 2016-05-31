@@ -7,6 +7,12 @@ Missing Kids in Slack
 
 An amber alert bot that notifies your team of missing kids.
 
+## Install
+
+[![Add to Slack](https://platform.slack-edge.com/img/add_to_slack.png)](http://www.missingkidsbot.org/)
+
+Invite *@missingkids* to a channel with `/invite @missingkids`. When an Amber Alert is issued, the bot will post a notification to that channel. You can also DM it to get the latest alerts.
+
 ### Commands
 
 #### missing kids [number]
