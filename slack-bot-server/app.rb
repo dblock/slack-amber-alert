@@ -11,6 +11,7 @@ module SlackBotServer
       update_team_name_and_id!
       purge_inactive_teams!
       configure_global_aliases!
+      disable_gifs!
     end
 
     def self.instance
@@ -88,6 +89,12 @@ module SlackBotServer
     def configure_global_aliases!
       SlackRubyBot.configure do |config|
         config.aliases = ENV['SLACK_RUBY_BOT_ALIASES'].split(' ') if ENV['SLACK_RUBY_BOT_ALIASES']
+      end
+    end
+
+    def disable_gifs!
+      SlackRubyBot.configure do |config|
+        config.send_gifs = false
       end
     end
   end
