@@ -2,27 +2,15 @@ source 'http://rubygems.org'
 
 ruby '2.2.4'
 
-gem 'slack-ruby-client', '~> 0.7.3'
-gem 'slack-ruby-bot', '~> 0.8.0'
-gem 'celluloid-io', require: ['celluloid/current', 'celluloid/io']
-gem 'mongoid', '~> 5.0.0'
-gem 'unicorn'
-gem 'grape', '~> 0.15.0'
-gem 'grape-swagger', '~> 0.10.0'
-gem 'grape-roar'
-gem 'rack-cors'
-gem 'kaminari', '~> 0.16.1', require: 'kaminari/grape'
-gem 'mongoid-scroll'
-gem 'rack-robotz'
-gem 'newrelic_rpm'
-gem 'newrelic-slack-ruby-bot'
-gem 'rack-rewrite'
+gem 'slack-ruby-bot-server'
 gem 'rack-server-pages', github: 'dblock/rack-server-pages', branch: 'fix-at-filename'
 gem 'simple-rss'
+gem 'newrelic_rpm'
+gem 'rack-robotz'
 
 group :development, :test do
   gem 'rake', '~> 10.4'
-  gem 'rubocop', '0.35.1'
+  gem 'rubocop', '0.40.0'
   gem 'foreman'
 end
 

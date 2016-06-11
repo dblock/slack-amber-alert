@@ -1,8 +1,8 @@
 require 'spec_helper'
 
-describe SlackBotServer::Commands::Kids do
+describe SlackAmberAlert::Commands::Kids do
   let!(:team) { Fabricate(:team) }
-  let(:app) { SlackBotServer::Server.new(team: team) }
+  let(:app) { SlackRubyBot::Server.new(team: team) }
   let(:client) { app.send(:client) }
   let(:message_command) { SlackRubyBot::Hooks::Message.new }
   context 'with missing kids' do
