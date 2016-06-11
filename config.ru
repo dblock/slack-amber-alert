@@ -1,6 +1,14 @@
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 
-require 'slack-bot-server'
+ENV['RACK_ENV'] ||= 'development'
+
+require 'bundler/setup'
+Bundler.require :default, ENV['RACK_ENV']
+
+require 'slack-ruby-bot-server'
+require 'slack-amber-alert'
+
+Mongoid.load!(File.expand_path('config/mongoid.yml', __dir__), ENV['RACK_ENV'])
 
 if ENV['RACK_ENV'] == 'development'
   puts 'Loading NewRelic in developer mode ...'
@@ -10,13 +18,8 @@ end
 
 NewRelic::Agent.manual_start
 
-SlackBotServer::App.instance.prepare!
+SlackAmberAlert::App.instance.prepare!
+SlackAmberAlert::Service.start!
+SlackAmberAlert::Service.instance.run_periodic_timer!
 
-Thread.abort_on_exception = true
-
-Thread.new do
-  SlackBotServer::Service.instance.start_from_database!
-  SlackBotServer::Service.instance.run_periodic_timer!
-end
-
-run Api::Middleware.instance
+run SlackAmberAlert::Api::Middleware.instance

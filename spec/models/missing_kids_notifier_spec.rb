@@ -16,8 +16,7 @@ describe MissingKidsNotifier do
                  { 'id' => 'general', 'is_member' => true },
                  { 'id' => 'other', 'is_member' => false }
                ]
-             }
-            )
+             })
     end
     before do
       allow(Slack::Web::Client).to receive(:new).with(token: team.token).and_return(client)

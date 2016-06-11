@@ -10,11 +10,11 @@ describe Api do
     end
     it 'documents root level apis' do
       expect(subject['apis'].map { |api| api['path'] }).to eq([
-        '/status.{format}',
-        '/teams.{format}',
-        '/missing_kids.{format}',
-        '/swagger_doc.{format}'
-      ])
+                                                                '/status.{format}',
+                                                                '/teams.{format}',
+                                                                '/missing_kids.{format}',
+                                                                '/swagger_doc.{format}'
+                                                              ])
     end
   end
 
@@ -25,9 +25,9 @@ describe Api do
     end
     it 'documents teams apis' do
       expect(subject['apis'].map { |api| api['path'] }).to eq([
-        '/api/teams/{id}.{format}',
-        '/api/teams.{format}'
-      ])
+                                                                '/api/teams/{id}.{format}',
+                                                                '/api/teams.{format}'
+                                                              ])
     end
   end
 end

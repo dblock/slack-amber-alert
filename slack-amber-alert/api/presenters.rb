@@ -1,0 +1,11 @@
+require 'roar/representer'
+require 'roar/json'
+require 'roar/json/hal'
+
+require 'slack-amber-alert/api/presenters/paginated_presenter'
+require 'slack-amber-alert/api/presenters/status_presenter'
+require 'slack-amber-alert/api/presenters/team_presenter'
+require 'slack-amber-alert/api/presenters/teams_presenter'
+require 'slack-amber-alert/api/presenters/missing_kid_presenter'
+require 'slack-amber-alert/api/presenters/missing_kids_presenter'
+require 'slack-amber-alert/api/presenters/root_presenter'
