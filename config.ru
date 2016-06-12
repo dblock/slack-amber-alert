@@ -19,7 +19,10 @@ end
 NewRelic::Agent.manual_start
 
 SlackAmberAlert::App.instance.prepare!
-SlackAmberAlert::Service.start!
-SlackAmberAlert::Service.instance.run_periodic_timer!
 
-run SlackAmberAlert::Api::Middleware.instance
+Thread.new do
+  SlackAmberAlert::Service.start!
+  SlackAmberAlert::Service.instance.run_periodic_timer!
+end
+
+run Api::Middleware.instance
