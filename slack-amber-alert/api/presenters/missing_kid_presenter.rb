@@ -60,8 +60,6 @@ module Api
         "#{request.base_url}/api/missing_kids/#{id}"
       end
 
-      private
-
       def height_units
         represented.heightInInch ? 'in' : 'cm'
       end

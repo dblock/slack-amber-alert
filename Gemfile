@@ -1,33 +1,38 @@
 source 'http://rubygems.org'
 
-ruby '2.2.4'
+ruby '2.5.0'
 
-gem 'slack-ruby-bot-server'
-gem 'rack-server-pages', github: 'dblock/rack-server-pages', branch: 'fix-at-filename'
-gem 'simple-rss'
+gem 'grape'
+gem 'hashie'
+gem 'mongoid'
+gem 'mongoid-scroll'
 gem 'newrelic_rpm'
 gem 'rack-robotz'
+gem 'rack-server-pages'
+gem 'simple-rss'
+gem 'slack-ruby-bot-server'
 
 group :development, :test do
-  gem 'rake', '~> 10.4'
-  gem 'rubocop', '0.40.0'
   gem 'foreman'
+  gem 'rake', '~> 10.4'
+  gem 'rubocop', '0.57.2'
 end
 
 group :development do
-  gem 'mongoid-shell'
   gem 'heroku'
+  gem 'mongoid-shell'
 end
 
 group :test do
-  gem 'rspec'
-  gem 'rack-test'
-  gem 'webmock'
-  gem 'vcr'
+  gem 'capybara'
+  gem 'database_cleaner'
   gem 'fabrication'
   gem 'faker'
-  gem 'database_cleaner'
   gem 'hyperclient'
-  gem 'capybara'
+  gem 'rack-test'
+  gem 'rspec'
   gem 'selenium-webdriver'
+  gem 'timecop'
+  gem 'vcr'
+  gem 'webmock'
 end

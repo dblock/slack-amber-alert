@@ -15,10 +15,10 @@ describe 'Teams', js: true, type: :feature do
       expect(SlackAmberAlert::Service.instance).to receive(:start!)
       oauth_access = { 'bot' => { 'bot_access_token' => 'token' }, 'team_id' => 'team_id', 'team_name' => 'team_name' }
       allow_any_instance_of(Slack::Web::Client).to receive(:oauth_access).with(hash_including(code: 'code')).and_return(oauth_access)
-      expect do
+      expect {
         visit '/?code=code'
         expect(page.find('#messages')).to have_content 'Team successfully registered!'
-      end.to change(Team, :count).by(1)
+      }.to change(Team, :count).by(1)
     end
   end
   context 'homepage' do

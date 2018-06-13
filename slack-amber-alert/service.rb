@@ -13,13 +13,11 @@ module SlackAmberAlert
     def run_periodic_timer!
       logger.info "Setting up periodic notification every #{notify_period} second(s)."
       @timers.every(notify_period) do
-        begin
-          MissingKid.update!
-          MissingKidsNotifier.notify!
-        rescue StandardError => e
-          logger.error "Error in periodic notification: #{e.message}."
-          logger.error e
-        end
+        MissingKid.update!
+        MissingKidsNotifier.notify!
+      rescue StandardError => e
+        logger.error "Error in periodic notification: #{e.message}."
+        logger.error e
       end
       loop { @timers.wait }
     end

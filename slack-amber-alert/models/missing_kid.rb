@@ -50,39 +50,37 @@ class MissingKid
   SORT_ORDERS = ['created_at', '-created_at'].freeze
 
   def self.update!
-    f = open('http://www.missingkids.org/missingkids/servlet/XmlServlet?act=rss&LanguageCountry=en_US&orgPrefix=NCMC')
+    f = open('http://www.missingkids.org/missingkids/servlet/XmlServlet?LanguageCountry=en_US&act=rss&orgPrefix=NCMC')
     rss = SimpleRSS.parse(f)
     rss.items.each do |item|
-      begin
-        case_number = CGI.parse(URI.parse(item.link).query)['caseNum'][0]
+      case_number = CGI.parse(URI.parse(item.link).query)['caseNum'][0]
 
-        # existing record
-        next if MissingKid.where(caseNumber: case_number).exists?
+      # existing record
+      next if MissingKid.where(caseNumber: case_number).exists?
 
-        # details
-        detail_url = "http://www.missingkids.com/missingkids/servlet/JSONDataServlet?action=childDetail&orgPrefix=NCMC&caseNum=#{case_number}&seqNum=1&caseLang=en_US&searchLang=en_US&LanguageId=en_US"
-        details_json = JSON.parse(open(URI.parse(detail_url)).read)
+      # details
+      detail_url = "http://www.missingkids.com/missingkids/servlet/JSONDataServlet?action=childDetail&orgPrefix=NCMC&caseNum=#{case_number}&seqNum=1&caseLang=en_US&searchLang=en_US&LanguageId=en_US"
+      details_json = JSON.parse(open(URI.parse(detail_url)).read)
 
-        unless details_json['status'] == 'success'
-          Mongoid.logger.warn "Error retrieving details for #{item}: #{details_json['msg']} (#{detail_url})."
-          next
-        end
-
-        details = details_json['childBean']
-        next unless details
-
-        missing_kid = MissingKid.new(details)
-        missing_kid.title = item.title
-        missing_kid.published_at = item.pubDate
-        missing_kid.description = item.description
-        missing_kid.link = item.link
-
-        missing_kid.save!
-        Mongoid.logger.info missing_kid.to_s
-      rescue StandardError => e
-        Mongoid.logger.error "Error parsing #{item}!"
-        Mongoid.logger.error e
+      unless details_json['status'] == 'success'
+        Mongoid.logger.warn "Error retrieving details for #{item}: #{details_json['msg']} (#{detail_url})."
+        next
       end
+
+      details = details_json['childBean']
+      next unless details
+
+      missing_kid = MissingKid.new(details)
+      missing_kid.title = item.title
+      missing_kid.published_at = item.pubDate
+      missing_kid.description = item.description
+      missing_kid.link = item.link
+
+      missing_kid.save!
+      Mongoid.logger.info missing_kid.to_s
+    rescue StandardError => e
+      Mongoid.logger.error "Error parsing #{item}!"
+      Mongoid.logger.error e
     end
   end
 

@@ -1,7 +1,16 @@
-$LOAD_PATH.unshift(File.dirname(__FILE__))
+ENV['RACK_ENV'] ||= 'development'
 
-require 'celluloid/io'
+require 'bundler/setup'
+Bundler.require :default, ENV['RACK_ENV']
+
+Dir[File.expand_path('config/initializers', __dir__) + '/**/*.rb'].each do |file|
+  require file
+end
+
+Mongoid.load! File.expand_path('config/mongoid.yml', __dir__), ENV['RACK_ENV']
+
 require 'open-uri'
+require 'slack-ruby-bot'
 require 'slack-amber-alert/version'
 require 'slack-amber-alert/info'
 require 'slack-amber-alert/models'

@@ -9,12 +9,13 @@ describe Api do
       JSON.parse(last_response.body)
     end
     it 'documents root level apis' do
-      expect(subject['apis'].map { |api| api['path'] }).to eq([
-                                                                '/status.{format}',
-                                                                '/teams.{format}',
-                                                                '/missing_kids.{format}',
-                                                                '/swagger_doc.{format}'
-                                                              ])
+      expect(subject['paths'].keys).to eq [
+        '/api/status',
+        '/api/teams',
+        '/api/teams/{id}',
+        '/api/missing_kids',
+        '/api/missing_kids/{id}'
+      ]
     end
   end
 
@@ -24,10 +25,7 @@ describe Api do
       JSON.parse(last_response.body)
     end
     it 'documents teams apis' do
-      expect(subject['apis'].map { |api| api['path'] }).to eq([
-                                                                '/api/teams/{id}.{format}',
-                                                                '/api/teams.{format}'
-                                                              ])
+      expect(subject['paths'].keys).to eq ['/api/teams', '/api/teams/{id}']
     end
   end
 end

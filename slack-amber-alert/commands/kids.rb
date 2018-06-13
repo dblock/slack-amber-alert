@@ -1,7 +1,7 @@
 module SlackAmberAlert
   module Commands
     class Kids < SlackRubyBot::Commands::Base
-      include Celluloid::IO
+      include Celluloid
 
       command 'kids' do |client, data, match|
         max = 3

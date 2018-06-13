@@ -36,9 +36,9 @@ describe Api::Endpoints::TeamsEndpoint do
         expect(teams.count).to eq 1
       end
       it 'does not return team with api=false' do
-        expect do
+        expect {
           client.team(id: team.id)
-        end.to_not raise_error
+        }.to_not raise_error
       end
     end
   end
@@ -77,18 +77,18 @@ describe Api::Endpoints::TeamsEndpoint do
       end
       it 'creates a team' do
         expect(SlackAmberAlert::Service.instance).to receive(:start!)
-        expect do
+        expect {
           team = client.teams._post(code: 'code')
           expect(team.team_id).to eq 'team_id'
           expect(team.name).to eq 'team_name'
           team = Team.find(team.id)
           expect(team.token).to eq 'token'
-        end.to change(Team, :count).by(1)
+        }.to change(Team, :count).by(1)
       end
       it 'reactivates a deactivated team' do
         expect(SlackAmberAlert::Service.instance).to receive(:start!)
         existing_team = Fabricate(:team, token: 'token', active: false)
-        expect do
+        expect {
           team = client.teams._post(code: 'code')
           expect(team.team_id).to eq existing_team.team_id
           expect(team.name).to eq existing_team.name
@@ -96,7 +96,7 @@ describe Api::Endpoints::TeamsEndpoint do
           team = Team.find(team.id)
           expect(team.token).to eq 'token'
           expect(team.active).to be true
-        end.to_not change(Team, :count)
+        }.to_not change(Team, :count)
       end
       it 'returns a useful error when team already exists' do
         existing_team = Fabricate(:team, token: 'token')
@@ -108,7 +108,7 @@ describe Api::Endpoints::TeamsEndpoint do
       it 'reactivates a deactivated team with a different code' do
         expect(SlackAmberAlert::Service.instance).to receive(:start!)
         existing_team = Fabricate(:team, token: 'old', team_id: 'team_id', active: false)
-        expect do
+        expect {
           team = client.teams._post(code: 'code')
           expect(team.team_id).to eq existing_team.team_id
           expect(team.name).to eq existing_team.name
@@ -116,7 +116,7 @@ describe Api::Endpoints::TeamsEndpoint do
           team = Team.find(team.id)
           expect(team.token).to eq 'token'
           expect(team.active).to be true
-        end.to_not change(Team, :count)
+        }.to_not change(Team, :count)
       end
     end
   end

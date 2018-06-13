@@ -3,9 +3,9 @@ require 'spec_helper'
 describe MissingKid, vcr: { cassette_name: 'missing_kids', allow_playback_repeats: true } do
   context '#update!' do
     it 'creates a record for each alert' do
-      expect do
+      expect {
         MissingKid.update!
-      end.to change(MissingKid, :count).by(8)
+      }.to change(MissingKid, :count).by(8)
     end
   end
   context 'with existing records' do
@@ -15,14 +15,14 @@ describe MissingKid, vcr: { cassette_name: 'missing_kids', allow_playback_repeat
     it 'only creates new records' do
       MissingKid.all.limit(5).destroy
       expect(MissingKid.count).to eq 3
-      expect do
+      expect {
         MissingKid.update!
-      end.to change(MissingKid, :count).by(5)
+      }.to change(MissingKid, :count).by(5)
     end
     it 'can be called twice' do
-      expect do
+      expect {
         MissingKid.update!
-      end.to_not change(MissingKid, :count)
+      }.to_not change(MissingKid, :count)
     end
     it 'updates records that have changed' do
       first_kid = MissingKid.asc(:_id).first

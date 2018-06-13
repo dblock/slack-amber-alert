@@ -1,8 +1,8 @@
 module SlackRubyBotServer
   class Server < SlackRubyBot::Server
-    WELCOME_MESSAGE = <<-EOS.freeze
-Thanks for installing the Missing Kids Bot - you're doing your part in helping out!
-When an Amber Alert is issued, I'll post a notification to this channel. You can also DM me to get the latest alerts.
+    WELCOME_MESSAGE = <<~EOS.freeze
+      Thanks for installing the Missing Kids Bot - you're doing your part in helping out!
+      When an Amber Alert is issued, I'll post a notification to this channel. You can also DM me to get the latest alerts.
     EOS
 
     on :hello do |client, _data|
