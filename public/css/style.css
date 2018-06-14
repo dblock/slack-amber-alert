@@ -58,7 +58,7 @@ background: rgb(0, 141, 177) none repeat scroll 0% 0%;
 margin-bottom: 30px;
 }
 .slack-button {
-  width: 360px;
+  width: 760px;
   height: 64px;
   border-radius: 4px;
   background-color: #f0544f;
@@ -106,7 +106,7 @@ font-size: 11px !important;
   color: #ffffff;
   font-family: 'Open Sans', sans-serif;
 }
-.slack-chat{
+.slack-chat {
   width: 85%;
   display: block;
   margin-left: auto;
