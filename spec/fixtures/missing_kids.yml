@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://www.missingkids.org/missingkids/servlet/XmlServlet?LanguageCountry=en_US&act=rss&orgPrefix=NCMC
+    uri: http://www.missingkids.com/missingkids/servlet/XmlServlet?LanguageCountry=en_US&act=rss&orgPrefix=NCMC
     body:
       encoding: US-ASCII
       string: ''
@@ -19,83 +19,145 @@ http_interactions:
       message: OK
     headers:
       Content-Type:
-      - text/xml
+      - text/xml; charset=UTF-8
       Content-Length:
-      - '1274'
-      Date:
-      - Sun, 17 Apr 2016 19:07:22 GMT
+      - '2197'
+      Connection:
+      - keep-alive
       Server:
       - Apache
-      Set-Cookie:
-      - asdfjkl1=!Jqo/qqnWEWWLLleboZNuUBTVaO3P26ncIdQanbffVfp47ckHZCkYGh5nghW2HEk19qmkhxCfVh3jfg==;
-        path=/
-      - asdfjkl=998090944.20480.0000; path=/
+      X-Frame-Options:
+      - SAMEORIGIN
+      - SAMEORIGIN
+      X-Content-Type-Options:
+      - nosniff
+      Date:
+      - Tue, 31 Jul 2018 20:21:51 GMT
       Vary:
       - Accept-Encoding
       Age:
-      - '76254'
+      - '59404'
       X-Cache:
       - Hit from cloudfront
-      - MISS from 3
-      X-Amz-Cf-Id:
-      - vsIDeAYKX_qZDOVtDo6QcbtoY6_pkru0roxQPjdBTF0wUO8eB_SFdg==
       Via:
-      - 1.1 c4032d302400e72942a63d2c4ac1acc5.cloudfront.net (CloudFront), 1.1 3 (squid)
-      Connection:
-      - keep-alive
+      - 1.1 738914e1c987985551e83e7e80882749.cloudfront.net (CloudFront)
+      X-Amz-Cf-Id:
+      - ZRek5RkJq69pDDKC8dHfdq0NS2_Q4voRhCeFCr4E9QQYFBcN-hlJYA==
     body:
       encoding: ASCII-8BIT
-      string: |-
-        <?xml version="1.0" encoding="UTF-8"?>
-        <rss version='2.0'><channel><title>Missing Children Alert Cases</title><link>http://www.missingkids.com/</link><description>Missing Children Alert Cases</description><image><url>http://www.missingkids.com/en_US/missingkids_logo/homeHeaderLogo.gif</url><title>Missing Children Alert Cases</title><link>http://www.missingkids.com/</link></image><item><title>Missing: NOEMI WALLACE (TX)</title><pubDate>Fri, 01 Apr 2016 12:00:00 EDT</pubDate><link>http://www.missingkids.com/missingkids/servlet/PubCaseSearchServlet?act=viewChildDetail&amp;LanguageCountry=en_US&amp;searchLang=en_US&amp;caseLang=en_US&amp;orgPrefix=NCMC&amp;caseNum=1264275&amp;seqNum=1</link><description>NOEMI WALLACE, Age Now: 16, Missing: 03/07/2016. Missing From LEANDER, TX. ANYONE HAVING INFORMATION SHOULD CONTACT: Leander Police Department (Texas) 1-512-528-2800.</description><enclosure length="1899" type="image/jpeg" url="http://www.missingkids.com/photographs/NCMC1264275c1t.jpg"/></item><item><title>Missing: NATHANIEL COOPER (TX)</title><pubDate>Tue, 29 Mar 2016 12:00:00 EDT</pubDate><link>http://www.missingkids.com/missingkids/servlet/PubCaseSearchServlet?act=viewChildDetail&amp;LanguageCountry=en_US&amp;searchLang=en_US&amp;caseLang=en_US&amp;orgPrefix=NCMC&amp;caseNum=1264431&amp;seqNum=1</link><description>NATHANIEL COOPER, Age Now: 12, Missing: 03/13/2016. Missing From HOUSTON, TX. ANYONE HAVING INFORMATION SHOULD CONTACT: Houston Police Department (Texas) 1-713-884-3131.</description><enclosure length="1897" type="image/jpeg" url="http://www.missingkids.com/photographs/NCMC1264431c1t.jpg"/></item><item><title>Missing: NOAH COOPER (TX)</title><pubDate>Tue, 29 Mar 2016 12:00:00 EDT</pubDate><link>http://www.missingkids.com/missingkids/servlet/PubCaseSearchServlet?act=viewChildDetail&amp;LanguageCountry=en_US&amp;searchLang=en_US&amp;caseLang=en_US&amp;orgPrefix=NCMC&amp;caseNum=1264431&amp;seqNum=2</link><description>NOAH COOPER, Age Now: 14, Missing: 03/13/2016. Missing From HOUSTON, TX. ANYONE HAVING INFORMATION SHOULD CONTACT: Houston Police Department (Texas) 1-713-884-3131.</description><enclosure length="2024" type="image/jpeg" url="http://www.missingkids.com/photographs/NCMC1264431c2t.jpg"/></item><item><title>Missing: KALEYA ALSTORK (OH)</title><pubDate>Thu, 24 Mar 2016 12:00:00 EDT</pubDate><link>http://www.missingkids.com/missingkids/servlet/PubCaseSearchServlet?act=viewChildDetail&amp;LanguageCountry=en_US&amp;searchLang=en_US&amp;caseLang=en_US&amp;orgPrefix=NCMC&amp;caseNum=1264425&amp;seqNum=1</link><description>KALEYA ALSTORK, Age Now: 15, Missing: 03/14/2016. Missing From DAYTON, OH. ANYONE HAVING INFORMATION SHOULD CONTACT: Montgomery County Sheriff's Office  (Ohio)  1-937-225-4357.</description><enclosure length="1868" type="image/jpeg" url="http://www.missingkids.com/photographs/NCMC1264425c1t.jpg"/></item><item><title>Missing: JOSHUA FRANKLIN (CA)</title><pubDate>Thu, 17 Mar 2016 12:00:00 EDT</pubDate><link>http://www.missingkids.com/missingkids/servlet/PubCaseSearchServlet?act=viewChildDetail&amp;LanguageCountry=en_US&amp;searchLang=en_US&amp;caseLang=en_US&amp;orgPrefix=NCMC&amp;caseNum=1264337&amp;seqNum=1</link><description>JOSHUA FRANKLIN, Age Now: 14, Missing: 03/12/2016. Missing From VISALIA, CA. ANYONE HAVING INFORMATION SHOULD CONTACT: Visalia Police Department  (California)  1-559-734-8116.</description><enclosure length="1693" type="image/jpeg" url="http://www.missingkids.com/photographs/NCMC1264337c1t.jpg"/></item><item><title>Missing: HAILEE WILLIAMS (NV)</title><pubDate>Thu, 03 Mar 2016 12:00:00 EST</pubDate><link>http://www.missingkids.com/missingkids/servlet/PubCaseSearchServlet?act=viewChildDetail&amp;LanguageCountry=en_US&amp;searchLang=en_US&amp;caseLang=en_US&amp;orgPrefix=NCMC&amp;caseNum=1262740&amp;seqNum=1</link><description>HAILEE WILLIAMS, Age Now: 15, Missing: 02/11/2016. Missing From SPARKS, NV. ANYONE HAVING INFORMATION SHOULD CONTACT: Sparks Police Department (Nevada) 1-775-353-2231.</description><enclosure length="1742" type="image/jpeg" url="http://www.missingkids.com/photographs/NCMC1262740c1t.jpg"/></item><item><title>Missing: MABEL LOPEZ (OK)</title><pubDate>Fri, 19 Feb 2016 12:00:00 EST</pubDate><link>http://www.missingkids.com/missingkids/servlet/PubCaseSearchServlet?act=viewChildDetail&amp;LanguageCountry=en_US&amp;searchLang=en_US&amp;caseLang=en_US&amp;orgPrefix=NCMC&amp;caseNum=1262873&amp;seqNum=1</link><description>MABEL LOPEZ, Age Now: 8, Missing: 02/17/2016. Missing From EL RENO, OK. ANYONE HAVING INFORMATION SHOULD CONTACT: El Reno Police Department  (Oklahoma)  1-405-262-6941.</description><enclosure length="1528" type="image/jpeg" url="http://www.missingkids.com/photographs/NCMC1262873c1t.jpg"/></item><item><title>Missing: UNITY FORNEY (DE)</title><pubDate>Tue, 02 Feb 2016 12:00:00 EST</pubDate><link>http://www.missingkids.com/missingkids/servlet/PubCaseSearchServlet?act=viewChildDetail&amp;LanguageCountry=en_US&amp;searchLang=en_US&amp;caseLang=en_US&amp;orgPrefix=NCMC&amp;caseNum=1261605&amp;seqNum=1</link><description>UNITY FORNEY, Age Now: 14, Missing: 01/15/2016. Missing From WILMINGTON, DE. ANYONE HAVING INFORMATION SHOULD CONTACT: New Castle County Police Department  (Delaware)  1-302-573-2800.</description><enclosure length="1784" type="image/jpeg" url="http://www.missingkids.com/photographs/NCMC1261605c1t.jpg"/></item><item><title>Missing: YVETTE HERNANDEZ (IL)</title><pubDate>Tue, 26 Jan 2016 12:00:00 EST</pubDate><link>http://www.missingkids.com/missingkids/servlet/PubCaseSearchServlet?act=viewChildDetail&amp;LanguageCountry=en_US&amp;searchLang=en_US&amp;caseLang=en_US&amp;orgPrefix=NCMC&amp;caseNum=1261092&amp;seqNum=1</link><description>YVETTE HERNANDEZ, Age Now: 15, Missing: 01/16/2016. Missing From CHICAGO, IL. ANYONE HAVING INFORMATION SHOULD CONTACT: Chicago Police Department  (Illinois)  1-312-747-5789.</description><enclosure length="1763" type="image/jpeg" url="http://www.missingkids.com/photographs/NCMC1261092c1t.jpg"/></item></channel></rss>
+      string: '<?xml version="1.0" encoding="UTF-8"?><rss version=''2.0''><channel><title>Missing
+        Children Alert Cases</title><link>/</link><description>Missing Children Alert
+        Cases</description><image><url>/en_US/missingkids_logo/homeHeaderLogo.gif</url><title>Missing
+        Children Alert Cases</title><link>/</link></image><item><title>Missing: DANIEJAH
+        CLOPTON (FL)</title><pubDate>Thu, 26 Jul 2018 12:00:00 EDT</pubDate><link>/poster/NCMC/1334573/1</link><description>DANIEJAH
+        CLOPTON, Age Now: 17, Missing: 07/09/2018. Missing From TAMPA, FL. ANYONE
+        HAVING INFORMATION SHOULD CONTACT: Tampa Police Department  (Florida)  1-813-276-3200.</description><enclosure
+        length="1635" type="image/jpeg" url="/photographs/NCMC1334573c1t.jpg"/></item><item><title>Missing:
+        KAYLA WALTON (NC)</title><pubDate>Thu, 26 Jul 2018 12:00:00 EDT</pubDate><link>/poster/NCMC/1334644/1</link><description>KAYLA
+        WALTON, Age Now: 13, Missing: 07/24/2018. Missing From RALEIGH, NC. ANYONE
+        HAVING INFORMATION SHOULD CONTACT: Wake County Sheriff''s Office (North Carolina)
+        1-919-856-6911.</description><enclosure length="1791" type="image/jpeg" url="/photographs/NCMC1334644c1t.jpg"/></item><item><title>Missing:
+        AMERIE SANTIAGO (MA)</title><pubDate>Thu, 26 Jul 2018 12:00:00 EDT</pubDate><link>/poster/NCMC/1334360/1</link><description>AMERIE
+        SANTIAGO, Age Now: 14, Missing: 07/20/2018. Missing From WILMINGTON, MA. ANYONE
+        HAVING INFORMATION SHOULD CONTACT: Wilmington Police Department (Massachusetts)
+        1-978-658-3331.</description><enclosure length="2021" type="image/jpeg" url="/photographs/NCMC1334360c1t.jpg"/></item><item><title>Missing:
+        ENARIYAH MATHIS (FL)</title><pubDate>Thu, 26 Jul 2018 12:00:00 EDT</pubDate><link>/poster/NCMC/1334573/2</link><description>ENARIYAH
+        MATHIS, Age Now: 1, Missing: 07/09/2018. Missing From TAMPA, FL. ANYONE HAVING
+        INFORMATION SHOULD CONTACT: Tampa Police Department  (Florida)  1-813-276-3200.</description><enclosure
+        length="1692" type="image/jpeg" url="/photographs/NCMC1334573c2t.jpg"/></item><item><title>Missing:
+        CHRISTOPHER ESPARZA (CA)</title><pubDate>Thu, 26 Jul 2018 12:00:00 EDT</pubDate><link>/poster/NCMC/1333407/1</link><description>CHRISTOPHER
+        ESPARZA, Age Now: 16, Missing: 07/04/2018. Missing From COMMERCE, CA. ANYONE
+        HAVING INFORMATION SHOULD CONTACT: Los Angeles County Sheriff''s Office (California)
+        1-323-264-4151.</description><enclosure length="1832" type="image/jpeg" url="/photographs/NCMC1333407c1t.jpg"/></item><item><title>Missing:
+        JASMINE BILLIOT (OH)</title><pubDate>Wed, 25 Jul 2018 12:00:00 EDT</pubDate><link>/poster/NCMC/1334195/1</link><description>JASMINE
+        BILLIOT, Age Now: 14, Missing: 07/19/2018. Missing From CANAL WINCHESTER,
+        OH. ANYONE HAVING INFORMATION SHOULD CONTACT: Columbus Police Department  (Ohio)  1-614-645-4545.</description><enclosure
+        length="1678" type="image/jpeg" url="/photographs/NCMC1334195c1t.jpg"/></item><item><title>Missing:
+        DAVONYE CUMMINGS (CA)</title><pubDate>Wed, 25 Jul 2018 12:00:00 EDT</pubDate><link>/poster/NCMC/1334395/1</link><description>DAVONYE
+        CUMMINGS, Age Now: 12, Missing: 07/15/2018. Missing From OAKLAND, CA. ANYONE
+        HAVING INFORMATION SHOULD CONTACT: Oakland Police Department (California)
+        1-510-777-3333.</description><enclosure length="1903" type="image/jpeg" url="/photographs/NCMC1334395c1t.jpg"/></item><item><title>Missing:
+        ITALY JOHNSON (CA)</title><pubDate>Tue, 24 Jul 2018 12:00:00 EDT</pubDate><link>/poster/NCMC/1334464/1</link><description>ITALY
+        JOHNSON, Age Now: 11, Missing: 07/22/2018. Missing From ROSEMEAD, CA. ANYONE
+        HAVING INFORMATION SHOULD CONTACT: Los Angeles County Sheriff''s Office (California)
+        1-213-229-1700.</description><enclosure length="1610" type="image/jpeg" url="/photographs/NCMC1334464c1t.jpg"/></item><item><title>Missing:
+        ALYSSA RODRIGUEZ (CA)</title><pubDate>Tue, 24 Jul 2018 12:00:00 EDT</pubDate><link>/poster/NCMC/1334133/1</link><description>ALYSSA
+        RODRIGUEZ, Age Now: 15, Missing: 07/18/2018. Missing From SACRAMENTO, CA.
+        ANYONE HAVING INFORMATION SHOULD CONTACT: Sacramento County Sheriff''s Office
+        (California) 1-916-874-5115.</description><enclosure length="1676" type="image/jpeg"
+        url="/photographs/NCMC1334133c1t.jpg"/></item><item><title>Missing: ANGEL
+        ERHARDT (MO)</title><pubDate>Tue, 24 Jul 2018 12:00:00 EDT</pubDate><link>/poster/NCMC/1334356/1</link><description>ANGEL
+        ERHARDT, Age Now: 15, Missing: 07/20/2018. Missing From HILLSBORO, MO. ANYONE
+        HAVING INFORMATION SHOULD CONTACT: Jefferson County Sheriff''s Office (Missouri)
+        1-636-797-9999.</description><enclosure length="2008" type="image/jpeg" url="/photographs/NCMC1334356c1t.jpg"/></item><item><title>Missing:
+        DANIEL ALTAMIRA (TX)</title><pubDate>Mon, 23 Jul 2018 12:00:00 EDT</pubDate><link>/poster/NCMC/1334053/2</link><description>DANIEL
+        ALTAMIRA, Age Now: 14, Missing: 07/17/2018. Missing From SAN ANTONIO, TX.
+        ANYONE HAVING INFORMATION SHOULD CONTACT: San Antonio Police Department  (Texas)  1-210-207-7273.</description><enclosure
+        length="1759" type="image/jpeg" url="/photographs/NCMC1334053c2t.jpg"/></item><item><title>Missing:
+        TYLER WYLIE (WA)</title><pubDate>Mon, 23 Jul 2018 12:00:00 EDT</pubDate><link>/poster/NCMC/1333709/1</link><description>TYLER
+        WYLIE, Age Now: 15, Missing: 07/12/2018. Missing From LAKEWOOD, WA. ANYONE
+        HAVING INFORMATION SHOULD CONTACT: Lakewood Police Department (Washington)
+        1-253-798-4721.</description><enclosure length="1589" type="image/jpeg" url="/photographs/NCMC1333709c1t.jpg"/></item><item><title>Missing:
+        HILBERTA ALTAMIRA (TX)</title><pubDate>Mon, 23 Jul 2018 12:00:00 EDT</pubDate><link>/poster/NCMC/1334053/1</link><description>HILBERTA
+        ALTAMIRA, Age Now: 15, Missing: 07/17/2018. Missing From SAN ANTONIO, TX.
+        ANYONE HAVING INFORMATION SHOULD CONTACT: San Antonio Police Department  (Texas)  1-210-207-7273.</description><enclosure
+        length="1876" type="image/jpeg" url="/photographs/NCMC1334053c1t.jpg"/></item><item><title>Missing:
+        ANA NAVARRO (NV)</title><pubDate>Fri, 20 Jul 2018 12:00:00 EDT</pubDate><link>/poster/NCMC/1333885/1</link><description>ANA
+        NAVARRO, Age Now: 15, Missing: 07/15/2018. Missing From RENO, NV. ANYONE HAVING
+        INFORMATION SHOULD CONTACT: Reno Police Department (Nevada) 1-775-334-2121.</description><enclosure
+        length="1784" type="image/jpeg" url="/photographs/NCMC1333885c1t.jpg"/></item><item><title>Missing:
+        MICHAEL ELLIOT (PA)</title><pubDate>Wed, 18 Jul 2018 12:00:00 EDT</pubDate><link>/poster/NCMC/1333657/1</link><description>MICHAEL
+        ELLIOT, Age Now: 13, Missing: 07/12/2018. Missing From YORK, PA. ANYONE HAVING
+        INFORMATION SHOULD CONTACT: Springettsbury Police Department (Pennsylvania)
+        1-717-757-3525.</description><enclosure length="1648" type="image/jpeg" url="/photographs/NCMC1333657c1t.jpg"/></item><item><title>Missing:
+        KRISTON WHITE (SC)</title><pubDate>Wed, 18 Jul 2018 12:00:00 EDT</pubDate><link>/poster/NCMC/1333696/1</link><description>KRISTON
+        WHITE, Age Now: 15, Missing: 07/12/2018. Missing From SPARTANBURG, SC. ANYONE
+        HAVING INFORMATION SHOULD CONTACT: Spartanburg Police Department (South Carolina)
+        1-864-596-2222.</description><enclosure length="1662" type="image/jpeg" url="/photographs/NCMC1333696c1t.jpg"/></item><item><title>Missing:
+        GABRIELLE COOPER (KS)</title><pubDate>Fri, 13 Jul 2018 12:00:00 EDT</pubDate><link>/poster/NCMC/1333214/1</link><description>GABRIELLE
+        COOPER, Age Now: 17, Missing: 07/08/2018. Missing From HAYS, KS. ANYONE HAVING
+        INFORMATION SHOULD CONTACT: Hays Police Department (Kansas) 1-785-625-1011.</description><enclosure
+        length="1799" type="image/jpeg" url="/photographs/NCMC1333214c1t.jpg"/></item><item><title>Missing:
+        ANTHONY COCO (MA)</title><pubDate>Thu, 12 Jul 2018 12:00:00 EDT</pubDate><link>/poster/NCMC/1332631/1</link><description>ANTHONY
+        COCO, Age Now: 16, Missing: 06/27/2018. Missing From FALL RIVER, MA. ANYONE
+        HAVING INFORMATION SHOULD CONTACT: Fall River Police Department  (Massachusetts)  1-508-676-8511.</description><enclosure
+        length="1860" type="image/jpeg" url="/photographs/NCMC1332631c1t.jpg"/></item><item><title>Missing:
+        CIJARA AUXIER (NM)</title><pubDate>Wed, 11 Jul 2018 12:00:00 EDT</pubDate><link>/poster/NCMC/1332272/1</link><description>CIJARA
+        AUXIER, Age Now: 14, Missing: 06/26/2018. Missing From ALBUQUERQUE, NM. ANYONE
+        HAVING INFORMATION SHOULD CONTACT: Albuquerque Police Department (New Mexico)
+        1-505-242-2677.</description><enclosure length="1631" type="image/jpeg" url="/photographs/NCMC1332272c1t.jpg"/></item><item><title>Missing:
+        SHANE MEINKE (OH)</title><pubDate>Tue, 03 Jul 2018 12:00:00 EDT</pubDate><link>/poster/NCMC/1332285/1</link><description>SHANE
+        MEINKE, Age Now: 14, Missing: 06/25/2018. Missing From CLEVELAND, OH. ANYONE
+        HAVING INFORMATION SHOULD CONTACT: Cleveland Police Department (Ohio) 1-216-623-5300.</description><enclosure
+        length="1688" type="image/jpeg" url="/photographs/NCMC1332285c1t.jpg"/></item><item><title>Missing:
+        NANCY MONTELONGO (NV)</title><pubDate>Mon, 02 Jul 2018 12:00:00 EDT</pubDate><link>/poster/NCMC/1332259/1</link><description>NANCY
+        MONTELONGO, Age Now: 14, Missing: 06/22/2018. Missing From LAS VEGAS, NV.
+        ANYONE HAVING INFORMATION SHOULD CONTACT: Las Vegas Metropolitan Police Department
+        (Nevada) 1-702-828-3111.</description><enclosure length="1806" type="image/jpeg"
+        url="/photographs/NCMC1332259c1t.jpg"/></item><item><title>Missing: JHAIQUAN
+        SALISBURY (NY)</title><pubDate>Tue, 26 Jun 2018 12:00:00 EDT</pubDate><link>/poster/NCMC/1331776/1</link><description>JHAIQUAN
+        SALISBURY, Age Now: 15, Missing: 06/21/2018. Missing From CANAAN, NY. ANYONE
+        HAVING INFORMATION SHOULD CONTACT: New York State Police Department  (New
+        Lebanon)  1-518-794-8445.</description><enclosure length="1797" type="image/jpeg"
+        url="/photographs/NCMC1331776c1t.jpg"/></item><item><title>Missing: OWEN HIDALGO-CALDERON
+        (NY)</title><pubDate>Tue, 05 Jun 2018 12:00:00 EDT</pubDate><link>/poster/NCMC/1329426/1</link><description>OWEN
+        HIDALGO-CALDERON, Age Now: 1, Missing: 05/16/2018. Missing From SODUS, NY.
+        ANYONE HAVING INFORMATION SHOULD CONTACT: Wayne County Sheriff''s Office (New
+        York) 1-315-946-9711.</description><enclosure length="1573" type="image/jpeg"
+        url="/photographs/NCMC1329426c1t.jpg"/></item><item><title>Missing: LUIS RAMIREZ
+        (AZ)</title><pubDate>Thu, 24 May 2018 12:00:00 EDT</pubDate><link>/poster/NCMC/1327551/2</link><description>LUIS
+        RAMIREZ, Age Now: 5, Missing: 05/04/2018. Missing From TUCSON, AZ. ANYONE
+        HAVING INFORMATION SHOULD CONTACT: Tucson Police Department (Arizona) 1-520-791-4444.</description><enclosure
+        length="1924" type="image/jpeg" url="/photographs/NCMC1327551c2t.jpg"/></item><item><title>Missing:
+        KAHMILA RAMIREZ (AZ)</title><pubDate>Thu, 24 May 2018 12:00:00 EDT</pubDate><link>/poster/NCMC/1327551/1</link><description>KAHMILA
+        RAMIREZ, Age Now: 9 Month(s), Missing: 05/04/2018. Missing From TUCSON, AZ.
+        ANYONE HAVING INFORMATION SHOULD CONTACT: Tucson Police Department (Arizona)
+        1-520-791-4444.</description><enclosure length="1815" type="image/jpeg" url="/photographs/NCMC1327551c1t.jpg"/></item></channel></rss>'
     http_version: 
-  recorded_at: Mon, 18 Apr 2016 16:18:35 GMT
+  recorded_at: Wed, 01 Aug 2018 12:51:55 GMT
 - request:
     method: get
-    uri: http://www.missingkids.com/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=1264275&orgPrefix=NCMC&searchLang=en_US&seqNum=1
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 301
-      message: Moved Permanently
-    headers:
-      Cache-Control:
-      - max-age=900
-      Content-Type:
-      - text/html
-      Location:
-      - http://www.missingkids.org/missingkids/servlet/JSONDataServlet?action=childDetail&orgPrefix=NCMC&caseNum=1264275&seqNum=1&caseLang=en_US&searchLang=en_US&LanguageId=en_US
-      Server:
-      - Microsoft-IIS/7.5
-      X-Aspnet-Version:
-      - 4.0.30319
-      X-Powered-By:
-      - ASP.NET
-      Date:
-      - Tue, 19 Apr 2016 19:26:30 GMT
-      Content-Length:
-      - '0'
-      Age:
-      - '0'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: ''
-    http_version: 
-  recorded_at: Tue, 19 Apr 2016 19:26:31 GMT
-- request:
-    method: get
-    uri: http://www.missingkids.org/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=1264275&orgPrefix=NCMC&searchLang=en_US&seqNum=1
+    uri: https://api.missingkids.org/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=NCMC&orgPrefix=NCMC&searchLang=en_US&seqNum=1
     body:
       encoding: US-ASCII
       string: ''
@@ -111,126 +173,8 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Content-Type:
-      - text/html;charset=UTF-8
-      Content-Length:
-      - '1016'
-      Connection:
-      - keep-alive
       Date:
-      - Tue, 19 Apr 2016 19:18:52 GMT
-      Server:
-      - Apache
-      Pragma:
-      - public
-      Cache-Control:
-      - maxage=1800
-      Expires:
-      - Tue, 19 Apr 2016 19:48:52 GMT
-      Set-Cookie:
-      - asdfjkl1=!AX/ig467shhEnkOboZNuUBTVaO3P26n9kwAL5NagK1Wlr8U2Copnluu81b2u0Oqx3Sa8USrQS95ouw==;
-        path=/
-      - asdfjkl=981313728.20480.0000; path=/
-      Vary:
-      - Accept-Encoding
-      Age:
-      - '459'
-      X-Cache:
-      - Hit from cloudfront
-      Via:
-      - 1.1 02dbafde595cb7c71a101711aa83e43b.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - kD3v87uJrjuEsJReY768_1i4ZBGaaovmQGDFibBciW_yYaHo1qj65w==
-    body:
-      encoding: ASCII-8BIT
-      string: '{"status":"success","msg":"","childBean":{"hasAgedPhoto":false,"hasExtraPhoto":true,"possibleLocation":"","caseNumber":"1264275","orgPrefix":"NCMC","seqNumber":1,"langId":"en_US","userLangId":"en_US","firstName":"NOEMI","lastName":"WALLACE","middleName":"","approxAge":"","sex":"female","race":"hispanic","birthDate":"Oct
-        6, 1999 12:00:00 AM","height":62,"heightInInch":true,"weight":210,"weightInPound":true,"eyeColor":"brown","hairColor":"brown","hasPhoto":true,"hasThumbnail":true,"hasPoster":true,"otherChildList":[],"otherCsawList":[{"companionType":"companion","caseNumber":"1264275","orgPrefix":"NCMC","seqNumber":1,"langId":"en_US","userLangId":"en_US","firstName":"FRANCISCO","lastName":"LEMUS-CASTILLO","middleName":"OVIDIO","approxAge":"","sex":"male","race":"hispanic","birthDate":"Jan
-        27, 1992 12:00:00 AM","height":72,"heightInInch":true,"weight":180,"weightInPound":true,"eyeColor":"brown","hairColor":"brown","hasPhoto":true,"hasThumbnail":true,"hasPoster":true,"otherChildList":[],"otherCsawList":[],"caseType":"endangeredRunaway","missingDate":"Mar
-        7, 2016 12:00:00 AM","missingCity":"LEANDER","missingCounty":"Williamson","missingState":"TX","missingProvince":"","missingCountry":"US","circumstance":"The
-        additional photo is also of Noemi. She may be in the company of Francisco
-        Lemus-Castillo. A felony warrant was issued for Francisco on March 28, 2016.
-        They may travel to Richmond, Virginia. Noemi has her ears pierced. She may
-        go by her nickname, Mimi. Francisco may use the alias first name Erick. CAUTION
-        ADVISED","profileNarrative":"","orgName":"","orgContactInfo":"","orgLogo":"","isClearinghouse":false,"isChild":false,"repSightURL":"","inMonth":false,"inDay":false,"age":-1,"altContact":"","photoMap":"c1x1a1","ncic":"","namUs":"","maxHeight":0,"maxWeight":0}],"caseType":"endangeredRunaway","missingDate":"Mar
-        7, 2016 12:00:00 AM","missingCity":"LEANDER","missingCounty":"Williamson","missingState":"TX","missingProvince":"","missingCountry":"US","circumstance":"The
-        additional photo is also of Noemi. She may be in the company of Francisco
-        Lemus-Castillo. A felony warrant was issued for Francisco on March 28, 2016.
-        They may travel to Richmond, Virginia. Noemi has her ears pierced. She may
-        go by her nickname, Mimi. Francisco may use the alias first name Erick. CAUTION
-        ADVISED","profileNarrative":"","orgName":"National Center for Missing \u0026
-        Exploited Children","orgContactInfo":"1-800-843-5678 (1-800-THE-LOST)","orgLogo":"NCMC_en_US.gif","isClearinghouse":false,"isChild":true,"repSightURL":"","inMonth":false,"inDay":false,"age":16,"altContact":"Leander
-        Police Department (Texas) 1-512-528-2800","photoMap":"c1x1a1","ncic":"","namUs":"","maxHeight":0,"maxWeight":0}}'
-    http_version: 
-  recorded_at: Tue, 19 Apr 2016 19:26:31 GMT
-- request:
-    method: get
-    uri: http://www.missingkids.com/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=1264431&orgPrefix=NCMC&searchLang=en_US&seqNum=1
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 301
-      message: Moved Permanently
-    headers:
-      Cache-Control:
-      - max-age=900
-      Content-Type:
-      - text/html
-      Location:
-      - http://www.missingkids.org/missingkids/servlet/JSONDataServlet?action=childDetail&orgPrefix=NCMC&caseNum=1264431&seqNum=1&caseLang=en_US&searchLang=en_US&LanguageId=en_US
-      Server:
-      - Microsoft-IIS/7.5
-      X-Aspnet-Version:
-      - 4.0.30319
-      X-Powered-By:
-      - ASP.NET
-      Date:
-      - Tue, 19 Apr 2016 19:26:31 GMT
-      Content-Length:
-      - '0'
-      Age:
-      - '0'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: ''
-    http_version: 
-  recorded_at: Tue, 19 Apr 2016 19:26:32 GMT
-- request:
-    method: get
-    uri: http://www.missingkids.org/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=1264431&orgPrefix=NCMC&searchLang=en_US&seqNum=1
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 200
-      message: OK
-    headers:
-      Content-Type:
-      - text/html;charset=UTF-8
-      Content-Length:
-      - '824'
-      Connection:
-      - keep-alive
-      Date:
-      - Tue, 19 Apr 2016 19:18:53 GMT
+      - Wed, 01 Aug 2018 13:00:01 GMT
       Server:
       - Apache
       Pragma:
@@ -238,83 +182,30 @@ http_interactions:
       Cache-Control:
       - maxage=1800
       Expires:
-      - Tue, 19 Apr 2016 19:48:53 GMT
-      Set-Cookie:
-      - asdfjkl1=!RACofP2A9BE259yboZNuUBTVaO3P2yzf9WrL8oTrVAlImY8n3Ynas1Wbw8iBnUrL15H7AfseickPJw==;
-        path=/
-      - asdfjkl=981313728.20480.0000; path=/
+      - Wed, 01 Aug 2018 13:30:01 GMT
+      Access-Control-Allow-Origin:
+      - "*"
       Vary:
-      - Accept-Encoding
-      Age:
-      - '458'
-      X-Cache:
-      - Hit from cloudfront
-      Via:
-      - 1.1 0d630c8de7e2fe46848af1c20a39ed06.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - lYGvwPMqcbjzO5Ro_7Hrbz67wh8cgHo6xTF7K_slWqtUpQzwhXQmFg==
-    body:
-      encoding: ASCII-8BIT
-      string: '{"status":"success","msg":"","childBean":{"hasAgedPhoto":false,"hasExtraPhoto":false,"possibleLocation":"","caseNumber":"1264431","orgPrefix":"NCMC","seqNumber":1,"langId":"en_US","userLangId":"en_US","firstName":"NATHANIEL","lastName":"COOPER","middleName":"","approxAge":"","sex":"male","race":"hispanic","birthDate":"Jul
-        24, 2003 12:00:00 AM","height":59,"heightInInch":true,"weight":110,"weightInPound":true,"eyeColor":"brown","hairColor":"brown","hasPhoto":true,"hasThumbnail":true,"hasPoster":true,"otherChildList":[{"hasAgedPhoto":false,"hasExtraPhoto":false,"possibleLocation":"","caseNumber":"1264431","orgPrefix":"NCMC","seqNumber":2,"langId":"en_US","userLangId":"en_US","firstName":"NOAH","lastName":"COOPER","middleName":"","approxAge":"","sex":"male","race":"hispanic","birthDate":"Sep
-        14, 2001 12:00:00 AM","height":57,"heightInInch":true,"weight":130,"weightInPound":true,"eyeColor":"brown","hairColor":"brown","hasPhoto":true,"hasThumbnail":true,"hasPoster":true,"otherChildList":[],"otherCsawList":[],"caseType":"endangeredRunaway","missingDate":"Mar
-        13, 2016 12:00:00 AM","missingCity":"HOUSTON","missingCounty":"Harris","missingState":"TX","missingProvince":"","missingCountry":"US","circumstance":"Nathaniel
-        and Noah may still be in the local area or they may have traveled to Corpus
-        Christi, Texas.","profileNarrative":"","orgName":"","orgContactInfo":"","orgLogo":"","isClearinghouse":false,"isChild":true,"repSightURL":"","inMonth":false,"inDay":false,"age":-1,"altContact":"Houston
-        Police Department (Texas) 1-713-884-3131","photoMap":"c1c2","ncic":"","namUs":"","maxHeight":0,"maxWeight":0}],"otherCsawList":[],"caseType":"endangeredRunaway","missingDate":"Mar
-        13, 2016 12:00:00 AM","missingCity":"HOUSTON","missingCounty":"Harris","missingState":"TX","missingProvince":"","missingCountry":"US","circumstance":"Nathaniel
-        and Noah may still be in the local area or they may have traveled to Corpus
-        Christi, Texas.","profileNarrative":"","orgName":"National Center for Missing
-        \u0026 Exploited Children","orgContactInfo":"1-800-843-5678 (1-800-THE-LOST)","orgLogo":"NCMC_en_US.gif","isClearinghouse":false,"isChild":true,"repSightURL":"","inMonth":false,"inDay":false,"age":12,"altContact":"Houston
-        Police Department (Texas) 1-713-884-3131","photoMap":"c1c2","ncic":"","namUs":"","maxHeight":0,"maxWeight":0}}'
-    http_version: 
-  recorded_at: Tue, 19 Apr 2016 19:26:32 GMT
-- request:
-    method: get
-    uri: http://www.missingkids.com/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=1264425&orgPrefix=NCMC&searchLang=en_US&seqNum=1
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 301
-      message: Moved Permanently
-    headers:
-      Cache-Control:
-      - max-age=900
-      Content-Type:
-      - text/html
-      Location:
-      - http://www.missingkids.org/missingkids/servlet/JSONDataServlet?action=childDetail&orgPrefix=NCMC&caseNum=1264425&seqNum=1&caseLang=en_US&searchLang=en_US&LanguageId=en_US
-      Server:
-      - Microsoft-IIS/7.5
-      X-Aspnet-Version:
-      - 4.0.30319
-      X-Powered-By:
-      - ASP.NET
-      Date:
-      - Tue, 19 Apr 2016 19:26:30 GMT
+      - Origin
+      Access-Control-Allow-Credentials:
+      - 'true'
       Content-Length:
-      - '0'
-      Age:
-      - '1'
-      Connection:
-      - keep-alive
+      - '85'
+      Content-Type:
+      - text/html;charset=UTF-8
+      Set-Cookie:
+      - BIGipServermkapi.ncmecad.net.app~mkapi.ncmecad.net_pool=2919635372.20480.0000;
+        path=/; Httponly
+      - asdfjkl=!Jv9KdrrS6LRj/ca+HfyV8jAwfWejpJHayz/1cm+Zza47oA8Wx35DPILu465BwbRwahj0bn6JjqnSkQ==;
+        path=/; Httponly; Secure
     body:
       encoding: UTF-8
-      string: ''
+      string: '{"status":"error","msg":"Child Detail Information cannot be found.","posterlangs":""}'
     http_version: 
-  recorded_at: Tue, 19 Apr 2016 19:26:32 GMT
+  recorded_at: Wed, 01 Aug 2018 13:00:01 GMT
 - request:
     method: get
-    uri: http://www.missingkids.org/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=1264425&orgPrefix=NCMC&searchLang=en_US&seqNum=1
+    uri: https://api.missingkids.org/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=NCMC&orgPrefix=NCMC&searchLang=en_US&seqNum=1
     body:
       encoding: US-ASCII
       string: ''
@@ -330,14 +221,8 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Content-Type:
-      - text/html;charset=UTF-8
-      Content-Length:
-      - '802'
-      Connection:
-      - keep-alive
       Date:
-      - Tue, 19 Apr 2016 19:17:41 GMT
+      - Wed, 01 Aug 2018 13:00:01 GMT
       Server:
       - Apache
       Pragma:
@@ -345,79 +230,1196 @@ http_interactions:
       Cache-Control:
       - maxage=1800
       Expires:
-      - Tue, 19 Apr 2016 19:47:41 GMT
-      Set-Cookie:
-      - asdfjkl1=!G/vGUGF+0NUnXeeboZNuUBTVaO3P2/bydX+DkXuAJPG9CAnEsXYD1Hq+3fW+vNfU73zlFjeqd6/x5g==;
-        path=/
-      - asdfjkl=981313728.20480.0000; path=/
+      - Wed, 01 Aug 2018 13:30:01 GMT
+      Access-Control-Allow-Origin:
+      - "*"
       Vary:
-      - Accept-Encoding
-      Age:
-      - '531'
-      X-Cache:
-      - Hit from cloudfront
-      Via:
-      - 1.1 28d68c8478e7dc09e98d0fdb3b55e6d5.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - I6ctJw4R_lbJfiQ8GTXACgNyFOElaiWmTpycB-BDUz1NTd47yJv6dQ==
+      - Origin
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Length:
+      - '85'
+      Content-Type:
+      - text/html;charset=UTF-8
+      Set-Cookie:
+      - BIGipServermkapi.ncmecad.net.app~mkapi.ncmecad.net_pool=2902858156.20480.0000;
+        path=/; Httponly
+      - asdfjkl=!B0JVJZEUt2o4/o6+HfyV8jAwfWejpJRjyPcAUbnqwTUpgs/XQZvXikdoIg9FpxTgn0H3HC9WpaErMA==;
+        path=/; Httponly; Secure
+    body:
+      encoding: UTF-8
+      string: '{"status":"error","msg":"Child Detail Information cannot be found.","posterlangs":""}'
+    http_version: 
+  recorded_at: Wed, 01 Aug 2018 13:00:01 GMT
+- request:
+    method: get
+    uri: https://api.missingkids.org/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=NCMC&orgPrefix=NCMC&searchLang=en_US&seqNum=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 01 Aug 2018 13:00:01 GMT
+      Server:
+      - Apache
+      Pragma:
+      - public
+      Cache-Control:
+      - maxage=1800
+      Expires:
+      - Wed, 01 Aug 2018 13:30:01 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Origin
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Length:
+      - '85'
+      Content-Type:
+      - text/html;charset=UTF-8
+      Set-Cookie:
+      - BIGipServermkapi.ncmecad.net.app~mkapi.ncmecad.net_pool=2886080940.20480.0000;
+        path=/; Httponly
+      - asdfjkl=!dRA38tyPvU4j7yi+HfyV8jAwfWejpPzuA0a+hJYSyeXCLbIdG/cCVrY/NUz+56bru5DZLohx8mHTdg==;
+        path=/; Httponly; Secure
+    body:
+      encoding: UTF-8
+      string: '{"status":"error","msg":"Child Detail Information cannot be found.","posterlangs":""}'
+    http_version: 
+  recorded_at: Wed, 01 Aug 2018 13:00:01 GMT
+- request:
+    method: get
+    uri: https://api.missingkids.org/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=NCMC&orgPrefix=NCMC&searchLang=en_US&seqNum=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 01 Aug 2018 13:00:01 GMT
+      Server:
+      - Apache
+      Pragma:
+      - public
+      Cache-Control:
+      - maxage=1800
+      Expires:
+      - Wed, 01 Aug 2018 13:30:01 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Origin
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Length:
+      - '85'
+      Content-Type:
+      - text/html;charset=UTF-8
+      Set-Cookie:
+      - BIGipServermkapi.ncmecad.net.app~mkapi.ncmecad.net_pool=2919635372.20480.0000;
+        path=/; Httponly
+      - asdfjkl=!znhTjugBSlfgAYu+HfyV8jAwfWejpHUnxTGXORoSoDYb0iv9Bp99CiUEB2dP7kXBvyBER/YbCufp0Q==;
+        path=/; Httponly; Secure
+    body:
+      encoding: UTF-8
+      string: '{"status":"error","msg":"Child Detail Information cannot be found.","posterlangs":""}'
+    http_version: 
+  recorded_at: Wed, 01 Aug 2018 13:00:01 GMT
+- request:
+    method: get
+    uri: https://api.missingkids.org/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=NCMC&orgPrefix=NCMC&searchLang=en_US&seqNum=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 01 Aug 2018 13:00:01 GMT
+      Server:
+      - Apache
+      Pragma:
+      - public
+      Cache-Control:
+      - maxage=1800
+      Expires:
+      - Wed, 01 Aug 2018 13:30:01 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Origin
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Length:
+      - '85'
+      Content-Type:
+      - text/html;charset=UTF-8
+      Set-Cookie:
+      - BIGipServermkapi.ncmecad.net.app~mkapi.ncmecad.net_pool=2886080940.20480.0000;
+        path=/; Httponly
+      - asdfjkl=!Qp3q451Bfy2tsxm+HfyV8jAwfWejpAUvAgk+riCIFe07tEYATWqQ2CAqg3HKN6DgWnnJpI1KqnZ30A==;
+        path=/; Httponly; Secure
+    body:
+      encoding: UTF-8
+      string: '{"status":"error","msg":"Child Detail Information cannot be found.","posterlangs":""}'
+    http_version: 
+  recorded_at: Wed, 01 Aug 2018 13:00:01 GMT
+- request:
+    method: get
+    uri: https://api.missingkids.org/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=NCMC&orgPrefix=NCMC&searchLang=en_US&seqNum=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 01 Aug 2018 13:00:01 GMT
+      Server:
+      - Apache
+      Pragma:
+      - public
+      Cache-Control:
+      - maxage=1800
+      Expires:
+      - Wed, 01 Aug 2018 13:30:01 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Origin
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Length:
+      - '85'
+      Content-Type:
+      - text/html;charset=UTF-8
+      Set-Cookie:
+      - BIGipServermkapi.ncmecad.net.app~mkapi.ncmecad.net_pool=2919635372.20480.0000;
+        path=/; Httponly
+      - asdfjkl=!GH6UwAubY1RM2WW+HfyV8jAwfWejpM11Da16nV0SVr5zdpeTMsUmXGykh3AlBNU85DWOpR/41iKkjA==;
+        path=/; Httponly; Secure
+    body:
+      encoding: UTF-8
+      string: '{"status":"error","msg":"Child Detail Information cannot be found.","posterlangs":""}'
+    http_version: 
+  recorded_at: Wed, 01 Aug 2018 13:00:01 GMT
+- request:
+    method: get
+    uri: https://api.missingkids.org/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=NCMC&orgPrefix=NCMC&searchLang=en_US&seqNum=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 01 Aug 2018 13:00:01 GMT
+      Server:
+      - Apache
+      Pragma:
+      - public
+      Cache-Control:
+      - maxage=1800
+      Expires:
+      - Wed, 01 Aug 2018 13:30:01 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Origin
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Length:
+      - '85'
+      Content-Type:
+      - text/html;charset=UTF-8
+      Set-Cookie:
+      - BIGipServermkapi.ncmecad.net.app~mkapi.ncmecad.net_pool=2886080940.20480.0000;
+        path=/; Httponly
+      - asdfjkl=!ihDRrdZ0mDJjBdq+HfyV8jAwfWejpDbmlxjN9Vw6RLlgIyt6T03Zui00Pz8QrtVtBGrkmeUhr2DNsQ==;
+        path=/; Httponly; Secure
+    body:
+      encoding: UTF-8
+      string: '{"status":"error","msg":"Child Detail Information cannot be found.","posterlangs":""}'
+    http_version: 
+  recorded_at: Wed, 01 Aug 2018 13:00:01 GMT
+- request:
+    method: get
+    uri: https://api.missingkids.org/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=NCMC&orgPrefix=NCMC&searchLang=en_US&seqNum=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 01 Aug 2018 13:00:02 GMT
+      Server:
+      - Apache
+      Pragma:
+      - public
+      Cache-Control:
+      - maxage=1800
+      Expires:
+      - Wed, 01 Aug 2018 13:30:02 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Origin
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Length:
+      - '85'
+      Content-Type:
+      - text/html;charset=UTF-8
+      Set-Cookie:
+      - BIGipServermkapi.ncmecad.net.app~mkapi.ncmecad.net_pool=2902858156.20480.0000;
+        path=/; Httponly
+      - asdfjkl=!HEZR1L91M1X2sAW+HfyV8jAwfWejpD9Il6J0L+BIyfaIAhYU8MS6ciKKLDPpDRGRsJj5nLjDtMeUwA==;
+        path=/; Httponly; Secure
+    body:
+      encoding: UTF-8
+      string: '{"status":"error","msg":"Child Detail Information cannot be found.","posterlangs":""}'
+    http_version: 
+  recorded_at: Wed, 01 Aug 2018 13:00:02 GMT
+- request:
+    method: get
+    uri: https://api.missingkids.org/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=NCMC&orgPrefix=NCMC&searchLang=en_US&seqNum=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 01 Aug 2018 13:00:02 GMT
+      Server:
+      - Apache
+      Pragma:
+      - public
+      Cache-Control:
+      - maxage=1800
+      Expires:
+      - Wed, 01 Aug 2018 13:30:02 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Origin
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Length:
+      - '85'
+      Content-Type:
+      - text/html;charset=UTF-8
+      Set-Cookie:
+      - BIGipServermkapi.ncmecad.net.app~mkapi.ncmecad.net_pool=2886080940.20480.0000;
+        path=/; Httponly
+      - asdfjkl=!5eH5+YUilvxYk2W+HfyV8jAwfWejpGKjsYKkOURIh+R2/vRiT1r66KH65y/rclq9JdU/dEoHw+s6CQ==;
+        path=/; Httponly; Secure
+    body:
+      encoding: UTF-8
+      string: '{"status":"error","msg":"Child Detail Information cannot be found.","posterlangs":""}'
+    http_version: 
+  recorded_at: Wed, 01 Aug 2018 13:00:02 GMT
+- request:
+    method: get
+    uri: https://api.missingkids.org/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=NCMC&orgPrefix=NCMC&searchLang=en_US&seqNum=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 01 Aug 2018 13:00:02 GMT
+      Server:
+      - Apache
+      Pragma:
+      - public
+      Cache-Control:
+      - maxage=1800
+      Expires:
+      - Wed, 01 Aug 2018 13:30:02 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Origin
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Length:
+      - '85'
+      Content-Type:
+      - text/html;charset=UTF-8
+      Set-Cookie:
+      - BIGipServermkapi.ncmecad.net.app~mkapi.ncmecad.net_pool=2919635372.20480.0000;
+        path=/; Httponly
+      - asdfjkl=!SqTP/C+7DLD/KZa+HfyV8jAwfWejpDm/WSSgee+lEFTSQEZZu3hd+rMYJXmUQKai/tSsF2ehEeaiUg==;
+        path=/; Httponly; Secure
+    body:
+      encoding: UTF-8
+      string: '{"status":"error","msg":"Child Detail Information cannot be found.","posterlangs":""}'
+    http_version: 
+  recorded_at: Wed, 01 Aug 2018 13:00:02 GMT
+- request:
+    method: get
+    uri: https://api.missingkids.org/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=NCMC&orgPrefix=NCMC&searchLang=en_US&seqNum=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 01 Aug 2018 13:00:02 GMT
+      Server:
+      - Apache
+      Pragma:
+      - public
+      Cache-Control:
+      - maxage=1800
+      Expires:
+      - Wed, 01 Aug 2018 13:30:02 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Origin
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Length:
+      - '85'
+      Content-Type:
+      - text/html;charset=UTF-8
+      Set-Cookie:
+      - BIGipServermkapi.ncmecad.net.app~mkapi.ncmecad.net_pool=2902858156.20480.0000;
+        path=/; Httponly
+      - asdfjkl=!/lfPWCP06uyYpd++HfyV8jAwfWejpD3xoyCdhFVyL11SaDapIXsmpaFKoM3zXTTmNgZQxmA2VtI3DQ==;
+        path=/; Httponly; Secure
+    body:
+      encoding: UTF-8
+      string: '{"status":"error","msg":"Child Detail Information cannot be found.","posterlangs":""}'
+    http_version: 
+  recorded_at: Wed, 01 Aug 2018 13:00:02 GMT
+- request:
+    method: get
+    uri: https://api.missingkids.org/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=NCMC&orgPrefix=NCMC&searchLang=en_US&seqNum=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 01 Aug 2018 13:00:02 GMT
+      Server:
+      - Apache
+      Pragma:
+      - public
+      Cache-Control:
+      - maxage=1800
+      Expires:
+      - Wed, 01 Aug 2018 13:30:02 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Origin
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Length:
+      - '85'
+      Content-Type:
+      - text/html;charset=UTF-8
+      Set-Cookie:
+      - BIGipServermkapi.ncmecad.net.app~mkapi.ncmecad.net_pool=2886080940.20480.0000;
+        path=/; Httponly
+      - asdfjkl=!1ozwVfT8LpekpMW+HfyV8jAwfWejpH2zYRxbLxRU5UdaeBCRofKI8JCjFFRxAZtkYX3dISWb1NbioQ==;
+        path=/; Httponly; Secure
+    body:
+      encoding: UTF-8
+      string: '{"status":"error","msg":"Child Detail Information cannot be found.","posterlangs":""}'
+    http_version: 
+  recorded_at: Wed, 01 Aug 2018 13:00:02 GMT
+- request:
+    method: get
+    uri: https://api.missingkids.org/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=NCMC&orgPrefix=NCMC&searchLang=en_US&seqNum=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 01 Aug 2018 13:00:02 GMT
+      Server:
+      - Apache
+      Pragma:
+      - public
+      Cache-Control:
+      - maxage=1800
+      Expires:
+      - Wed, 01 Aug 2018 13:30:02 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Origin
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Length:
+      - '85'
+      Content-Type:
+      - text/html;charset=UTF-8
+      Set-Cookie:
+      - BIGipServermkapi.ncmecad.net.app~mkapi.ncmecad.net_pool=2919635372.20480.0000;
+        path=/; Httponly
+      - asdfjkl=!XjtuKLVr7/TDR4O+HfyV8jAwfWejpNTXrv0wQoiEzfEO37Ka6xTQFn+VjJb1PGcHComMVJ4M8/nzGw==;
+        path=/; Httponly; Secure
+    body:
+      encoding: UTF-8
+      string: '{"status":"error","msg":"Child Detail Information cannot be found.","posterlangs":""}'
+    http_version: 
+  recorded_at: Wed, 01 Aug 2018 13:00:02 GMT
+- request:
+    method: get
+    uri: https://api.missingkids.org/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=NCMC&orgPrefix=NCMC&searchLang=en_US&seqNum=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 01 Aug 2018 13:00:02 GMT
+      Server:
+      - Apache
+      Pragma:
+      - public
+      Cache-Control:
+      - maxage=1800
+      Expires:
+      - Wed, 01 Aug 2018 13:30:02 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Origin
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Length:
+      - '85'
+      Content-Type:
+      - text/html;charset=UTF-8
+      Set-Cookie:
+      - BIGipServermkapi.ncmecad.net.app~mkapi.ncmecad.net_pool=2902858156.20480.0000;
+        path=/; Httponly
+      - asdfjkl=!qgCwXE3syNHNe3u+HfyV8jAwfWejpHhPe/RZhCXGC2CQ8Qr8T/Pm5YW1Vyl1Iju7ouDF/B3aaZUXNA==;
+        path=/; Httponly; Secure
+    body:
+      encoding: UTF-8
+      string: '{"status":"error","msg":"Child Detail Information cannot be found.","posterlangs":""}'
+    http_version: 
+  recorded_at: Wed, 01 Aug 2018 13:00:02 GMT
+- request:
+    method: get
+    uri: https://api.missingkids.org/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=NCMC&orgPrefix=NCMC&searchLang=en_US&seqNum=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 01 Aug 2018 13:00:02 GMT
+      Server:
+      - Apache
+      Pragma:
+      - public
+      Cache-Control:
+      - maxage=1800
+      Expires:
+      - Wed, 01 Aug 2018 13:30:02 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Origin
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Length:
+      - '85'
+      Content-Type:
+      - text/html;charset=UTF-8
+      Set-Cookie:
+      - BIGipServermkapi.ncmecad.net.app~mkapi.ncmecad.net_pool=2886080940.20480.0000;
+        path=/; Httponly
+      - asdfjkl=!zCIVlO9T88nTyVq+HfyV8jAwfWejpNMW1xU/OH+Lq5GTFqu3Sp71lQf30YRrzdbyZc2YdT85N1h3eg==;
+        path=/; Httponly; Secure
+    body:
+      encoding: UTF-8
+      string: '{"status":"error","msg":"Child Detail Information cannot be found.","posterlangs":""}'
+    http_version: 
+  recorded_at: Wed, 01 Aug 2018 13:00:02 GMT
+- request:
+    method: get
+    uri: https://api.missingkids.org/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=NCMC&orgPrefix=NCMC&searchLang=en_US&seqNum=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 01 Aug 2018 13:00:02 GMT
+      Server:
+      - Apache
+      Pragma:
+      - public
+      Cache-Control:
+      - maxage=1800
+      Expires:
+      - Wed, 01 Aug 2018 13:30:02 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Origin
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Length:
+      - '85'
+      Content-Type:
+      - text/html;charset=UTF-8
+      Set-Cookie:
+      - BIGipServermkapi.ncmecad.net.app~mkapi.ncmecad.net_pool=2919635372.20480.0000;
+        path=/; Httponly
+      - asdfjkl=!6HlsLTJhqXuO22C+HfyV8jAwfWejpDKZvFora64uJDi1g6/dXZY0zDgmY+Tj9TRooACSAGFES1O9kw==;
+        path=/; Httponly; Secure
+    body:
+      encoding: UTF-8
+      string: '{"status":"error","msg":"Child Detail Information cannot be found.","posterlangs":""}'
+    http_version: 
+  recorded_at: Wed, 01 Aug 2018 13:00:03 GMT
+- request:
+    method: get
+    uri: https://api.missingkids.org/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=NCMC&orgPrefix=NCMC&searchLang=en_US&seqNum=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 01 Aug 2018 13:00:03 GMT
+      Server:
+      - Apache
+      Pragma:
+      - public
+      Cache-Control:
+      - maxage=1800
+      Expires:
+      - Wed, 01 Aug 2018 13:30:03 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Origin
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Length:
+      - '85'
+      Content-Type:
+      - text/html;charset=UTF-8
+      Set-Cookie:
+      - BIGipServermkapi.ncmecad.net.app~mkapi.ncmecad.net_pool=2902858156.20480.0000;
+        path=/; Httponly
+      - asdfjkl=!1SKWIR/F6txJADW+HfyV8jAwfWejpP91m4v9dpBIB9dqZNL1H3jw+jG/ZFBfbOS/ubIVW4Ncku395w==;
+        path=/; Httponly; Secure
+    body:
+      encoding: UTF-8
+      string: '{"status":"error","msg":"Child Detail Information cannot be found.","posterlangs":""}'
+    http_version: 
+  recorded_at: Wed, 01 Aug 2018 13:00:03 GMT
+- request:
+    method: get
+    uri: https://api.missingkids.org/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=NCMC&orgPrefix=NCMC&searchLang=en_US&seqNum=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 01 Aug 2018 13:00:03 GMT
+      Server:
+      - Apache
+      Pragma:
+      - public
+      Cache-Control:
+      - maxage=1800
+      Expires:
+      - Wed, 01 Aug 2018 13:30:03 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Origin
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Length:
+      - '85'
+      Content-Type:
+      - text/html;charset=UTF-8
+      Set-Cookie:
+      - BIGipServermkapi.ncmecad.net.app~mkapi.ncmecad.net_pool=2886080940.20480.0000;
+        path=/; Httponly
+      - asdfjkl=!4Hbuk4X7204+Umi+HfyV8jAwfWejpKn4Gkya8pPGFEzgp5ZijGf+bfC+jAUvyj3xvGL3ZKMTSx1mPA==;
+        path=/; Httponly; Secure
+    body:
+      encoding: UTF-8
+      string: '{"status":"error","msg":"Child Detail Information cannot be found.","posterlangs":""}'
+    http_version: 
+  recorded_at: Wed, 01 Aug 2018 13:00:03 GMT
+- request:
+    method: get
+    uri: https://api.missingkids.org/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=NCMC&orgPrefix=NCMC&searchLang=en_US&seqNum=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 01 Aug 2018 13:00:03 GMT
+      Server:
+      - Apache
+      Pragma:
+      - public
+      Cache-Control:
+      - maxage=1800
+      Expires:
+      - Wed, 01 Aug 2018 13:30:03 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Origin
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Length:
+      - '85'
+      Content-Type:
+      - text/html;charset=UTF-8
+      Set-Cookie:
+      - BIGipServermkapi.ncmecad.net.app~mkapi.ncmecad.net_pool=2919635372.20480.0000;
+        path=/; Httponly
+      - asdfjkl=!2go2lfvJjF2Py1a+HfyV8jAwfWejpMEwLe2PqXpN2FRwGFYSCp7CWKz+Z0aw/vVcrbnMCgloneLDYg==;
+        path=/; Httponly; Secure
+    body:
+      encoding: UTF-8
+      string: '{"status":"error","msg":"Child Detail Information cannot be found.","posterlangs":""}'
+    http_version: 
+  recorded_at: Wed, 01 Aug 2018 13:00:03 GMT
+- request:
+    method: get
+    uri: https://api.missingkids.org/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=NCMC&orgPrefix=NCMC&searchLang=en_US&seqNum=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 01 Aug 2018 13:00:03 GMT
+      Server:
+      - Apache
+      Pragma:
+      - public
+      Cache-Control:
+      - maxage=1800
+      Expires:
+      - Wed, 01 Aug 2018 13:30:03 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Origin
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Length:
+      - '85'
+      Content-Type:
+      - text/html;charset=UTF-8
+      Set-Cookie:
+      - BIGipServermkapi.ncmecad.net.app~mkapi.ncmecad.net_pool=2902858156.20480.0000;
+        path=/; Httponly
+      - asdfjkl=!UxLsQvBLBCndHd2+HfyV8jAwfWejpMciHd/jdNaH3Us/NBOBZ2xIju3l7tyysSQC95h7rCwWcDAmYg==;
+        path=/; Httponly; Secure
+    body:
+      encoding: UTF-8
+      string: '{"status":"error","msg":"Child Detail Information cannot be found.","posterlangs":""}'
+    http_version: 
+  recorded_at: Wed, 01 Aug 2018 13:00:03 GMT
+- request:
+    method: get
+    uri: https://api.missingkids.org/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=NCMC&orgPrefix=NCMC&searchLang=en_US&seqNum=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 01 Aug 2018 13:00:03 GMT
+      Server:
+      - Apache
+      Pragma:
+      - public
+      Cache-Control:
+      - maxage=1800
+      Expires:
+      - Wed, 01 Aug 2018 13:30:03 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Origin
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Length:
+      - '85'
+      Content-Type:
+      - text/html;charset=UTF-8
+      Set-Cookie:
+      - BIGipServermkapi.ncmecad.net.app~mkapi.ncmecad.net_pool=2886080940.20480.0000;
+        path=/; Httponly
+      - asdfjkl=!SHuuVsJB/mFn/oa+HfyV8jAwfWejpG9uHHojOVzlEcZTn2TR/jpNufvpmRN050AaBXCa9zZ/jJb2HQ==;
+        path=/; Httponly; Secure
+    body:
+      encoding: UTF-8
+      string: '{"status":"error","msg":"Child Detail Information cannot be found.","posterlangs":""}'
+    http_version: 
+  recorded_at: Wed, 01 Aug 2018 13:00:03 GMT
+- request:
+    method: get
+    uri: https://api.missingkids.org/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=NCMC&orgPrefix=NCMC&searchLang=en_US&seqNum=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 01 Aug 2018 13:00:03 GMT
+      Server:
+      - Apache
+      Pragma:
+      - public
+      Cache-Control:
+      - maxage=1800
+      Expires:
+      - Wed, 01 Aug 2018 13:30:03 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Origin
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Length:
+      - '85'
+      Content-Type:
+      - text/html;charset=UTF-8
+      Set-Cookie:
+      - BIGipServermkapi.ncmecad.net.app~mkapi.ncmecad.net_pool=2919635372.20480.0000;
+        path=/; Httponly
+      - asdfjkl=!k6FaHVA2zhOR+CW+HfyV8jAwfWejpA3ezcS0aCQboNWHjUUY69b2NMIDsJq0ivp6K6+cjRFdMkVZYg==;
+        path=/; Httponly; Secure
+    body:
+      encoding: UTF-8
+      string: '{"status":"error","msg":"Child Detail Information cannot be found.","posterlangs":""}'
+    http_version: 
+  recorded_at: Wed, 01 Aug 2018 13:00:03 GMT
+- request:
+    method: get
+    uri: https://api.missingkids.org/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=NCMC&orgPrefix=NCMC&searchLang=en_US&seqNum=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 01 Aug 2018 13:00:03 GMT
+      Server:
+      - Apache
+      Pragma:
+      - public
+      Cache-Control:
+      - maxage=1800
+      Expires:
+      - Wed, 01 Aug 2018 13:30:03 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Origin
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Length:
+      - '85'
+      Content-Type:
+      - text/html;charset=UTF-8
+      Set-Cookie:
+      - BIGipServermkapi.ncmecad.net.app~mkapi.ncmecad.net_pool=2902858156.20480.0000;
+        path=/; Httponly
+      - asdfjkl=!PYWqkt85zQek8dm+HfyV8jAwfWejpFUznVD/L7Wnn8TdzKiP9Qi/oxpJTA8eotns0CbYG5M33WK6aQ==;
+        path=/; Httponly; Secure
+    body:
+      encoding: UTF-8
+      string: '{"status":"error","msg":"Child Detail Information cannot be found.","posterlangs":""}'
+    http_version: 
+  recorded_at: Wed, 01 Aug 2018 13:00:03 GMT
+- request:
+    method: get
+    uri: https://api.missingkids.org/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=NCMC&orgPrefix=NCMC&searchLang=en_US&seqNum=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 01 Aug 2018 13:00:03 GMT
+      Server:
+      - Apache
+      Pragma:
+      - public
+      Cache-Control:
+      - maxage=1800
+      Expires:
+      - Wed, 01 Aug 2018 13:30:03 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Origin
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Length:
+      - '85'
+      Content-Type:
+      - text/html;charset=UTF-8
+      Set-Cookie:
+      - BIGipServermkapi.ncmecad.net.app~mkapi.ncmecad.net_pool=2919635372.20480.0000;
+        path=/; Httponly
+      - asdfjkl=!fdjDNgfoMD94O7e+HfyV8jAwfWejpF6LjVL9MBv1XOPI/DaTeYFI8DkPOPLuQ8tQpLAwKTRBJOhAbw==;
+        path=/; Httponly; Secure
+    body:
+      encoding: UTF-8
+      string: '{"status":"error","msg":"Child Detail Information cannot be found.","posterlangs":""}'
+    http_version: 
+  recorded_at: Wed, 01 Aug 2018 13:00:03 GMT
+- request:
+    method: get
+    uri: https://api.missingkids.org/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=NCMC&orgPrefix=NCMC&searchLang=en_US&seqNum=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 01 Aug 2018 13:00:04 GMT
+      Server:
+      - Apache
+      Pragma:
+      - public
+      Cache-Control:
+      - maxage=1800
+      Expires:
+      - Wed, 01 Aug 2018 13:30:04 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Origin
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Length:
+      - '85'
+      Content-Type:
+      - text/html;charset=UTF-8
+      Set-Cookie:
+      - BIGipServermkapi.ncmecad.net.app~mkapi.ncmecad.net_pool=2886080940.20480.0000;
+        path=/; Httponly
+      - asdfjkl=!Vc9eQ9csln6RB2i+HfyV8jAwfWejpMvS4ZG801PbI2YkDwyNMnxiIRZfgg8pMGfiOOalsYmV0kDy8A==;
+        path=/; Httponly; Secure
+    body:
+      encoding: UTF-8
+      string: '{"status":"error","msg":"Child Detail Information cannot be found.","posterlangs":""}'
+    http_version: 
+  recorded_at: Wed, 01 Aug 2018 13:00:04 GMT
+- request:
+    method: get
+    uri: https://api.missingkids.org/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=1334573&orgPrefix=NCMC&searchLang=en_US&seqNum=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 01 Aug 2018 13:01:02 GMT
+      Server:
+      - Apache
+      Pragma:
+      - public
+      Cache-Control:
+      - maxage=1800
+      Expires:
+      - Wed, 01 Aug 2018 13:31:02 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Origin, Accept-Encoding
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Length:
+      - '896'
+      Content-Type:
+      - text/html;charset=UTF-8
+      Set-Cookie:
+      - BIGipServermkapi.ncmecad.net.app~mkapi.ncmecad.net_pool=2902858156.20480.0000;
+        path=/; Httponly
+      - asdfjkl=!XFlB2JJncjbo04m+HfyV8jAwfWejpJ91LDludF5LJEfVLam7Y+exBGjP3Q5lz/zGNGNdoPyL7MWegg==;
+        path=/; Httponly; Secure
+      Connection:
+      - Keep-Alive
     body:
       encoding: ASCII-8BIT
-      string: '{"status":"success","msg":"","childBean":{"hasAgedPhoto":false,"hasExtraPhoto":false,"possibleLocation":"","caseNumber":"1264425","orgPrefix":"NCMC","seqNumber":1,"langId":"en_US","userLangId":"en_US","firstName":"KALEYA","lastName":"ALSTORK","middleName":"MONAE","approxAge":"","sex":"female","race":"black","birthDate":"Dec
-        24, 2000 12:00:00 AM","height":63,"heightInInch":true,"weight":110,"weightInPound":true,"eyeColor":"brown","hairColor":"black","hasPhoto":true,"hasThumbnail":true,"hasPoster":true,"otherChildList":[],"otherCsawList":[],"caseType":"endangeredRunaway","missingDate":"Mar
-        14, 2016 12:00:00 AM","missingCity":"DAYTON","missingCounty":"Montgomery","missingState":"OH","missingProvince":"","missingCountry":"US","circumstance":"Kaleya
-        was last seen on March 14, 2016.  She may be in the company of other juvenile
-        females.  They may still be in the local area.","profileNarrative":"","orgName":"National
+      string: '{"status":"success","msg":"","childBean":{"hasAgedPhoto":false,"hasExtraPhoto":false,"possibleLocation":"","caseNumber":"1334573","orgPrefix":"NCMC","seqNumber":1,"langId":"en_US","userLangId":"en_US","firstName":"DANIEJAH","lastName":"CLOPTON","middleName":"RANAE","approxAge":"","sex":"female","race":"black","birthDate":"May
+        10, 2001 12:00:00 AM","height":64,"heightInInch":true,"weight":128,"weightInPound":true,"eyeColor":"brown","hairColor":"black","hasPhoto":true,"hasThumbnail":true,"hasPoster":true,"otherChildList":[{"hasAgedPhoto":false,"hasExtraPhoto":false,"possibleLocation":"","caseNumber":"1334573","orgPrefix":"NCMC","seqNumber":2,"langId":"en_US","userLangId":"en_US","firstName":"ENARIYAH","lastName":"MATHIS","middleName":"SERENITY","approxAge":"","sex":"female","race":"black","birthDate":"Mar
+        12, 2017 12:00:00 AM","height":24,"heightInInch":true,"weight":25,"weightInPound":true,"eyeColor":"brown","hairColor":"black","hasPhoto":true,"hasThumbnail":true,"hasPoster":true,"otherChildList":[],"otherCsawList":[],"caseType":"endangeredRunaway","missingDate":"Jul
+        9, 2018 12:00:00 AM","missingCity":"TAMPA","missingCounty":"","missingState":"FL","missingProvince":"","missingCountry":"US","circumstance":"Daniejah
+        and her infant daughter, EnaRiyah, were last seen on July 9, 2018.  They may
+        still be in the local area or they may travel to Orlando, Florida.","profileNarrative":"","orgName":"","orgContactInfo":"","orgLogo":"","isClearinghouse":false,"isChild":true,"repSightURL":"","inMonth":false,"inDay":false,"age":-1,"altContact":"Tampa
+        Police Department  (Florida)  1-813-276-3200","photoMap":"c1c2","ncic":"","namUs":"","maxHeight":0,"maxWeight":0}],"otherCsawList":[],"caseType":"endangeredRunaway","missingDate":"Jul
+        9, 2018 12:00:00 AM","missingCity":"TAMPA","missingCounty":"","missingState":"FL","missingProvince":"","missingCountry":"US","circumstance":"Daniejah
+        and her infant daughter, EnaRiyah, were last seen on July 9, 2018.  They may
+        still be in the local area or they may travel to Orlando, Florida.","profileNarrative":"","orgName":"National
         Center for Missing \u0026 Exploited Children","orgContactInfo":"1-800-843-5678
-        (1-800-THE-LOST)","orgLogo":"NCMC_en_US.gif","isClearinghouse":false,"isChild":true,"repSightURL":"","inMonth":false,"inDay":false,"age":15,"altContact":"Montgomery
-        County Sheriff\u0027s Office  (Ohio)  1-937-225-4357","photoMap":"c1","ncic":"","namUs":"","maxHeight":0,"maxWeight":0}}'
+        (1-800-THE-LOST)","orgLogo":"NCMC_en_US.jpg","isClearinghouse":false,"isChild":true,"repSightURL":"","inMonth":false,"inDay":false,"age":17,"altContact":"Tampa
+        Police Department  (Florida)  1-813-276-3200","photoMap":"c1c2","ncic":"","namUs":"","maxHeight":0,"maxWeight":0},"posterlangs":"en_US"}'
     http_version: 
-  recorded_at: Tue, 19 Apr 2016 19:26:32 GMT
+  recorded_at: Wed, 01 Aug 2018 13:01:02 GMT
 - request:
     method: get
-    uri: http://www.missingkids.com/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=1264337&orgPrefix=NCMC&searchLang=en_US&seqNum=1
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 301
-      message: Moved Permanently
-    headers:
-      Cache-Control:
-      - max-age=900
-      Content-Type:
-      - text/html
-      Location:
-      - http://www.missingkids.org/missingkids/servlet/JSONDataServlet?action=childDetail&orgPrefix=NCMC&caseNum=1264337&seqNum=1&caseLang=en_US&searchLang=en_US&LanguageId=en_US
-      Server:
-      - Microsoft-IIS/7.5
-      X-Aspnet-Version:
-      - 4.0.30319
-      X-Powered-By:
-      - ASP.NET
-      Date:
-      - Tue, 19 Apr 2016 19:26:31 GMT
-      Content-Length:
-      - '0'
-      Age:
-      - '1'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: ''
-    http_version: 
-  recorded_at: Tue, 19 Apr 2016 19:26:33 GMT
-- request:
-    method: get
-    uri: http://www.missingkids.org/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=1264337&orgPrefix=NCMC&searchLang=en_US&seqNum=1
+    uri: https://api.missingkids.org/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=1334644&orgPrefix=NCMC&searchLang=en_US&seqNum=1
     body:
       encoding: US-ASCII
       string: ''
@@ -433,14 +1435,8 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Content-Type:
-      - text/html;charset=UTF-8
-      Content-Length:
-      - '768'
-      Connection:
-      - keep-alive
       Date:
-      - Tue, 19 Apr 2016 19:17:41 GMT
+      - Wed, 01 Aug 2018 13:01:02 GMT
       Server:
       - Apache
       Pragma:
@@ -448,78 +1444,39 @@ http_interactions:
       Cache-Control:
       - maxage=1800
       Expires:
-      - Tue, 19 Apr 2016 19:47:41 GMT
-      Set-Cookie:
-      - asdfjkl1=!vitT4nGWcgj7nneboZNuUBTVaO3P29AF62Uli5rBTAd9ogCNWxoBkZJJslr70Oz3FCzMvWZrJeDN1A==;
-        path=/
-      - asdfjkl=981313728.20480.0000; path=/
+      - Wed, 01 Aug 2018 13:31:02 GMT
+      Access-Control-Allow-Origin:
+      - "*"
       Vary:
-      - Accept-Encoding
-      Age:
-      - '531'
-      X-Cache:
-      - Hit from cloudfront
-      Via:
-      - 1.1 1dfd825f34d4740660624dcdc050b92b.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - "-ZuagH857yw8Kp0_OvjJwQDWBtIVWd3ngibSczxQRmA9XcAX1DSFZw=="
+      - Origin, Accept-Encoding
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Length:
+      - '813'
+      Content-Type:
+      - text/html;charset=UTF-8
+      Set-Cookie:
+      - BIGipServermkapi.ncmecad.net.app~mkapi.ncmecad.net_pool=2886080940.20480.0000;
+        path=/; Httponly
+      - asdfjkl=!D3JUtiZalvfFxnm+HfyV8jAwfWejpAspLGeqqYkzduIUtqMZg5w8snofwe0QsKpkxj8t2AYh8WGSQw==;
+        path=/; Httponly; Secure
+      Connection:
+      - Keep-Alive
     body:
       encoding: ASCII-8BIT
-      string: '{"status":"success","msg":"","childBean":{"hasAgedPhoto":false,"hasExtraPhoto":false,"possibleLocation":"","caseNumber":"1264337","orgPrefix":"NCMC","seqNumber":1,"langId":"en_US","userLangId":"en_US","firstName":"JOSHUA","lastName":"FRANKLIN","middleName":"","approxAge":"","sex":"male","race":"white","birthDate":"Apr
-        29, 2001 12:00:00 AM","height":58,"heightInInch":true,"weight":95,"weightInPound":true,"eyeColor":"blue","hairColor":"blonde","hasPhoto":true,"hasThumbnail":true,"hasPoster":true,"otherChildList":[],"otherCsawList":[],"caseType":"endangeredRunaway","missingDate":"Mar
-        12, 2016 12:00:00 AM","missingCity":"VISALIA","missingCounty":"Tulare","missingState":"CA","missingProvince":"","missingCountry":"US","circumstance":"Joshua
-        may still be in the local area.  He may go by the nickname Josh.","profileNarrative":"","orgName":"National
+      string: '{"status":"success","msg":"","childBean":{"hasAgedPhoto":false,"hasExtraPhoto":true,"possibleLocation":"","caseNumber":"1334644","orgPrefix":"NCMC","seqNumber":1,"langId":"en_US","userLangId":"en_US","firstName":"KAYLA","lastName":"WALTON","middleName":"MARIE","approxAge":"","sex":"female","race":"biracial","birthDate":"Dec
+        13, 2004 12:00:00 AM","height":64,"heightInInch":true,"weight":140,"weightInPound":true,"eyeColor":"brown","hairColor":"brown","hasPhoto":true,"hasThumbnail":true,"hasPoster":true,"otherChildList":[],"otherCsawList":[],"caseType":"endangeredRunaway","missingDate":"Jul
+        24, 2018 12:00:00 AM","missingCity":"RALEIGH","missingCounty":"","missingState":"NC","missingProvince":"","missingCountry":"US","circumstance":"Both
+        photos shown are of Kayla. She is biracial. Kayla is Black and White. She
+        may use the alias date of birth December 12, 2004.","profileNarrative":"","orgName":"National
         Center for Missing \u0026 Exploited Children","orgContactInfo":"1-800-843-5678
-        (1-800-THE-LOST)","orgLogo":"NCMC_en_US.gif","isClearinghouse":false,"isChild":true,"repSightURL":"","inMonth":false,"inDay":false,"age":14,"altContact":"Visalia
-        Police Department  (California)  1-559-734-8116","photoMap":"c1","ncic":"","namUs":"","maxHeight":0,"maxWeight":0}}'
+        (1-800-THE-LOST)","orgLogo":"NCMC_en_US.jpg","isClearinghouse":false,"isChild":true,"repSightURL":"","inMonth":false,"inDay":false,"age":13,"altContact":"Wake
+        County Sheriff\u0027s Office (North Carolina) 1-919-856-6911","photoMap":"c1x1","ncic":"","namUs":"","maxHeight":0,"maxWeight":0},"posterlangs":"en_US"}'
     http_version: 
-  recorded_at: Tue, 19 Apr 2016 19:26:33 GMT
+  recorded_at: Wed, 01 Aug 2018 13:01:02 GMT
 - request:
     method: get
-    uri: http://www.missingkids.com/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=1262740&orgPrefix=NCMC&searchLang=en_US&seqNum=1
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 301
-      message: Moved Permanently
-    headers:
-      Cache-Control:
-      - max-age=900
-      Content-Type:
-      - text/html
-      Location:
-      - http://www.missingkids.org/missingkids/servlet/JSONDataServlet?action=childDetail&orgPrefix=NCMC&caseNum=1262740&seqNum=1&caseLang=en_US&searchLang=en_US&LanguageId=en_US
-      Server:
-      - Microsoft-IIS/7.5
-      X-Aspnet-Version:
-      - 4.0.30319
-      X-Powered-By:
-      - ASP.NET
-      Date:
-      - Tue, 19 Apr 2016 19:26:31 GMT
-      Content-Length:
-      - '0'
-      Age:
-      - '1'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: ''
-    http_version: 
-  recorded_at: Tue, 19 Apr 2016 19:26:33 GMT
-- request:
-    method: get
-    uri: http://www.missingkids.org/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=1262740&orgPrefix=NCMC&searchLang=en_US&seqNum=1
+    uri: https://api.missingkids.org/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=1334360&orgPrefix=NCMC&searchLang=en_US&seqNum=1
     body:
       encoding: US-ASCII
       string: ''
@@ -535,14 +1492,8 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Content-Type:
-      - text/html;charset=UTF-8
-      Content-Length:
-      - '782'
-      Connection:
-      - keep-alive
       Date:
-      - Tue, 19 Apr 2016 19:17:42 GMT
+      - Wed, 01 Aug 2018 13:01:03 GMT
       Server:
       - Apache
       Pragma:
@@ -550,78 +1501,37 @@ http_interactions:
       Cache-Control:
       - maxage=1800
       Expires:
-      - Tue, 19 Apr 2016 19:47:42 GMT
-      Set-Cookie:
-      - asdfjkl1=!4NnCpwtNW3v6enaboZNuUBTVaO3P23LAeFuyt51trskbwZZzVSDB/0xYX27Nlp4CN4MoKYAdatioig==;
-        path=/
-      - asdfjkl=981313728.20480.0000; path=/
+      - Wed, 01 Aug 2018 13:31:03 GMT
+      Access-Control-Allow-Origin:
+      - "*"
       Vary:
-      - Accept-Encoding
-      Age:
-      - '530'
-      X-Cache:
-      - Hit from cloudfront
-      Via:
-      - 1.1 8b450c5ceb9da5ba4adb11dbef98562c.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - 47FKlW5kCVwAnJ_xhV_NE9fZ8eg5ETMKklPIpoUVGF8TJS4zLal1nA==
+      - Origin, Accept-Encoding
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Length:
+      - '762'
+      Content-Type:
+      - text/html;charset=UTF-8
+      Set-Cookie:
+      - BIGipServermkapi.ncmecad.net.app~mkapi.ncmecad.net_pool=2886080940.20480.0000;
+        path=/; Httponly
+      - asdfjkl=!S4DVV6H0VfZogm2+HfyV8jAwfWejpPKfUHwXcCccaP/fL/2DnUZd2m4VydxKm67cYWa2Gb3hswojuQ==;
+        path=/; Httponly; Secure
+      Connection:
+      - Keep-Alive
     body:
       encoding: ASCII-8BIT
-      string: '{"status":"success","msg":"","childBean":{"hasAgedPhoto":false,"hasExtraPhoto":false,"possibleLocation":"","caseNumber":"1262740","orgPrefix":"NCMC","seqNumber":1,"langId":"en_US","userLangId":"en_US","firstName":"HAILEE","lastName":"WILLIAMS","middleName":"","approxAge":"","sex":"female","race":"white","birthDate":"Aug
-        28, 2000 12:00:00 AM","height":61,"heightInInch":true,"weight":98,"weightInPound":true,"eyeColor":"blue","hairColor":"ltBrown","hasPhoto":true,"hasThumbnail":true,"hasPoster":true,"otherChildList":[],"otherCsawList":[],"caseType":"endangeredRunaway","missingDate":"Feb
-        11, 2016 12:00:00 AM","missingCity":"SPARKS","missingCounty":"Washoe","missingState":"NV","missingProvince":"","missingCountry":"US","circumstance":"Hailee
-        was last seen on February 11, 2016.  She has gauges in her ears and her hair
-        may be dyed blonde.","profileNarrative":"","orgName":"National Center for
-        Missing \u0026 Exploited Children","orgContactInfo":"1-800-843-5678 (1-800-THE-LOST)","orgLogo":"NCMC_en_US.gif","isClearinghouse":false,"isChild":true,"repSightURL":"","inMonth":false,"inDay":false,"age":15,"altContact":"Sparks
-        Police Department (Nevada) 1-775-353-2231","photoMap":"c1","ncic":"","namUs":"","maxHeight":0,"maxWeight":0}}'
+      string: '{"status":"success","msg":"","childBean":{"hasAgedPhoto":false,"hasExtraPhoto":true,"possibleLocation":"","caseNumber":"1334360","orgPrefix":"NCMC","seqNumber":1,"langId":"en_US","userLangId":"en_US","firstName":"AMERIE","lastName":"SANTIAGO","middleName":"","approxAge":"","sex":"female","race":"hispanic","birthDate":"Sep
+        3, 2003 12:00:00 AM","height":63,"heightInInch":true,"weight":120,"weightInPound":true,"eyeColor":"brown","hairColor":"brown","hasPhoto":true,"hasThumbnail":true,"hasPoster":true,"otherChildList":[],"otherCsawList":[],"caseType":"endangeredRunaway","missingDate":"Jul
+        20, 2018 12:00:00 AM","missingCity":"WILMINGTON","missingCounty":"Middlesex","missingState":"MA","missingProvince":"","missingCountry":"US","circumstance":"Both
+        photos shown are of Amerie.","profileNarrative":"","orgName":"National Center
+        for Missing \u0026 Exploited Children","orgContactInfo":"1-800-843-5678 (1-800-THE-LOST)","orgLogo":"NCMC_en_US.jpg","isClearinghouse":false,"isChild":true,"repSightURL":"","inMonth":false,"inDay":false,"age":14,"altContact":"Wilmington
+        Police Department (Massachusetts) 1-978-658-3331","photoMap":"c1x1","ncic":"","namUs":"","maxHeight":0,"maxWeight":0},"posterlangs":"en_US"}'
     http_version: 
-  recorded_at: Tue, 19 Apr 2016 19:26:33 GMT
+  recorded_at: Wed, 01 Aug 2018 13:01:03 GMT
 - request:
     method: get
-    uri: http://www.missingkids.com/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=1262873&orgPrefix=NCMC&searchLang=en_US&seqNum=1
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 301
-      message: Moved Permanently
-    headers:
-      Cache-Control:
-      - max-age=900
-      Content-Type:
-      - text/html
-      Location:
-      - http://www.missingkids.org/missingkids/servlet/JSONDataServlet?action=childDetail&orgPrefix=NCMC&caseNum=1262873&seqNum=1&caseLang=en_US&searchLang=en_US&LanguageId=en_US
-      Server:
-      - Microsoft-IIS/7.5
-      X-Aspnet-Version:
-      - 4.0.30319
-      X-Powered-By:
-      - ASP.NET
-      Date:
-      - Tue, 19 Apr 2016 19:26:31 GMT
-      Content-Length:
-      - '0'
-      Age:
-      - '1'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: ''
-    http_version: 
-  recorded_at: Tue, 19 Apr 2016 19:26:33 GMT
-- request:
-    method: get
-    uri: http://www.missingkids.org/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=1262873&orgPrefix=NCMC&searchLang=en_US&seqNum=1
+    uri: https://api.missingkids.org/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=1333407&orgPrefix=NCMC&searchLang=en_US&seqNum=1
     body:
       encoding: US-ASCII
       string: ''
@@ -637,14 +1547,8 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Content-Type:
-      - text/html;charset=UTF-8
-      Content-Length:
-      - '1124'
-      Connection:
-      - keep-alive
       Date:
-      - Tue, 19 Apr 2016 19:17:42 GMT
+      - Wed, 01 Aug 2018 13:01:03 GMT
       Server:
       - Apache
       Pragma:
@@ -652,99 +1556,40 @@ http_interactions:
       Cache-Control:
       - maxage=1800
       Expires:
-      - Tue, 19 Apr 2016 19:47:42 GMT
-      Set-Cookie:
-      - asdfjkl1=!ewKANnWagvjCc0SboZNuUBTVaO3P25VLzJes9IVfBFqjiOXGbE2692tTs6LAU3wWZJ3E6CIWHxlfXA==;
-        path=/
-      - asdfjkl=981313728.20480.0000; path=/
+      - Wed, 01 Aug 2018 13:31:03 GMT
+      Access-Control-Allow-Origin:
+      - "*"
       Vary:
-      - Accept-Encoding
-      Age:
-      - '531'
-      X-Cache:
-      - Hit from cloudfront
-      Via:
-      - 1.1 48e04645e48ef523c7b3a2a5615bc0f0.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - myNUpFppW8Dh2smyYI_qAmyOvlOaU1EKCRpZ15Lgnsr_39wwN5D3Ww==
+      - Origin, Accept-Encoding
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Length:
+      - '880'
+      Content-Type:
+      - text/html;charset=UTF-8
+      Set-Cookie:
+      - BIGipServermkapi.ncmecad.net.app~mkapi.ncmecad.net_pool=2902858156.20480.0000;
+        path=/; Httponly
+      - asdfjkl=!EAeJmhy6KpYFNXK+HfyV8jAwfWejpLcNTbodHbSlFwyzqb69cKzqFz7NJQTk7YfikyPk7yOxOZsong==;
+        path=/; Httponly; Secure
+      Connection:
+      - Keep-Alive
     body:
       encoding: ASCII-8BIT
-      string: '{"status":"success","msg":"","childBean":{"hasAgedPhoto":false,"hasExtraPhoto":false,"possibleLocation":"","caseNumber":"1262873","orgPrefix":"NCMC","seqNumber":1,"langId":"en_US","userLangId":"en_US","firstName":"MABEL","lastName":"LOPEZ","middleName":"","approxAge":"","sex":"female","race":"hispanic","birthDate":"Dec
-        7, 2007 12:00:00 AM","height":54,"heightInInch":true,"weight":50,"weightInPound":true,"eyeColor":"brown","hairColor":"brown","hasPhoto":true,"hasThumbnail":true,"hasPoster":true,"otherChildList":[],"otherCsawList":[{"companionType":"companion","caseNumber":"1262873","orgPrefix":"NCMC","seqNumber":1,"langId":"en_US","userLangId":"en_US","firstName":"ARCENIO","lastName":"DE
-        JESUS","middleName":"","approxAge":"","sex":"male","race":"hispanic","birthDate":"Jan
-        21, 1977 12:00:00 AM","height":64,"heightInInch":true,"weight":162,"weightInPound":true,"eyeColor":"brown","hairColor":"brown","hasPhoto":true,"hasThumbnail":true,"hasPoster":true,"otherChildList":[],"otherCsawList":[],"caseType":"familyAbduct","missingDate":"Feb
-        17, 2016 12:00:00 AM","missingCity":"EL RENO","missingCounty":"Canadian","missingState":"OK","missingProvince":"","missingCountry":"US","circumstance":"Mabel
-        may be in the company of her mother, Mirian Lopez-Rodriguez, and her father,
-        Arcenio De Jesus. A felony warrant is on file for Arcenio De Jesus. They may
-        be traveling to Mexico. They may be driving a green or gray Ford Explorer
-        SUV with Oklahoma license plate number 689 LHD. Mabel may go by the alias
-        last name Juarez. CAUTION: If located do not approach, use caution and immediately
-        contact law enforcement.","profileNarrative":"","orgName":"","orgContactInfo":"","orgLogo":"","isClearinghouse":false,"isChild":false,"repSightURL":"","inMonth":false,"inDay":false,"age":-1,"altContact":"","photoMap":"c1a1a2","ncic":"","namUs":"","maxHeight":0,"maxWeight":0},{"companionType":"companion","caseNumber":"1262873","orgPrefix":"NCMC","seqNumber":2,"langId":"en_US","userLangId":"en_US","firstName":"MIRIAN","lastName":"LOPEZ-RODRIGUEZ","middleName":"","approxAge":"","sex":"female","race":"hispanic","birthDate":"Dec
-        1, 1983 12:00:00 AM","height":60,"heightInInch":true,"weight":156,"weightInPound":true,"eyeColor":"brown","hairColor":"brown","hasPhoto":true,"hasThumbnail":true,"hasPoster":true,"otherChildList":[],"otherCsawList":[],"caseType":"familyAbduct","missingDate":"Feb
-        17, 2016 12:00:00 AM","missingCity":"EL RENO","missingCounty":"Canadian","missingState":"OK","missingProvince":"","missingCountry":"US","circumstance":"Mabel
-        may be in the company of her mother, Mirian Lopez-Rodriguez, and her father,
-        Arcenio De Jesus. A felony warrant is on file for Arcenio De Jesus. They may
-        be traveling to Mexico. They may be driving a green or gray Ford Explorer
-        SUV with Oklahoma license plate number 689 LHD. Mabel may go by the alias
-        last name Juarez. CAUTION: If located do not approach, use caution and immediately
-        contact law enforcement.","profileNarrative":"","orgName":"","orgContactInfo":"","orgLogo":"","isClearinghouse":false,"isChild":false,"repSightURL":"","inMonth":false,"inDay":false,"age":-1,"altContact":"","photoMap":"c1a1a2","ncic":"","namUs":"","maxHeight":0,"maxWeight":0}],"caseType":"familyAbduct","missingDate":"Feb
-        17, 2016 12:00:00 AM","missingCity":"EL RENO","missingCounty":"Canadian","missingState":"OK","missingProvince":"","missingCountry":"US","circumstance":"Mabel
-        may be in the company of her mother, Mirian Lopez-Rodriguez, and her father,
-        Arcenio De Jesus. A felony warrant is on file for Arcenio De Jesus. They may
-        be traveling to Mexico. They may be driving a green or gray Ford Explorer
-        SUV with Oklahoma license plate number 689 LHD. Mabel may go by the alias
-        last name Juarez. CAUTION: If located do not approach, use caution and immediately
-        contact law enforcement.","profileNarrative":"","orgName":"National Center
-        for Missing \u0026 Exploited Children","orgContactInfo":"1-800-843-5678 (1-800-THE-LOST)","orgLogo":"NCMC_en_US.gif","isClearinghouse":false,"isChild":true,"repSightURL":"","inMonth":false,"inDay":false,"age":8,"altContact":"El
-        Reno Police Department  (Oklahoma)  1-405-262-6941","photoMap":"c1a1a2","ncic":"","namUs":"","maxHeight":0,"maxWeight":0}}'
+      string: '{"status":"success","msg":"","childBean":{"hasAgedPhoto":false,"hasExtraPhoto":false,"possibleLocation":"","caseNumber":"1333407","orgPrefix":"NCMC","seqNumber":1,"langId":"en_US","userLangId":"en_US","firstName":"CHRISTOPHER","lastName":"ESPARZA","middleName":"MARTIN","approxAge":"","sex":"male","race":"hispanic","birthDate":"Apr
+        12, 2002 12:00:00 AM","height":68,"heightInInch":true,"weight":160,"weightInPound":true,"eyeColor":"brown","hairColor":"brown","hasPhoto":true,"hasThumbnail":true,"hasPoster":true,"otherChildList":[],"otherCsawList":[],"caseType":"endangeredRunaway","missingDate":"Jul
+        4, 2018 12:00:00 AM","missingCity":"COMMERCE","missingCounty":"Los Angeles","missingState":"CA","missingProvince":"","missingCountry":"US","circumstance":"Christopher
+        was last seen on July 4, 2018.  He was last seen wearing a black hat with
+        a green letter \"M\", the Monster Energy drink symbol, on it.  Christopher
+        was also last seen wearing a black t-shirt, blue jeans, and white and black
+        Reebok tennis shoes.","profileNarrative":"","orgName":"National Center for
+        Missing \u0026 Exploited Children","orgContactInfo":"1-800-843-5678 (1-800-THE-LOST)","orgLogo":"NCMC_en_US.jpg","isClearinghouse":false,"isChild":true,"repSightURL":"","inMonth":false,"inDay":false,"age":16,"altContact":"Los
+        Angeles County Sheriff\u0027s Office (California) 1-323-264-4151","photoMap":"c1","ncic":"","namUs":"","maxHeight":0,"maxWeight":0},"posterlangs":"en_US"}'
     http_version: 
-  recorded_at: Tue, 19 Apr 2016 19:26:33 GMT
+  recorded_at: Wed, 01 Aug 2018 13:01:03 GMT
 - request:
     method: get
-    uri: http://www.missingkids.com/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=1261605&orgPrefix=NCMC&searchLang=en_US&seqNum=1
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 301
-      message: Moved Permanently
-    headers:
-      Cache-Control:
-      - max-age=900
-      Content-Type:
-      - text/html
-      Location:
-      - http://www.missingkids.org/missingkids/servlet/JSONDataServlet?action=childDetail&orgPrefix=NCMC&caseNum=1261605&seqNum=1&caseLang=en_US&searchLang=en_US&LanguageId=en_US
-      Server:
-      - Microsoft-IIS/7.5
-      X-Aspnet-Version:
-      - 4.0.30319
-      X-Powered-By:
-      - ASP.NET
-      Date:
-      - Tue, 19 Apr 2016 19:26:32 GMT
-      Content-Length:
-      - '0'
-      Age:
-      - '1'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: ''
-    http_version: 
-  recorded_at: Tue, 19 Apr 2016 19:26:34 GMT
-- request:
-    method: get
-    uri: http://www.missingkids.org/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=1261605&orgPrefix=NCMC&searchLang=en_US&seqNum=1
+    uri: https://api.missingkids.org/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=1334195&orgPrefix=NCMC&searchLang=en_US&seqNum=1
     body:
       encoding: US-ASCII
       string: ''
@@ -760,14 +1605,8 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Content-Type:
-      - text/html;charset=UTF-8
-      Content-Length:
-      - '764'
-      Connection:
-      - keep-alive
       Date:
-      - Tue, 19 Apr 2016 19:17:43 GMT
+      - Wed, 01 Aug 2018 13:01:03 GMT
       Server:
       - Apache
       Pragma:
@@ -775,79 +1614,38 @@ http_interactions:
       Cache-Control:
       - maxage=1800
       Expires:
-      - Tue, 19 Apr 2016 19:47:43 GMT
-      Set-Cookie:
-      - asdfjkl1=!CWu+dNFzgw4cdqaboZNuUBTVaO3P27tMBY+68qQJ7RD+rCMVO9NsdKYcA3koa901UqgG2p4rAc1wGw==;
-        path=/
-      - asdfjkl=981313728.20480.0000; path=/
+      - Wed, 01 Aug 2018 13:31:03 GMT
+      Access-Control-Allow-Origin:
+      - "*"
       Vary:
-      - Accept-Encoding
-      Age:
-      - '530'
-      X-Cache:
-      - Hit from cloudfront
-      Via:
-      - 1.1 668df79c9fafc9b09ee9eefb3361e0ad.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - EmV28etyfu6PKOGvsP4fyqdVTs5zhr9Oah8uXNhAqo2xOtmPKaCw-Q==
+      - Origin, Accept-Encoding
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Length:
+      - '755'
+      Content-Type:
+      - text/html;charset=UTF-8
+      Set-Cookie:
+      - BIGipServermkapi.ncmecad.net.app~mkapi.ncmecad.net_pool=2886080940.20480.0000;
+        path=/; Httponly
+      - asdfjkl=!qMu/wAmxJe7Xt+K+HfyV8jAwfWejpFhl3Zenr2vpFg9evCuryQjzhgvE2BVfx5QhbqG+LpYU14t+qA==;
+        path=/; Httponly; Secure
+      Connection:
+      - Keep-Alive
     body:
       encoding: ASCII-8BIT
-      string: '{"status":"success","msg":"","childBean":{"hasAgedPhoto":false,"hasExtraPhoto":false,"possibleLocation":"","caseNumber":"1261605","orgPrefix":"NCMC","seqNumber":1,"langId":"en_US","userLangId":"en_US","firstName":"UNITY","lastName":"FORNEY","middleName":"","approxAge":"","sex":"female","race":"black","birthDate":"Jan
-        26, 2002 12:00:00 AM","height":67,"heightInInch":true,"weight":170,"weightInPound":true,"eyeColor":"brown","hairColor":"brown","hasPhoto":true,"hasThumbnail":true,"hasPoster":true,"otherChildList":[],"otherCsawList":[],"caseType":"endangeredRunaway","missingDate":"Jan
-        15, 2016 12:00:00 AM","missingCity":"WILMINGTON","missingCounty":"New Castle
-        County","missingState":"DE","missingProvince":"","missingCountry":"US","circumstance":"Unity
-        was last seen on January 15, 2016.  She may wear a weave in her hair.","profileNarrative":"","orgName":"National
+      string: '{"status":"success","msg":"","childBean":{"hasAgedPhoto":false,"hasExtraPhoto":false,"possibleLocation":"","caseNumber":"1334195","orgPrefix":"NCMC","seqNumber":1,"langId":"en_US","userLangId":"en_US","firstName":"JASMINE","lastName":"BILLIOT","middleName":"","approxAge":"","sex":"female","race":"white","birthDate":"Apr
+        6, 2004 12:00:00 AM","height":59,"heightInInch":true,"weight":125,"weightInPound":true,"eyeColor":"brown","hairColor":"red","hasPhoto":true,"hasThumbnail":true,"hasPoster":true,"otherChildList":[],"otherCsawList":[],"caseType":"endangeredRunaway","missingDate":"Jul
+        19, 2018 12:00:00 AM","missingCity":"CANAL WINCHESTER","missingCounty":"","missingState":"OH","missingProvince":"","missingCountry":"US","circumstance":"Jasmine
+        was last seen on July 19, 2018.","profileNarrative":"","orgName":"National
         Center for Missing \u0026 Exploited Children","orgContactInfo":"1-800-843-5678
-        (1-800-THE-LOST)","orgLogo":"NCMC_en_US.gif","isClearinghouse":false,"isChild":true,"repSightURL":"","inMonth":false,"inDay":false,"age":14,"altContact":"New
-        Castle County Police Department  (Delaware)  1-302-573-2800","photoMap":"c1","ncic":"","namUs":"","maxHeight":0,"maxWeight":0}}'
+        (1-800-THE-LOST)","orgLogo":"NCMC_en_US.jpg","isClearinghouse":false,"isChild":true,"repSightURL":"","inMonth":false,"inDay":false,"age":14,"altContact":"Columbus
+        Police Department  (Ohio)  1-614-645-4545","photoMap":"c1","ncic":"","namUs":"","maxHeight":0,"maxWeight":0},"posterlangs":"en_US"}'
     http_version: 
-  recorded_at: Tue, 19 Apr 2016 19:26:34 GMT
+  recorded_at: Wed, 01 Aug 2018 13:01:03 GMT
 - request:
     method: get
-    uri: http://www.missingkids.com/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=1261092&orgPrefix=NCMC&searchLang=en_US&seqNum=1
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
-      User-Agent:
-      - Ruby
-  response:
-    status:
-      code: 301
-      message: Moved Permanently
-    headers:
-      Cache-Control:
-      - max-age=900
-      Content-Type:
-      - text/html
-      Location:
-      - http://www.missingkids.org/missingkids/servlet/JSONDataServlet?action=childDetail&orgPrefix=NCMC&caseNum=1261092&seqNum=1&caseLang=en_US&searchLang=en_US&LanguageId=en_US
-      Server:
-      - Microsoft-IIS/7.5
-      X-Aspnet-Version:
-      - 4.0.30319
-      X-Powered-By:
-      - ASP.NET
-      Date:
-      - Tue, 19 Apr 2016 19:26:32 GMT
-      Content-Length:
-      - '0'
-      Age:
-      - '1'
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: ''
-    http_version: 
-  recorded_at: Tue, 19 Apr 2016 19:26:34 GMT
-- request:
-    method: get
-    uri: http://www.missingkids.org/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=1261092&orgPrefix=NCMC&searchLang=en_US&seqNum=1
+    uri: https://api.missingkids.org/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=1334395&orgPrefix=NCMC&searchLang=en_US&seqNum=1
     body:
       encoding: US-ASCII
       string: ''
@@ -863,14 +1661,742 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      Date:
+      - Wed, 01 Aug 2018 13:01:03 GMT
+      Server:
+      - Apache
+      Pragma:
+      - public
+      Cache-Control:
+      - maxage=1800
+      Expires:
+      - Wed, 01 Aug 2018 13:31:03 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Origin, Accept-Encoding
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Length:
+      - '778'
       Content-Type:
       - text/html;charset=UTF-8
+      Set-Cookie:
+      - BIGipServermkapi.ncmecad.net.app~mkapi.ncmecad.net_pool=2902858156.20480.0000;
+        path=/; Httponly
+      - asdfjkl=!CmakxVd+O/54PJi+HfyV8jAwfWejpNAPBR1KTe9pTZlZVtRHeMBpSepljb17Ogax2kB3pRLwB4v5NQ==;
+        path=/; Httponly; Secure
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"success","msg":"","childBean":{"hasAgedPhoto":false,"hasExtraPhoto":true,"possibleLocation":"","caseNumber":"1334395","orgPrefix":"NCMC","seqNumber":1,"langId":"en_US","userLangId":"en_US","firstName":"DAVONYE","lastName":"CUMMINGS","middleName":"","approxAge":"","sex":"female","race":"black","birthDate":"Jan
+        9, 2006 12:00:00 AM","height":65,"heightInInch":true,"weight":200,"weightInPound":true,"eyeColor":"brown","hairColor":"black","hasPhoto":true,"hasThumbnail":true,"hasPoster":true,"otherChildList":[],"otherCsawList":[],"caseType":"endangeredRunaway","missingDate":"Jul
+        15, 2018 12:00:00 AM","missingCity":"OAKLAND","missingCounty":"Alameda","missingState":"CA","missingProvince":"","missingCountry":"US","circumstance":"Both
+        photos shown are of Davonye.  She was last seen on July 15, 2018.","profileNarrative":"","orgName":"National
+        Center for Missing \u0026 Exploited Children","orgContactInfo":"1-800-843-5678
+        (1-800-THE-LOST)","orgLogo":"NCMC_en_US.jpg","isClearinghouse":false,"isChild":true,"repSightURL":"","inMonth":false,"inDay":false,"age":12,"altContact":"Oakland
+        Police Department (California) 1-510-777-3333","photoMap":"c1x1","ncic":"","namUs":"","maxHeight":0,"maxWeight":0},"posterlangs":"en_US"}'
+    http_version: 
+  recorded_at: Wed, 01 Aug 2018 13:01:03 GMT
+- request:
+    method: get
+    uri: https://api.missingkids.org/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=1334464&orgPrefix=NCMC&searchLang=en_US&seqNum=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 01 Aug 2018 13:01:03 GMT
+      Server:
+      - Apache
+      Pragma:
+      - public
+      Cache-Control:
+      - maxage=1800
+      Expires:
+      - Wed, 01 Aug 2018 13:31:03 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Origin, Accept-Encoding
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Length:
+      - '804'
+      Content-Type:
+      - text/html;charset=UTF-8
+      Set-Cookie:
+      - BIGipServermkapi.ncmecad.net.app~mkapi.ncmecad.net_pool=2919635372.20480.0000;
+        path=/; Httponly
+      - asdfjkl=!b8c07FEqoW1cwW++HfyV8jAwfWejpPeovQabhkkV7BFW0mj/9/Eh6hivlW28fsC7GVcA231zw+1J1Q==;
+        path=/; Httponly; Secure
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"success","msg":"","childBean":{"hasAgedPhoto":false,"hasExtraPhoto":true,"possibleLocation":"","caseNumber":"1334464","orgPrefix":"NCMC","seqNumber":1,"langId":"en_US","userLangId":"en_US","firstName":"ITALY","lastName":"JOHNSON","middleName":"ANNA","approxAge":"","sex":"female","race":"white","birthDate":"Nov
+        4, 2006 12:00:00 AM","height":55,"heightInInch":true,"weight":85,"weightInPound":true,"eyeColor":"hazel","hairColor":"brown","hasPhoto":true,"hasThumbnail":true,"hasPoster":true,"otherChildList":[],"otherCsawList":[],"caseType":"endangeredRunaway","missingDate":"Jul
+        22, 2018 12:00:00 AM","missingCity":"ROSEMEAD","missingCounty":"Los Angeles","missingState":"CA","missingProvince":"","missingCountry":"US","circumstance":"Both
+        photos shown are of Italy. She may still be in the local area. Italy\u0027s
+        nose is pierced.","profileNarrative":"","orgName":"National Center for Missing
+        \u0026 Exploited Children","orgContactInfo":"1-800-843-5678 (1-800-THE-LOST)","orgLogo":"NCMC_en_US.jpg","isClearinghouse":false,"isChild":true,"repSightURL":"","inMonth":false,"inDay":false,"age":11,"altContact":"Los
+        Angeles County Sheriff\u0027s Office (California) 1-213-229-1700","photoMap":"c1x1","ncic":"","namUs":"","maxHeight":0,"maxWeight":0},"posterlangs":"en_US"}'
+    http_version: 
+  recorded_at: Wed, 01 Aug 2018 13:01:03 GMT
+- request:
+    method: get
+    uri: https://api.missingkids.org/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=1334133&orgPrefix=NCMC&searchLang=en_US&seqNum=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 01 Aug 2018 13:01:03 GMT
+      Server:
+      - Apache
+      Pragma:
+      - public
+      Cache-Control:
+      - maxage=1800
+      Expires:
+      - Wed, 01 Aug 2018 13:31:03 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Origin, Accept-Encoding
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Length:
+      - '774'
+      Content-Type:
+      - text/html;charset=UTF-8
+      Set-Cookie:
+      - BIGipServermkapi.ncmecad.net.app~mkapi.ncmecad.net_pool=2902858156.20480.0000;
+        path=/; Httponly
+      - asdfjkl=!r7nhFF6DioxMC2O+HfyV8jAwfWejpLDPMAvKNt8U/kbNvP/RgtwJ/WrzQy1LMMqB3ENqpP0yw6OTtQ==;
+        path=/; Httponly; Secure
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"success","msg":"","childBean":{"hasAgedPhoto":false,"hasExtraPhoto":false,"possibleLocation":"","caseNumber":"1334133","orgPrefix":"NCMC","seqNumber":1,"langId":"en_US","userLangId":"en_US","firstName":"ALYSSA","lastName":"RODRIGUEZ","middleName":"MARIE","approxAge":"","sex":"female","race":"hispanic","birthDate":"Mar
+        31, 2003 12:00:00 AM","height":63,"heightInInch":true,"weight":134,"weightInPound":true,"eyeColor":"brown","hairColor":"brown","hasPhoto":true,"hasThumbnail":true,"hasPoster":true,"otherChildList":[],"otherCsawList":[],"caseType":"endangeredRunaway","missingDate":"Jul
+        18, 2018 12:00:00 AM","missingCity":"SACRAMENTO","missingCounty":"Sacramento","missingState":"CA","missingProvince":"","missingCountry":"US","circumstance":"Alyssa
+        may still be in the local area.","profileNarrative":"","orgName":"National
+        Center for Missing \u0026 Exploited Children","orgContactInfo":"1-800-843-5678
+        (1-800-THE-LOST)","orgLogo":"NCMC_en_US.jpg","isClearinghouse":false,"isChild":true,"repSightURL":"","inMonth":false,"inDay":false,"age":15,"altContact":"Sacramento
+        County Sheriff\u0027s Office (California) 1-916-874-5115","photoMap":"c1","ncic":"","namUs":"","maxHeight":0,"maxWeight":0},"posterlangs":"en_US"}'
+    http_version: 
+  recorded_at: Wed, 01 Aug 2018 13:01:03 GMT
+- request:
+    method: get
+    uri: https://api.missingkids.org/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=1334356&orgPrefix=NCMC&searchLang=en_US&seqNum=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 01 Aug 2018 13:01:04 GMT
+      Server:
+      - Apache
+      Pragma:
+      - public
+      Cache-Control:
+      - maxage=1800
+      Expires:
+      - Wed, 01 Aug 2018 13:31:04 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Origin, Accept-Encoding
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Length:
+      - '843'
+      Content-Type:
+      - text/html;charset=UTF-8
+      Set-Cookie:
+      - BIGipServermkapi.ncmecad.net.app~mkapi.ncmecad.net_pool=2886080940.20480.0000;
+        path=/; Httponly
+      - asdfjkl=!jIK1+1b6qk4BKDu+HfyV8jAwfWejpEk1hS8apJHxE00sYcKNK6WQbtvETvAYW2/3scbwrEuEPmF8cw==;
+        path=/; Httponly; Secure
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"success","msg":"","childBean":{"hasAgedPhoto":false,"hasExtraPhoto":true,"possibleLocation":"","caseNumber":"1334356","orgPrefix":"NCMC","seqNumber":1,"langId":"en_US","userLangId":"en_US","firstName":"ANGEL","lastName":"ERHARDT","middleName":"DAWNN","approxAge":"","sex":"female","race":"white","birthDate":"Apr
+        4, 2003 12:00:00 AM","height":63,"heightInInch":true,"weight":130,"weightInPound":true,"eyeColor":"brown","hairColor":"blonde","hasPhoto":true,"hasThumbnail":true,"hasPoster":true,"otherChildList":[],"otherCsawList":[],"caseType":"endangeredRunaway","missingDate":"Jul
+        20, 2018 12:00:00 AM","missingCity":"HILLSBORO","missingCounty":"Jefferson","missingState":"MO","missingProvince":"","missingCountry":"US","circumstance":"Both
+        photos shown are of Angel. She may still be in the local area. When Angel
+        was last seen, the front of her hair was dyed green. Her nose and ears are
+        pierced.","profileNarrative":"","orgName":"National Center for Missing \u0026
+        Exploited Children","orgContactInfo":"1-800-843-5678 (1-800-THE-LOST)","orgLogo":"NCMC_en_US.jpg","isClearinghouse":false,"isChild":true,"repSightURL":"","inMonth":false,"inDay":false,"age":15,"altContact":"Jefferson
+        County Sheriff\u0027s Office (Missouri) 1-636-797-9999","photoMap":"c1x1","ncic":"","namUs":"","maxHeight":0,"maxWeight":0},"posterlangs":"en_US"}'
+    http_version: 
+  recorded_at: Wed, 01 Aug 2018 13:01:04 GMT
+- request:
+    method: get
+    uri: https://api.missingkids.org/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=1334053&orgPrefix=NCMC&searchLang=en_US&seqNum=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 01 Aug 2018 13:01:04 GMT
+      Server:
+      - Apache
+      Pragma:
+      - public
+      Cache-Control:
+      - maxage=1800
+      Expires:
+      - Wed, 01 Aug 2018 13:31:04 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Origin, Accept-Encoding
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Length:
+      - '819'
+      Content-Type:
+      - text/html;charset=UTF-8
+      Set-Cookie:
+      - BIGipServermkapi.ncmecad.net.app~mkapi.ncmecad.net_pool=2902858156.20480.0000;
+        path=/; Httponly
+      - asdfjkl=!0Kit3pC/L35VSVe+HfyV8jAwfWejpO/sw9cT+8nlSM73L7thtN/cRrUNtlKEheRrHmAocofvoIuu6Q==;
+        path=/; Httponly; Secure
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"success","msg":"","childBean":{"hasAgedPhoto":false,"hasExtraPhoto":false,"possibleLocation":"","caseNumber":"1334053","orgPrefix":"NCMC","seqNumber":1,"langId":"en_US","userLangId":"en_US","firstName":"HILBERTA","lastName":"ALTAMIRA","middleName":"","approxAge":"","sex":"female","race":"hispanic","birthDate":"Nov
+        3, 2002 12:00:00 AM","height":64,"heightInInch":true,"weight":120,"weightInPound":true,"eyeColor":"brown","hairColor":"brown","hasPhoto":true,"hasThumbnail":true,"hasPoster":true,"otherChildList":[{"hasAgedPhoto":false,"hasExtraPhoto":false,"possibleLocation":"","caseNumber":"1334053","orgPrefix":"NCMC","seqNumber":2,"langId":"en_US","userLangId":"en_US","firstName":"DANIEL","lastName":"ALTAMIRA","middleName":"","approxAge":"","sex":"male","race":"hispanic","birthDate":"Sep
+        7, 2003 12:00:00 AM","height":63,"heightInInch":true,"weight":120,"weightInPound":true,"eyeColor":"brown","hairColor":"brown","hasPhoto":true,"hasThumbnail":true,"hasPoster":true,"otherChildList":[],"otherCsawList":[],"caseType":"endangeredRunaway","missingDate":"Jul
+        17, 2018 12:00:00 AM","missingCity":"SAN ANTONIO","missingCounty":"Bexar","missingState":"TX","missingProvince":"","missingCountry":"US","circumstance":"Hilberta
+        and Daniel were last seen on July 17, 2018.","profileNarrative":"","orgName":"","orgContactInfo":"","orgLogo":"","isClearinghouse":false,"isChild":true,"repSightURL":"","inMonth":false,"inDay":false,"age":-1,"altContact":"San
+        Antonio Police Department  (Texas)  1-210-207-7273","photoMap":"c1c2","ncic":"","namUs":"","maxHeight":0,"maxWeight":0}],"otherCsawList":[],"caseType":"endangeredRunaway","missingDate":"Jul
+        17, 2018 12:00:00 AM","missingCity":"SAN ANTONIO","missingCounty":"Bexar","missingState":"TX","missingProvince":"","missingCountry":"US","circumstance":"Hilberta
+        and Daniel were last seen on July 17, 2018.","profileNarrative":"","orgName":"National
+        Center for Missing \u0026 Exploited Children","orgContactInfo":"1-800-843-5678
+        (1-800-THE-LOST)","orgLogo":"NCMC_en_US.jpg","isClearinghouse":false,"isChild":true,"repSightURL":"","inMonth":false,"inDay":false,"age":15,"altContact":"San
+        Antonio Police Department  (Texas)  1-210-207-7273","photoMap":"c1c2","ncic":"","namUs":"","maxHeight":0,"maxWeight":0},"posterlangs":"en_US"}'
+    http_version: 
+  recorded_at: Wed, 01 Aug 2018 13:01:04 GMT
+- request:
+    method: get
+    uri: https://api.missingkids.org/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=1333709&orgPrefix=NCMC&searchLang=en_US&seqNum=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 01 Aug 2018 13:01:04 GMT
+      Server:
+      - Apache
+      Pragma:
+      - public
+      Cache-Control:
+      - maxage=1800
+      Expires:
+      - Wed, 01 Aug 2018 13:31:04 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Origin, Accept-Encoding
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Length:
+      - '758'
+      Content-Type:
+      - text/html;charset=UTF-8
+      Set-Cookie:
+      - BIGipServermkapi.ncmecad.net.app~mkapi.ncmecad.net_pool=2886080940.20480.0000;
+        path=/; Httponly
+      - asdfjkl=!6QCS//TxoePnTF2+HfyV8jAwfWejpCP9cdwxhe+a3VlgXrywkfZPwTuS9rVjmHSZOHaiIWlMTxGpFA==;
+        path=/; Httponly; Secure
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"success","msg":"","childBean":{"hasAgedPhoto":false,"hasExtraPhoto":false,"possibleLocation":"","caseNumber":"1333709","orgPrefix":"NCMC","seqNumber":1,"langId":"en_US","userLangId":"en_US","firstName":"TYLER","lastName":"WYLIE","middleName":"J","approxAge":"","sex":"male","race":"white","birthDate":"Aug
+        25, 2002 12:00:00 AM","height":64,"heightInInch":true,"weight":130,"weightInPound":true,"eyeColor":"hazel","hairColor":"blonde","hasPhoto":true,"hasThumbnail":true,"hasPoster":true,"otherChildList":[],"otherCsawList":[],"caseType":"endangeredRunaway","missingDate":"Jul
+        12, 2018 12:00:00 AM","missingCity":"LAKEWOOD","missingCounty":"","missingState":"WA","missingProvince":"","missingCountry":"US","circumstance":"Tyler
+        may still be in the local area.","profileNarrative":"","orgName":"National
+        Center for Missing \u0026 Exploited Children","orgContactInfo":"1-800-843-5678
+        (1-800-THE-LOST)","orgLogo":"NCMC_en_US.jpg","isClearinghouse":false,"isChild":true,"repSightURL":"","inMonth":false,"inDay":false,"age":15,"altContact":"Lakewood
+        Police Department (Washington) 1-253-798-4721","photoMap":"c1","ncic":"","namUs":"","maxHeight":0,"maxWeight":0},"posterlangs":"en_US"}'
+    http_version: 
+  recorded_at: Wed, 01 Aug 2018 13:01:04 GMT
+- request:
+    method: get
+    uri: https://api.missingkids.org/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=1333885&orgPrefix=NCMC&searchLang=en_US&seqNum=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 01 Aug 2018 13:01:04 GMT
+      Server:
+      - Apache
+      Pragma:
+      - public
+      Cache-Control:
+      - maxage=1800
+      Expires:
+      - Wed, 01 Aug 2018 13:31:04 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Origin, Accept-Encoding
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Length:
+      - '819'
+      Content-Type:
+      - text/html;charset=UTF-8
+      Set-Cookie:
+      - BIGipServermkapi.ncmecad.net.app~mkapi.ncmecad.net_pool=2919635372.20480.0000;
+        path=/; Httponly
+      - asdfjkl=!wuLyzvid2vOWS0G+HfyV8jAwfWejpMfXKZUuQ7DJfsB5VK5vvAIw4VHcnMa0GAmpbEMvyhTqZl2DUQ==;
+        path=/; Httponly; Secure
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"success","msg":"","childBean":{"hasAgedPhoto":false,"hasExtraPhoto":true,"possibleLocation":"","caseNumber":"1333885","orgPrefix":"NCMC","seqNumber":1,"langId":"en_US","userLangId":"en_US","firstName":"ANA","lastName":"NAVARRO","middleName":"CRISTINA","approxAge":"","sex":"female","race":"biracial","birthDate":"Jun
+        14, 2003 12:00:00 AM","height":64,"heightInInch":true,"weight":165,"weightInPound":true,"eyeColor":"brown","hairColor":"brown","hasPhoto":true,"hasThumbnail":true,"hasPoster":true,"otherChildList":[],"otherCsawList":[],"caseType":"endangeredRunaway","missingDate":"Jul
+        15, 2018 12:00:00 AM","missingCity":"RENO","missingCounty":"","missingState":"NV","missingProvince":"","missingCountry":"US","circumstance":"Both
+        photos shown are of Ana. She is biracial. Ana is Hispanic and White. She has
+        a black outline of a heart tattoo on her left wrist. Ana also has a tattoo
+        on her left ankle.","profileNarrative":"","orgName":"National Center for Missing
+        \u0026 Exploited Children","orgContactInfo":"1-800-843-5678 (1-800-THE-LOST)","orgLogo":"NCMC_en_US.jpg","isClearinghouse":false,"isChild":true,"repSightURL":"","inMonth":false,"inDay":false,"age":15,"altContact":"Reno
+        Police Department (Nevada) 1-775-334-2121","photoMap":"c1x1","ncic":"","namUs":"","maxHeight":0,"maxWeight":0},"posterlangs":"en_US"}'
+    http_version: 
+  recorded_at: Wed, 01 Aug 2018 13:01:04 GMT
+- request:
+    method: get
+    uri: https://api.missingkids.org/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=1333657&orgPrefix=NCMC&searchLang=en_US&seqNum=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 01 Aug 2018 13:01:04 GMT
+      Server:
+      - Apache
+      Pragma:
+      - public
+      Cache-Control:
+      - maxage=1800
+      Expires:
+      - Wed, 01 Aug 2018 13:31:04 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Origin, Accept-Encoding
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Length:
+      - '755'
+      Content-Type:
+      - text/html;charset=UTF-8
+      Set-Cookie:
+      - BIGipServermkapi.ncmecad.net.app~mkapi.ncmecad.net_pool=2919635372.20480.0000;
+        path=/; Httponly
+      - asdfjkl=!XoKcdGRhWWq/Vfq+HfyV8jAwfWejpLDgvpTAk/fUmMaUYE/SxA093d0T0UX5HPR86uC+h2aZJXYFeQ==;
+        path=/; Httponly; Secure
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"success","msg":"","childBean":{"hasAgedPhoto":false,"hasExtraPhoto":false,"possibleLocation":"","caseNumber":"1333657","orgPrefix":"NCMC","seqNumber":1,"langId":"en_US","userLangId":"en_US","firstName":"MICHAEL","lastName":"ELLIOT","middleName":"","approxAge":"","sex":"male","race":"black","birthDate":"Feb
+        7, 2005 12:00:00 AM","height":60,"heightInInch":true,"weight":100,"weightInPound":true,"eyeColor":"brown","hairColor":"black","hasPhoto":true,"hasThumbnail":true,"hasPoster":true,"otherChildList":[],"otherCsawList":[],"caseType":"endangeredRunaway","missingDate":"Jul
+        12, 2018 12:00:00 AM","missingCity":"YORK","missingCounty":"York","missingState":"PA","missingProvince":"","missingCountry":"US","circumstance":"Michael
+        was last seen on July 12, 2018.","profileNarrative":"","orgName":"National
+        Center for Missing \u0026 Exploited Children","orgContactInfo":"1-800-843-5678
+        (1-800-THE-LOST)","orgLogo":"NCMC_en_US.jpg","isClearinghouse":false,"isChild":true,"repSightURL":"","inMonth":false,"inDay":false,"age":13,"altContact":"Springettsbury
+        Police Department (Pennsylvania) 1-717-757-3525","photoMap":"c1","ncic":"","namUs":"","maxHeight":0,"maxWeight":0},"posterlangs":"en_US"}'
+    http_version: 
+  recorded_at: Wed, 01 Aug 2018 13:01:04 GMT
+- request:
+    method: get
+    uri: https://api.missingkids.org/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=1333696&orgPrefix=NCMC&searchLang=en_US&seqNum=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 01 Aug 2018 13:01:05 GMT
+      Server:
+      - Apache
+      Pragma:
+      - public
+      Cache-Control:
+      - maxage=1800
+      Expires:
+      - Wed, 01 Aug 2018 13:31:05 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Origin, Accept-Encoding
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Length:
+      - '788'
+      Content-Type:
+      - text/html;charset=UTF-8
+      Set-Cookie:
+      - BIGipServermkapi.ncmecad.net.app~mkapi.ncmecad.net_pool=2919635372.20480.0000;
+        path=/; Httponly
+      - asdfjkl=!TeFvNCKJf2NUfXe+HfyV8jAwfWejpK0Uy8oPMe5NbWyN4KdpnGBeXaq5v9A7JPPT4y0KSh+GOPUDHA==;
+        path=/; Httponly; Secure
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"success","msg":"","childBean":{"hasAgedPhoto":false,"hasExtraPhoto":true,"possibleLocation":"","caseNumber":"1333696","orgPrefix":"NCMC","seqNumber":1,"langId":"en_US","userLangId":"en_US","firstName":"KRISTON","lastName":"WHITE","middleName":"LEE","approxAge":"","sex":"female","race":"white","birthDate":"Jun
+        16, 2003 12:00:00 AM","height":64,"heightInInch":true,"weight":150,"weightInPound":true,"eyeColor":"blue","hairColor":"brown","hasPhoto":true,"hasThumbnail":true,"hasPoster":true,"otherChildList":[],"otherCsawList":[],"caseType":"endangeredRunaway","missingDate":"Jul
+        12, 2018 12:00:00 AM","missingCity":"SPARTANBURG","missingCounty":"","missingState":"SC","missingProvince":"","missingCountry":"US","circumstance":"Both
+        photos shown are of Kriston. She may travel to Greenville, South Carolina.","profileNarrative":"","orgName":"National
+        Center for Missing \u0026 Exploited Children","orgContactInfo":"1-800-843-5678
+        (1-800-THE-LOST)","orgLogo":"NCMC_en_US.jpg","isClearinghouse":false,"isChild":true,"repSightURL":"","inMonth":false,"inDay":false,"age":15,"altContact":"Spartanburg
+        Police Department (South Carolina) 1-864-596-2222","photoMap":"c1x1","ncic":"","namUs":"","maxHeight":0,"maxWeight":0},"posterlangs":"en_US"}'
+    http_version: 
+  recorded_at: Wed, 01 Aug 2018 13:01:05 GMT
+- request:
+    method: get
+    uri: https://api.missingkids.org/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=1333214&orgPrefix=NCMC&searchLang=en_US&seqNum=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 01 Aug 2018 13:01:05 GMT
+      Server:
+      - Apache
+      Pragma:
+      - public
+      Cache-Control:
+      - maxage=1800
+      Expires:
+      - Wed, 01 Aug 2018 13:31:05 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Origin, Accept-Encoding
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Length:
+      - '771'
+      Content-Type:
+      - text/html;charset=UTF-8
+      Set-Cookie:
+      - BIGipServermkapi.ncmecad.net.app~mkapi.ncmecad.net_pool=2886080940.20480.0000;
+        path=/; Httponly
+      - asdfjkl=!G1iQ4iOlrTGszRu+HfyV8jAwfWejpCUmcM+0DpAH+X9n35lEfMudOPduAlHCO8Y/phYdlURKwOYRIw==;
+        path=/; Httponly; Secure
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"success","msg":"","childBean":{"hasAgedPhoto":false,"hasExtraPhoto":true,"possibleLocation":"","caseNumber":"1333214","orgPrefix":"NCMC","seqNumber":1,"langId":"en_US","userLangId":"en_US","firstName":"GABRIELLE","lastName":"COOPER","middleName":"","approxAge":"","sex":"female","race":"white","birthDate":"Feb
+        20, 2001 12:00:00 AM","height":67,"heightInInch":true,"weight":120,"weightInPound":true,"eyeColor":"brown","hairColor":"blonde","hasPhoto":true,"hasThumbnail":true,"hasPoster":true,"otherChildList":[],"otherCsawList":[],"caseType":"endangeredRunaway","missingDate":"Jul
+        8, 2018 12:00:00 AM","missingCity":"HAYS","missingCounty":"Ellis","missingState":"KS","missingProvince":"","missingCountry":"US","circumstance":"Both
+        photos shown are of Gabrielle. She was last seen on July 8, 2018.","profileNarrative":"","orgName":"National
+        Center for Missing \u0026 Exploited Children","orgContactInfo":"1-800-843-5678
+        (1-800-THE-LOST)","orgLogo":"NCMC_en_US.jpg","isClearinghouse":false,"isChild":true,"repSightURL":"","inMonth":false,"inDay":false,"age":17,"altContact":"Hays
+        Police Department (Kansas) 1-785-625-1011","photoMap":"c1x1","ncic":"","namUs":"","maxHeight":0,"maxWeight":0},"posterlangs":"en_US"}'
+    http_version: 
+  recorded_at: Wed, 01 Aug 2018 13:01:05 GMT
+- request:
+    method: get
+    uri: https://api.missingkids.org/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=1332631&orgPrefix=NCMC&searchLang=en_US&seqNum=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 01 Aug 2018 13:01:05 GMT
+      Server:
+      - Apache
+      Pragma:
+      - public
+      Cache-Control:
+      - maxage=1800
+      Expires:
+      - Wed, 01 Aug 2018 13:31:05 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Origin, Accept-Encoding
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Length:
+      - '786'
+      Content-Type:
+      - text/html;charset=UTF-8
+      Set-Cookie:
+      - BIGipServermkapi.ncmecad.net.app~mkapi.ncmecad.net_pool=2919635372.20480.0000;
+        path=/; Httponly
+      - asdfjkl=!qSmDkNLxhCZMalm+HfyV8jAwfWejpB/G2wFqpXdKExKnsNmcKQMFiSD8wxB6ZxcHArjzZkqrxlEmWQ==;
+        path=/; Httponly; Secure
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"success","msg":"","childBean":{"hasAgedPhoto":false,"hasExtraPhoto":false,"possibleLocation":"","caseNumber":"1332631","orgPrefix":"NCMC","seqNumber":1,"langId":"en_US","userLangId":"en_US","firstName":"ANTHONY","lastName":"COCO","middleName":"","approxAge":"","sex":"male","race":"hispanic","birthDate":"Sep
+        28, 2001 12:00:00 AM","height":73,"heightInInch":true,"weight":170,"weightInPound":true,"eyeColor":"brown","hairColor":"brown","hasPhoto":true,"hasThumbnail":true,"hasPoster":true,"otherChildList":[],"otherCsawList":[],"caseType":"endangeredRunaway","missingDate":"Jun
+        27, 2018 12:00:00 AM","missingCity":"FALL RIVER","missingCounty":"Bristol","missingState":"MA","missingProvince":"","missingCountry":"US","circumstance":"Anthony
+        was last seen on June 27, 2018.  He is believed to be in the local area.","profileNarrative":"","orgName":"National
+        Center for Missing \u0026 Exploited Children","orgContactInfo":"1-800-843-5678
+        (1-800-THE-LOST)","orgLogo":"NCMC_en_US.jpg","isClearinghouse":false,"isChild":true,"repSightURL":"","inMonth":false,"inDay":false,"age":16,"altContact":"Fall
+        River Police Department  (Massachusetts)  1-508-676-8511","photoMap":"c1","ncic":"","namUs":"","maxHeight":0,"maxWeight":0},"posterlangs":"en_US"}'
+    http_version: 
+  recorded_at: Wed, 01 Aug 2018 13:01:05 GMT
+- request:
+    method: get
+    uri: https://api.missingkids.org/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=1332272&orgPrefix=NCMC&searchLang=en_US&seqNum=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 01 Aug 2018 13:01:05 GMT
+      Server:
+      - Apache
+      Pragma:
+      - public
+      Cache-Control:
+      - maxage=1800
+      Expires:
+      - Wed, 01 Aug 2018 13:31:05 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Origin, Accept-Encoding
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Length:
+      - '803'
+      Content-Type:
+      - text/html;charset=UTF-8
+      Set-Cookie:
+      - BIGipServermkapi.ncmecad.net.app~mkapi.ncmecad.net_pool=2919635372.20480.0000;
+        path=/; Httponly
+      - asdfjkl=!U0g7kAucmqS2Tb++HfyV8jAwfWejpCzKteiRMOLCbM3hTy/j9H0WcN+gpesBAEOJ123NNJUAN2JIxw==;
+        path=/; Httponly; Secure
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"success","msg":"","childBean":{"hasAgedPhoto":false,"hasExtraPhoto":false,"possibleLocation":"","caseNumber":"1332272","orgPrefix":"NCMC","seqNumber":1,"langId":"en_US","userLangId":"en_US","firstName":"CIJARA","lastName":"AUXIER","middleName":"","approxAge":"","sex":"female","race":"biracial","birthDate":"Sep
+        24, 2003 12:00:00 AM","height":66,"heightInInch":true,"weight":117,"weightInPound":true,"eyeColor":"brown","hairColor":"brown","hasPhoto":true,"hasThumbnail":true,"hasPoster":true,"otherChildList":[],"otherCsawList":[],"caseType":"endangeredRunaway","missingDate":"Jun
+        26, 2018 12:00:00 AM","missingCity":"ALBUQUERQUE","missingCounty":"Bernalillo","missingState":"NM","missingProvince":"","missingCountry":"US","circumstance":"Cijara
+        is biracial.  She is Black and White of Armenian descent.  Cijara was last
+        seen on June 26, 2018.","profileNarrative":"","orgName":"National Center for
+        Missing \u0026 Exploited Children","orgContactInfo":"1-800-843-5678 (1-800-THE-LOST)","orgLogo":"NCMC_en_US.jpg","isClearinghouse":false,"isChild":true,"repSightURL":"","inMonth":false,"inDay":false,"age":14,"altContact":"Albuquerque
+        Police Department (New Mexico) 1-505-242-2677","photoMap":"c1","ncic":"","namUs":"","maxHeight":0,"maxWeight":0},"posterlangs":"en_US"}'
+    http_version: 
+  recorded_at: Wed, 01 Aug 2018 13:01:05 GMT
+- request:
+    method: get
+    uri: https://api.missingkids.org/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=1332285&orgPrefix=NCMC&searchLang=en_US&seqNum=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 01 Aug 2018 13:01:05 GMT
+      Server:
+      - Apache
+      Pragma:
+      - public
+      Cache-Control:
+      - maxage=1800
+      Expires:
+      - Wed, 01 Aug 2018 13:31:05 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Origin, Accept-Encoding
+      Access-Control-Allow-Credentials:
+      - 'true'
       Content-Length:
       - '772'
+      Content-Type:
+      - text/html;charset=UTF-8
+      Set-Cookie:
+      - BIGipServermkapi.ncmecad.net.app~mkapi.ncmecad.net_pool=2919635372.20480.0000;
+        path=/; Httponly
+      - asdfjkl=!LHGHDTDcu/1CKa6+HfyV8jAwfWejpHUyrG6Z1bSh5i1o4MEi/my+whyYsQMiElqmkxFk3Qx/uhwvlw==;
+        path=/; Httponly; Secure
       Connection:
-      - keep-alive
+      - Keep-Alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"success","msg":"","childBean":{"hasAgedPhoto":false,"hasExtraPhoto":true,"possibleLocation":"","caseNumber":"1332285","orgPrefix":"NCMC","seqNumber":1,"langId":"en_US","userLangId":"en_US","firstName":"SHANE","lastName":"MEINKE","middleName":"","approxAge":"","sex":"male","race":"white","birthDate":"Nov
+        13, 2003 12:00:00 AM","height":68,"heightInInch":true,"weight":130,"weightInPound":true,"eyeColor":"hazel","hairColor":"blonde","hasPhoto":true,"hasThumbnail":true,"hasPoster":true,"otherChildList":[],"otherCsawList":[],"caseType":"endangeredRunaway","missingDate":"Jun
+        25, 2018 12:00:00 AM","missingCity":"CLEVELAND","missingCounty":"","missingState":"OH","missingProvince":"","missingCountry":"US","circumstance":"Both
+        photos shown are of Shane. He may travel to the state of Michigan.","profileNarrative":"","orgName":"National
+        Center for Missing \u0026 Exploited Children","orgContactInfo":"1-800-843-5678
+        (1-800-THE-LOST)","orgLogo":"NCMC_en_US.jpg","isClearinghouse":false,"isChild":true,"repSightURL":"","inMonth":false,"inDay":false,"age":14,"altContact":"Cleveland
+        Police Department (Ohio) 1-216-623-5300","photoMap":"c1x1","ncic":"","namUs":"","maxHeight":0,"maxWeight":0},"posterlangs":"en_US"}'
+    http_version: 
+  recorded_at: Wed, 01 Aug 2018 13:01:05 GMT
+- request:
+    method: get
+    uri: https://api.missingkids.org/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=1332259&orgPrefix=NCMC&searchLang=en_US&seqNum=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
       Date:
-      - Tue, 19 Apr 2016 19:17:44 GMT
+      - Wed, 01 Aug 2018 13:01:05 GMT
       Server:
       - Apache
       Pragma:
@@ -878,30 +2404,229 @@ http_interactions:
       Cache-Control:
       - maxage=1800
       Expires:
-      - Tue, 19 Apr 2016 19:47:44 GMT
-      Set-Cookie:
-      - asdfjkl1=!mHrWEZrSfhpIiCmboZNuUBTVaO3P25hcF3Df9ZWbhO2BPlvMvoRTZGCK4LWCdSnme1V+HeAhY0u2kA==;
-        path=/
-      - asdfjkl=981313728.20480.0000; path=/
+      - Wed, 01 Aug 2018 13:31:05 GMT
+      Access-Control-Allow-Origin:
+      - "*"
       Vary:
-      - Accept-Encoding
-      Age:
-      - '529'
-      X-Cache:
-      - Hit from cloudfront
-      Via:
-      - 1.1 5a57d853ab1d61f9038a75f2a12c9421.cloudfront.net (CloudFront)
-      X-Amz-Cf-Id:
-      - Xv35E4ZlCuymUHuXx5oyqxQihxGV9nQ1ikfvrakuIDSvhRp1kjc-AA==
+      - Origin, Accept-Encoding
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Length:
+      - '786'
+      Content-Type:
+      - text/html;charset=UTF-8
+      Set-Cookie:
+      - BIGipServermkapi.ncmecad.net.app~mkapi.ncmecad.net_pool=2902858156.20480.0000;
+        path=/; Httponly
+      - asdfjkl=!elr37OyqCq1968e+HfyV8jAwfWejpMLLqGEMoa9a0wACF008qud+iyZzrsynyX/274iHC1PGXJVSqA==;
+        path=/; Httponly; Secure
+      Connection:
+      - Keep-Alive
     body:
       encoding: ASCII-8BIT
-      string: '{"status":"success","msg":"","childBean":{"hasAgedPhoto":false,"hasExtraPhoto":false,"possibleLocation":"","caseNumber":"1261092","orgPrefix":"NCMC","seqNumber":1,"langId":"en_US","userLangId":"en_US","firstName":"YVETTE","lastName":"HERNANDEZ","middleName":"","approxAge":"","sex":"female","race":"hispanic","birthDate":"Mar
-        21, 2001 12:00:00 AM","height":59,"heightInInch":true,"weight":140,"weightInPound":true,"eyeColor":"black","hairColor":"black","hasPhoto":true,"hasThumbnail":true,"hasPoster":true,"otherChildList":[],"otherCsawList":[],"caseType":"endangeredRunaway","missingDate":"Jan
-        16, 2016 12:00:00 AM","missingCity":"CHICAGO","missingCounty":"Cook","missingState":"IL","missingProvince":"","missingCountry":"US","circumstance":"Yvette
-        was last seen on January 16, 2016.  She may be in the company of an adult
-        male.","profileNarrative":"","orgName":"National Center for Missing \u0026
-        Exploited Children","orgContactInfo":"1-800-843-5678 (1-800-THE-LOST)","orgLogo":"NCMC_en_US.gif","isClearinghouse":false,"isChild":true,"repSightURL":"","inMonth":false,"inDay":false,"age":15,"altContact":"Chicago
-        Police Department  (Illinois)  1-312-747-5789","photoMap":"c1","ncic":"","namUs":"","maxHeight":0,"maxWeight":0}}'
+      string: '{"status":"success","msg":"","childBean":{"hasAgedPhoto":false,"hasExtraPhoto":false,"possibleLocation":"","caseNumber":"1332259","orgPrefix":"NCMC","seqNumber":1,"langId":"en_US","userLangId":"en_US","firstName":"NANCY","lastName":"MONTELONGO","middleName":"M","approxAge":"","sex":"female","race":"hispanic","birthDate":"Nov
+        11, 2003 12:00:00 AM","height":64,"heightInInch":true,"weight":135,"weightInPound":true,"eyeColor":"brown","hairColor":"brown","hasPhoto":true,"hasThumbnail":true,"hasPoster":true,"otherChildList":[],"otherCsawList":[],"caseType":"endangeredRunaway","missingDate":"Jun
+        22, 2018 12:00:00 AM","missingCity":"LAS VEGAS","missingCounty":"Clark","missingState":"NV","missingProvince":"","missingCountry":"US","circumstance":"Nancy
+        was last seen on June 22, 2018.  She may still be in the local area.","profileNarrative":"","orgName":"National
+        Center for Missing \u0026 Exploited Children","orgContactInfo":"1-800-843-5678
+        (1-800-THE-LOST)","orgLogo":"NCMC_en_US.jpg","isClearinghouse":false,"isChild":true,"repSightURL":"","inMonth":false,"inDay":false,"age":14,"altContact":"Las
+        Vegas Metropolitan Police Department (Nevada) 1-702-828-3111","photoMap":"c1","ncic":"","namUs":"","maxHeight":0,"maxWeight":0},"posterlangs":"en_US"}'
     http_version: 
-  recorded_at: Tue, 19 Apr 2016 19:26:34 GMT
-recorded_with: VCR 3.0.1
+  recorded_at: Wed, 01 Aug 2018 13:01:05 GMT
+- request:
+    method: get
+    uri: https://api.missingkids.org/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=1331776&orgPrefix=NCMC&searchLang=en_US&seqNum=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 01 Aug 2018 13:01:05 GMT
+      Server:
+      - Apache
+      Pragma:
+      - public
+      Cache-Control:
+      - maxage=1800
+      Expires:
+      - Wed, 01 Aug 2018 13:31:05 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Origin, Accept-Encoding
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Length:
+      - '847'
+      Content-Type:
+      - text/html;charset=UTF-8
+      Set-Cookie:
+      - BIGipServermkapi.ncmecad.net.app~mkapi.ncmecad.net_pool=2886080940.20480.0000;
+        path=/; Httponly
+      - asdfjkl=!rISJJlIJVehDDTC+HfyV8jAwfWejpEyAJEZT3OcSzeEzBnIFzgSJK8eog72k93RtTD+hmp1OEFOFuw==;
+        path=/; Httponly; Secure
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"success","msg":"","childBean":{"hasAgedPhoto":false,"hasExtraPhoto":true,"possibleLocation":"","caseNumber":"1331776","orgPrefix":"NCMC","seqNumber":1,"langId":"en_US","userLangId":"en_US","firstName":"JHAIQUAN","lastName":"SALISBURY","middleName":"RAMEL","approxAge":"","sex":"male","race":"black","birthDate":"Dec
+        2, 2002 12:00:00 AM","height":73,"heightInInch":true,"weight":240,"weightInPound":true,"eyeColor":"brown","hairColor":"black","hasPhoto":true,"hasThumbnail":true,"hasPoster":true,"otherChildList":[],"otherCsawList":[],"caseType":"endangeredRunaway","missingDate":"Jun
+        21, 2018 12:00:00 AM","missingCity":"CANAAN","missingCounty":"Columbia","missingState":"NY","missingProvince":"","missingCountry":"US","circumstance":"Both
+        photos shown are of JhaiQuan.  He was last seen on June 21, 2018.  JhaiQuan
+        may still be in the local area or he may travel to Schenectady, Albany, or
+        Middletown, New York.","profileNarrative":"","orgName":"National Center for
+        Missing \u0026 Exploited Children","orgContactInfo":"1-800-843-5678 (1-800-THE-LOST)","orgLogo":"NCMC_en_US.jpg","isClearinghouse":false,"isChild":true,"repSightURL":"","inMonth":false,"inDay":false,"age":15,"altContact":"New
+        York State Police Department  (New Lebanon)  1-518-794-8445","photoMap":"c1x1","ncic":"","namUs":"","maxHeight":0,"maxWeight":0},"posterlangs":"en_US"}'
+    http_version: 
+  recorded_at: Wed, 01 Aug 2018 13:01:05 GMT
+- request:
+    method: get
+    uri: https://api.missingkids.org/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=1329426&orgPrefix=NCMC&searchLang=en_US&seqNum=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 01 Aug 2018 13:01:05 GMT
+      Server:
+      - Apache
+      Pragma:
+      - public
+      Cache-Control:
+      - maxage=1800
+      Expires:
+      - Wed, 01 Aug 2018 13:31:05 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Origin, Accept-Encoding
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Length:
+      - '794'
+      Content-Type:
+      - text/html;charset=UTF-8
+      Set-Cookie:
+      - BIGipServermkapi.ncmecad.net.app~mkapi.ncmecad.net_pool=2886080940.20480.0000;
+        path=/; Httponly
+      - asdfjkl=!8L/+4KL1oRHm/YS+HfyV8jAwfWejpPlXsNSzwZf8QxP24bnWxgxoBViUtFz/7d4JI/LafD9Iw+Onhg==;
+        path=/; Httponly; Secure
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"success","msg":"","childBean":{"hasAgedPhoto":false,"hasExtraPhoto":true,"possibleLocation":"","caseNumber":"1329426","orgPrefix":"NCMC","seqNumber":1,"langId":"en_US","userLangId":"en_US","firstName":"OWEN","lastName":"HIDALGO-CALDERON","middleName":"","approxAge":"","sex":"male","race":"hispanic","birthDate":"Mar
+        14, 2017 12:00:00 AM","height":24,"heightInInch":true,"weight":23,"weightInPound":true,"eyeColor":"brown","hairColor":"brown","hasPhoto":true,"hasThumbnail":true,"hasPoster":true,"otherChildList":[],"otherCsawList":[],"caseType":"endangeredMissing","missingDate":"May
+        16, 2018 12:00:00 AM","missingCity":"SODUS","missingCounty":"Wayne","missingState":"NY","missingProvince":"","missingCountry":"US","circumstance":"Both
+        photos shown are of Owen. He was last seen on May 16, 2018. Owen may be in
+        need of medical attention.","profileNarrative":"","orgName":"National Center
+        for Missing \u0026 Exploited Children","orgContactInfo":"1-800-843-5678 (1-800-THE-LOST)","orgLogo":"NCMC_en_US.jpg","isClearinghouse":false,"isChild":true,"repSightURL":"","inMonth":false,"inDay":false,"age":1,"altContact":"Wayne
+        County Sheriff\u0027s Office (New York) 1-315-946-9711","photoMap":"c1x1","ncic":"","namUs":"","maxHeight":0,"maxWeight":0},"posterlangs":"en_US"}'
+    http_version: 
+  recorded_at: Wed, 01 Aug 2018 13:01:05 GMT
+- request:
+    method: get
+    uri: https://api.missingkids.org/missingkids/servlet/JSONDataServlet?LanguageId=en_US&action=childDetail&caseLang=en_US&caseNum=1327551&orgPrefix=NCMC&searchLang=en_US&seqNum=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 01 Aug 2018 13:01:05 GMT
+      Server:
+      - Apache
+      Pragma:
+      - public
+      Cache-Control:
+      - maxage=1800
+      Expires:
+      - Wed, 01 Aug 2018 13:31:05 GMT
+      Access-Control-Allow-Origin:
+      - "*"
+      Vary:
+      - Origin, Accept-Encoding
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Content-Length:
+      - '1247'
+      Content-Type:
+      - text/html;charset=UTF-8
+      Set-Cookie:
+      - BIGipServermkapi.ncmecad.net.app~mkapi.ncmecad.net_pool=2919635372.20480.0000;
+        path=/; Httponly
+      - asdfjkl=!1rYTyMeJbU/aZg6+HfyV8jAwfWejpJknfqrXoQHIBruibiw1NMgzeErHdoZcjSBYOPOIzyuELTz9Xg==;
+        path=/; Httponly; Secure
+      Connection:
+      - Keep-Alive
+    body:
+      encoding: ASCII-8BIT
+      string: '{"status":"success","msg":"","childBean":{"hasAgedPhoto":false,"hasExtraPhoto":false,"possibleLocation":"","caseNumber":"1327551","orgPrefix":"NCMC","seqNumber":1,"langId":"en_US","userLangId":"en_US","firstName":"KAHMILA","lastName":"RAMIREZ","middleName":"","approxAge":"","sex":"female","race":"hispanic","birthDate":"Oct
+        18, 2017 12:00:00 AM","height":24,"heightInInch":true,"weight":14,"weightInPound":true,"eyeColor":"brown","hairColor":"black","hasPhoto":true,"hasThumbnail":true,"hasPoster":true,"otherChildList":[{"hasAgedPhoto":false,"hasExtraPhoto":false,"possibleLocation":"","caseNumber":"1327551","orgPrefix":"NCMC","seqNumber":2,"langId":"en_US","userLangId":"en_US","firstName":"LUIS","lastName":"RAMIREZ","middleName":"","approxAge":"","sex":"male","race":"hispanic","birthDate":"Nov
+        28, 2012 12:00:00 AM","height":39,"heightInInch":true,"weight":35,"weightInPound":true,"eyeColor":"brown","hairColor":"black","hasPhoto":true,"hasThumbnail":true,"hasPoster":true,"otherChildList":[],"otherCsawList":[],"caseType":"familyAbduct","missingDate":"May
+        4, 2018 12:00:00 AM","missingCity":"TUCSON","missingCounty":"Pima","missingState":"AZ","missingProvince":"","missingCountry":"US","circumstance":"Kahmila
+        and Luis were allegedly abducted by their father, Luis Herrera-Ramirez and
+        their mother, Andrea Ramirez. Felony warrants are on file for both Luis and
+        Andrea. They may still be in the local area or they may travel to Mexico.  Kahmila
+        was last seen wearing a white onesie with yellow ruffles. Luis was last seen
+        wearing a gray and white striped polo shirt and khaki pants.","profileNarrative":"","orgName":"","orgContactInfo":"","orgLogo":"","isClearinghouse":false,"isChild":true,"repSightURL":"","inMonth":false,"inDay":false,"age":-1,"altContact":"Tucson
+        Police Department (Arizona) 1-520-791-4444","photoMap":"c1c2a1a2","ncic":"","namUs":"","maxHeight":0,"maxWeight":0}],"otherCsawList":[{"companionType":"abductor","caseNumber":"1327551","orgPrefix":"NCMC","seqNumber":1,"langId":"en_US","userLangId":"en_US","firstName":"LUIS","lastName":"HERRERA-RAMIREZ","middleName":"ALBERTO
+        G.","approxAge":"","sex":"male","race":"hispanic","birthDate":"Sep 28, 1987
+        12:00:00 AM","height":66,"heightInInch":true,"weight":200,"weightInPound":true,"eyeColor":"black","hairColor":"brown","hasPhoto":true,"hasThumbnail":true,"hasPoster":true,"otherChildList":[],"otherCsawList":[],"caseType":"familyAbduct","missingDate":"May
+        4, 2018 12:00:00 AM","missingCity":"TUCSON","missingCounty":"Pima","missingState":"AZ","missingProvince":"","missingCountry":"US","circumstance":"Kahmila
+        and Luis were allegedly abducted by their father, Luis Herrera-Ramirez and
+        their mother, Andrea Ramirez. Felony warrants are on file for both Luis and
+        Andrea. They may still be in the local area or they may travel to Mexico.  Kahmila
+        was last seen wearing a white onesie with yellow ruffles. Luis was last seen
+        wearing a gray and white striped polo shirt and khaki pants.","profileNarrative":"","orgName":"","orgContactInfo":"","orgLogo":"","isClearinghouse":false,"isChild":false,"repSightURL":"","inMonth":false,"inDay":false,"age":-1,"altContact":"","photoMap":"c1c2a1a2","ncic":"","namUs":"","maxHeight":0,"maxWeight":0},{"companionType":"abductor","caseNumber":"1327551","orgPrefix":"NCMC","seqNumber":2,"langId":"en_US","userLangId":"en_US","firstName":"ANDREA","lastName":"RAMIREZ","middleName":"VANESSA","approxAge":"","sex":"female","race":"hispanic","birthDate":"Jul
+        25, 1989 12:00:00 AM","height":61,"heightInInch":true,"weight":195,"weightInPound":true,"eyeColor":"brown","hairColor":"black","hasPhoto":true,"hasThumbnail":true,"hasPoster":true,"otherChildList":[],"otherCsawList":[],"caseType":"familyAbduct","missingDate":"May
+        4, 2018 12:00:00 AM","missingCity":"TUCSON","missingCounty":"Pima","missingState":"AZ","missingProvince":"","missingCountry":"US","circumstance":"Kahmila
+        and Luis were allegedly abducted by their father, Luis Herrera-Ramirez and
+        their mother, Andrea Ramirez. Felony warrants are on file for both Luis and
+        Andrea. They may still be in the local area or they may travel to Mexico.  Kahmila
+        was last seen wearing a white onesie with yellow ruffles. Luis was last seen
+        wearing a gray and white striped polo shirt and khaki pants.","profileNarrative":"","orgName":"","orgContactInfo":"","orgLogo":"","isClearinghouse":false,"isChild":false,"repSightURL":"","inMonth":false,"inDay":false,"age":-1,"altContact":"","photoMap":"c1c2a1a2","ncic":"","namUs":"","maxHeight":0,"maxWeight":0}],"caseType":"familyAbduct","missingDate":"May
+        4, 2018 12:00:00 AM","missingCity":"TUCSON","missingCounty":"Pima","missingState":"AZ","missingProvince":"","missingCountry":"US","circumstance":"Kahmila
+        and Luis were allegedly abducted by their father, Luis Herrera-Ramirez and
+        their mother, Andrea Ramirez. Felony warrants are on file for both Luis and
+        Andrea. They may still be in the local area or they may travel to Mexico.  Kahmila
+        was last seen wearing a white onesie with yellow ruffles. Luis was last seen
+        wearing a gray and white striped polo shirt and khaki pants.","profileNarrative":"","orgName":"National
+        Center for Missing \u0026 Exploited Children","orgContactInfo":"1-800-843-5678
+        (1-800-THE-LOST)","orgLogo":"NCMC_en_US.jpg","isClearinghouse":false,"isChild":true,"repSightURL":"","inMonth":true,"inDay":false,"age":9,"altContact":"Tucson
+        Police Department (Arizona) 1-520-791-4444","photoMap":"c1c2a1a2","ncic":"","namUs":"","maxHeight":0,"maxWeight":0},"posterlangs":"en_US"}'
+    http_version: 
+  recorded_at: Wed, 01 Aug 2018 13:01:06 GMT
+recorded_with: VCR 4.0.0

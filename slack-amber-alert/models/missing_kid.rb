@@ -50,16 +50,16 @@ class MissingKid
   SORT_ORDERS = ['created_at', '-created_at'].freeze
 
   def self.update!
-    f = open('http://www.missingkids.org/missingkids/servlet/XmlServlet?LanguageCountry=en_US&act=rss&orgPrefix=NCMC')
+    f = open('http://www.missingkids.com/missingkids/servlet/XmlServlet?act=rss&LanguageCountry=en_US&orgPrefix=NCMC')
     rss = SimpleRSS.parse(f)
     rss.items.each do |item|
-      case_number = CGI.parse(URI.parse(item.link).query)['caseNum'][0]
+      case_number = item.link.split('/')[3] # /poster/NCMC/#case/1
 
       # existing record
       next if MissingKid.where(caseNumber: case_number).exists?
 
       # details
-      detail_url = "http://www.missingkids.com/missingkids/servlet/JSONDataServlet?action=childDetail&orgPrefix=NCMC&caseNum=#{case_number}&seqNum=1&caseLang=en_US&searchLang=en_US&LanguageId=en_US"
+      detail_url = "https://api.missingkids.org/missingkids/servlet/JSONDataServlet?action=childDetail&orgPrefix=NCMC&caseNum=#{case_number}&seqNum=1&caseLang=en_US&searchLang=en_US&LanguageId=en_US"
       details_json = JSON.parse(open(URI.parse(detail_url)).read)
 
       unless details_json['status'] == 'success'
