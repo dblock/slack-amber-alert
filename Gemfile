@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-ruby '2.5.0'
+ruby '2.6.2'
 
 gem 'grape'
 gem 'hashie'
@@ -15,11 +15,10 @@ gem 'slack-ruby-bot-server'
 group :development, :test do
   gem 'foreman'
   gem 'rake', '~> 10.4'
-  gem 'rubocop', '0.57.2'
+  gem 'rubocop'
 end
 
 group :development do
-  gem 'heroku'
   gem 'mongoid-shell'
 end
 

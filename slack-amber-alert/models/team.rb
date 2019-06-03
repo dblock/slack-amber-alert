@@ -7,6 +7,7 @@ class Team
 
   def notified!(ts)
     return if notified_at && notified_at > ts
+
     update_attributes!(notified_at: ts)
   end
 end

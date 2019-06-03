@@ -15,9 +15,11 @@ module MissingKidsNotifier
                      end
       Mongoid.logger.info "Notify #{team.name} (#{team.notified_at}), #{missing_kids.count} missing ..."
       return unless missing_kids.any?
+
       client ||= Slack::Web::Client.new(token: team.token)
       channels = client.channels_list['channels'].select { |channel| channel['is_member'] }
       return unless channels.any?
+
       missing_kids.each do |missing_kid|
         channels.each do |channel|
           notify_missing_kid!(client, channel['id'], missing_kid)

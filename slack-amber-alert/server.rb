@@ -16,6 +16,7 @@ module SlackRubyBotServer
 
     def self.send_welcome_message(client, data)
       return if client.owner.welcomed_at
+
       logger.info "#{client.owner.name}: Welcome."
       client.say(channel: data.channel['id'], text: WELCOME_MESSAGE)
       client.owner.update_attributes!(welcomed_at: Time.now.utc)
@@ -25,6 +26,7 @@ module SlackRubyBotServer
       # send missing kids alerts
       missing_kid = MissingKid.desc(:published_at).first
       return unless missing_kid
+
       MissingKidsNotifier.notify_missing_kid!(client.web_client, data.channel['id'], missing_kid)
       client.owner.notified!(missing_kid.published_at)
     end

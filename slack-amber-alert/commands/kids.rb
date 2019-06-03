@@ -10,6 +10,7 @@ module SlackAmberAlert
         number = arguments.shift
         max = Integer(number) if number
         raise 'Please specify a number between 1 and 10.' if max < 1 || max > 10
+
         Celluloid.defer do
           kids = MissingKid.all.desc(:published_at).limit(max)
           if kids.any?
