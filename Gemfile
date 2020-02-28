@@ -14,7 +14,7 @@ gem 'slack-ruby-bot-server'
 
 group :development, :test do
   gem 'foreman'
-  gem 'rake', '~> 10.4'
+  gem 'rake', '~> 12.3'
   gem 'rubocop'
 end
 
