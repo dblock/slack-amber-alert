@@ -1,9 +1,9 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    activemodel (5.2.0)
-      activesupport (= 5.2.0)
-    activesupport (5.2.0)
+    activemodel (5.2.4.3)
+      activesupport (= 5.2.4.3)
+    activesupport (5.2.4.3)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)
@@ -50,7 +50,7 @@ GEM
       ffi (~> 1.0, >= 1.0.11)
     coercible (1.0.0)
       descendants_tracker (~> 0.0.1)
-    concurrent-ruby (1.0.5)
+    concurrent-ruby (1.1.6)
     crack (0.4.3)
       safe_yaml (~> 1.0.0)
     database_cleaner (1.7.0)
@@ -99,7 +99,7 @@ GEM
       faraday_middleware
       net-http-digest_auth
       uri_template
-    i18n (1.0.1)
+    i18n (1.8.2)
       concurrent-ruby (~> 1.0)
     ice_nine (0.11.2)
     jaro_winkler (1.5.2)
@@ -110,7 +110,7 @@ GEM
     kgio (2.11.2)
     mini_mime (1.0.1)
     mini_portile2 (2.4.0)
-    minitest (5.11.3)
+    minitest (5.14.1)
     mongo (2.5.3)
       bson (>= 4.3.0, < 5.0.0)
     mongoid (7.0.1)
@@ -216,7 +216,7 @@ GEM
     timecop (0.9.1)
     timers (4.1.2)
       hitimes
-    tzinfo (1.2.5)
+    tzinfo (1.2.7)
       thread_safe (~> 0.1)
     uber (0.1.0)
     unicode-display_width (1.6.0)
